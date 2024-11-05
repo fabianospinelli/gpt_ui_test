@@ -1,0 +1,80 @@
+<div class="ecl-container">
+
+   
+    <div class="col-xl text-center">
+       <h1 class="ecl-u-type-heading-2">INSPIRE Data Themes</h1>
+       <h4 class="ecl-u-type-heading-6">Explore all Member States' INSPIRE data sets by selecting an INSPIRE data theme.</h4>
+  
+   </div>
+     
+     
+     <div ng-repeat="annex in annexList">
+        <h2 class="text-center ecl-u-type-heading-2">Annex {{annex.label}}</h2>
+  
+  
+  <div class="row">
+    <div ng-repeat="theme in themes.data | filter: { annexGroupId: annex.id}"  ng-init="myVariable = $index+1">
+   
+        <div class="clearfix" ng-if="$index % 4 == 0">
+  
+    
+  
+        </div>
+   
+        <div class="col-s-12 col-md-6  col-lg-3" style="margin-top: 20px;">
+       
+   
+         
+            <div class="card" style="background-color: #f5f5f5; height: 210px!important; padding: 5px;">
+              <div class="card-header">
+  
+                
+                <div class="col-md-2" ><img src="../../catalog/views/inspireportal/images/{{theme.id}}.svg" style="width:48px; padding-right: 15px;"></div>
+                <div class="col-md-10" style="border:  0px solid green;">
+                  <b  ><a href="/component-library/example" class="ecl-link ecl-link--standalone"> {{theme.label}} </a></b></div>
+  
+              </div>
+              <div class="card-body">
+  
+  
+                  <div class="col-md-12"  style="border:  0px solid green;">
+          
+                            
+                                <b>Def:</b> <em> {{theme.definition | truncate:50:wordwise:60}}...</em>
+   
+                 
+                        </div> 
+            
+              </div>
+              <div class="card-footer">
+  
+    
+                  <div class="ecl-u-f-l">
+                     <a target="_blank" href="https://inspire.ec.europa.eu/Themes/{{theme.id}}" class="ecl-link ecl-link--standalone">
+                        <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Click for more details"></i>
+                     </a>
+               </div>
+   
+                     <div class="ecl-u-f-r ">
+                       <i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsThemeSelectionBox_mdCount_ad">0</span>	<span> | </span>
+                        <i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsThemeSelectionBox_dwCount_ad">0</span>	<span> | </span>
+                   <i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsThemeSelectionBox_lyCount_ad">0</span>
+                  </div>
+                     </div>
+     
+  
+              </div>
+            </div> 
+   
+          </div>
+    
+    </div>
+  </div>
+    </div>
+  
+  </div>
+  
+  
+   
+   
+   

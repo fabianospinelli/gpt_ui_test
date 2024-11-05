@@ -1,0 +1,92 @@
+#
+20241022
+v1.1.2.15
+added EUROSTAT
+#
+
+#
+20241011
+v1.1.2.14
+added Moldova and fix issue national/regional/others filter (first part)
+#
+
+#
+20240920
+v1.1.2.13
+changes and fix requested by BMs (listed in table on Confluence)
+#
+
+#
+20240806
+v1.1.2.12
+fix on images in homepage + new config file to manage path
+#
+
+#
+20240704
+v1.1.2.11
+fix on pagination and element items per page
+fix on link related to info icon in the datathemes page: new mapping with new IKB EWPP format
+#
+
+#
+20240702
+v1.1.2.10
+removed search field from header
+#
+
+#
+20240522
+v1.1.2.9
+fix on pagination and element items per page
+fix on link related to info icon in the datathemes page: new mapping with new IKB EWPP format
+#
+
+#
+20240430
+v1.1.2.8
+new fix for accessibility (keyboard navigation) and updated accessibility statement
+#
+
+#
+20240426
+v1.1.2.7
+disabled scroll top on page reload
+#
+
+#
+20240327
+v1.1.2.6
+new controller for manage and show breadcrumb
+#
+#
+20240305
+v1.1.2.5
+look&feel compliant to EWG (standardised template)
+v1.1.2.4
+fix homepage link to validator
+#
+
+#
+20240214
+v1.1.2.3
+fix on issues emerged post rollout
+#
+
+#
+20240123
+v1.1.2.2
+added fixes requested by Geocat on Elastic queries, different ID for download. Removed login button from header
+#
+
+#
+20231219
+v1.1.2.1
+fixed URLs for new URL format on Production (without /geonetwork)
+#
+
+#
+20231213
+v1.1.2.0
+merged branches: WCAG accessibility and text and graphic fixes from August
+#

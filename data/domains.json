@@ -1,0 +1,1102 @@
+ 
+     [
+         {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "waste",
+        "definition": null,
+        "id": "agricultural-sludge-deposit-sites",
+        "label": "Agricultural sludge deposit sites",
+        "solrFilterQueryFieldValue": "agricultural-sludge-deposit-sites",
+        "solrFilterQueryParam": "environmentalDomain:\"agricultural-sludge-deposit-sites\"",
+        "dataSetNumber": ["43,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "waste",
+        "definition": null,
+        "id": "agricultural-sludge-receiving-facilities",
+        "label": "Agricultural sludge receiving facilities",
+        "solrFilterQueryFieldValue": "agricultural-sludge-receiving-facilities",
+        "solrFilterQueryParam": "environmentalDomain:\"agricultural-sludge-receiving-facilities\"",
+        "dataSetNumber": ["42,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "macro",
+        "definition": null,
+        "id": "air",
+        "label": "Air",
+        "solrFilterQueryFieldValue": "air",
+        "solrFilterQueryParam": "environmentalDomain:\"air\"",
+        "dataSetNumber": ["-"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "air",
+        "definition": null,
+        "id": "air-quality-data",
+        "label": "AQ data",
+        "solrFilterQueryFieldValue": "air-quality-data",
+        "solrFilterQueryParam": "environmentalDomain:\"air-quality-data\"",
+        "dataSetNumber": ["4,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "air",
+        "definition": null,
+        "id": "air-quality-management-zones-agglomerations",
+        "label": "AQ management zones & agglomerations",
+        "solrFilterQueryFieldValue": "air-quality-management-zones-agglomerations",
+        "solrFilterQueryParam": "environmentalDomain:\"air-quality-management-zones-agglomerations\"",
+        "dataSetNumber": ["1,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "air",
+        "definition": "grouping",
+        "id": "air-quality-management-zones-agglomerations-grouping",
+        "label": "AQ management zones & agglomerations",
+        "solrFilterQueryFieldValue": "air-quality-management-zones-agglomerations-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"air-quality-management-zones-agglomerations-grouping\"",
+        "dataSetNumber": ["1,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "air",
+        "definition": null,
+        "id": "air-quality-model-areas-incl-assessment-methods-models",
+        "label": "AQ model areas (incl. assessment methods - models)",
+        "solrFilterQueryFieldValue": "air-quality-model-areas-incl-assessment-methods-models",
+        "solrFilterQueryParam": "environmentalDomain:\"air-quality-model-areas-incl-assessment-methods-models\"",
+        "dataSetNumber": ["2,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "air",
+        "definition": null,
+        "id": "air-quality-monitoring-stations-incl-assessment-methods-measurements",
+        "label": "AQ monitoring stations  (incl. assessment methods - measurements)",
+        "solrFilterQueryFieldValue": "air-quality-monitoring-stations-incl-assessment-methods-measurements",
+        "solrFilterQueryParam": "environmentalDomain:\"air-quality-monitoring-stations-incl-assessment-methods-measurements\"",
+        "dataSetNumber": ["3,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": null,
+        "id": "alien-species-distribution",
+        "label": "Alien species distribution",
+        "solrFilterQueryFieldValue": "alien-species-distribution",
+        "solrFilterQueryParam": "environmentalDomain:\"alien-species-distribution\"",
+        "dataSetNumber": ["26,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "",
+        "definition": null,
+        "id": "all",
+        "label": "All Environmental Domains",
+        "solrFilterQueryFieldValue": "*",
+        "solrFilterQueryParam": "environmentalDomain:*",
+        "dataSetNumber": ["-"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "waste",
+        "definition": null,
+        "id": "areas-exempt-from-requirement-to-obtain-a-permit-to-dump-waste",
+        "label": "Areas exemted from permission of dumping waste",
+        "solrFilterQueryFieldValue": "areas-exempt-from-requirement-to-obtain-a-permit-to-dump-waste",
+        "solrFilterQueryParam": "environmentalDomain:\"areas-exempt-from-requirement-to-obtain-a-permit-to-dump-waste\"",
+        "dataSetNumber": ["37,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "bathing-water-directive-bathing-sites-abstraction-points",
+        "label": "Drinking water abstraction points",
+        "solrFilterQueryFieldValue": "bathing-water-directive-bathing-sites-abstraction-points",
+        "solrFilterQueryParam": "environmentalDomain:\"bathing-water-directive-bathing-sites-abstraction-points\"",
+        "dataSetNumber": ["21,02"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "bathing-water-directive-bathing-waters",
+        "label": "BWD bathing waters",
+        "solrFilterQueryFieldValue": "bathing-water-directive-bathing-waters",
+        "solrFilterQueryParam": "environmentalDomain:\"bathing-water-directive-bathing-waters\"",
+        "dataSetNumber": ["22,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": null,
+        "id": "biogeographical-regions-national-datasets",
+        "label": "Biogeographical regions (national datasets)",
+        "solrFilterQueryFieldValue": "biogeographical-regions-national-datasets",
+        "solrFilterQueryParam": "environmentalDomain:\"biogeographical-regions-national-datasets\"",
+        "dataSetNumber": ["46,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": null,
+        "id": "biogeographical-regions-pan-european-dataset",
+        "label": "Biogeographical regions (pan-European dataset)",
+        "solrFilterQueryFieldValue": "biogeographical-regions-pan-european-dataset",
+        "solrFilterQueryParam": "environmentalDomain:\"biogeographical-regions-pan-european-dataset\"",
+        "dataSetNumber": ["23,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": "grouping",
+        "id": "bird-species-distribution-and-range-birds-directive-grouping",
+        "label": "Bird species distribution and range (Birds Directive)",
+        "solrFilterQueryFieldValue": "bird-species-distribution-and-range-birds-directive-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"bird-species-distribution-and-range-birds-directive-grouping\"",
+        "dataSetNumber": ["24,09", "24,10", "24,07", "24,08"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": null,
+        "id": "birds-distribution",
+        "label": "BIRDS distribution",
+        "solrFilterQueryFieldValue": "birds-distribution",
+        "solrFilterQueryParam": "environmentalDomain:\"birds-distribution\"",
+        "dataSetNumber": ["24,09", "24,10"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": "grouping",
+        "id": "birds-distribution-grouping",
+        "label": "BIRDS distribution",
+        "solrFilterQueryFieldValue": "birds-distribution-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"birds-distribution-grouping\"",
+        "dataSetNumber": ["24,09", "24,10"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": null,
+        "id": "birds-distribution-sensitive",
+        "label": "BIRDS distribution sensitive",
+        "solrFilterQueryFieldValue": "birds-distribution-sensitive",
+        "solrFilterQueryParam": "environmentalDomain:\"birds-distribution-sensitive\"",
+        "dataSetNumber": ["24,1"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": null,
+        "id": "birds-range",
+        "label": "BIRDS range",
+        "solrFilterQueryFieldValue": "birds-range",
+        "solrFilterQueryParam": "environmentalDomain:\"birds-range\"",
+        "dataSetNumber": ["24,07", "24,08"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": "grouping",
+        "id": "birds-range-grouping",
+        "label": "BIRDS range",
+        "solrFilterQueryFieldValue": "birds-range-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"birds-range-grouping\"",
+        "dataSetNumber": ["24,07", "24,08"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": null,
+        "id": "birds-range-sensitive",
+        "label": "BIRDS range sensitive",
+        "solrFilterQueryFieldValue": "birds-range-sensitive",
+        "solrFilterQueryParam": "environmentalDomain:\"birds-range-sensitive\"",
+        "dataSetNumber": ["24,08"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "industrial-emissions",
+        "definition": null,
+        "id": "boreholes-for-hydraulic-fracturing",
+        "label": "Boreholes for hydraulic fracturing",
+        "solrFilterQueryFieldValue": "boreholes-for-hydraulic-fracturing",
+        "solrFilterQueryParam": "environmentalDomain:\"boreholes-for-hydraulic-fracturing\"",
+        "dataSetNumber": ["40,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "industrial-emissions",
+        "definition": "grouping",
+        "id": "boreholes-for-hydraulic-fracturing-grouping",
+        "label": "Boreholes for hydraulic fracturing",
+        "solrFilterQueryFieldValue": "boreholes-for-hydraulic-fracturing-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"boreholes-for-hydraulic-fracturing-grouping\"",
+        "dataSetNumber": ["40,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "industrial-emissions",
+        "definition": null,
+        "id": "combustion-plants",
+        "label": "Combustion plants",
+        "solrFilterQueryFieldValue": "combustion-plants",
+        "solrFilterQueryParam": "environmentalDomain:\"combustion-plants\"",
+        "dataSetNumber": ["30,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "drinking-water-protected-areas",
+        "label": "Drinking water protected areas",
+        "solrFilterQueryFieldValue": "drinking-water-protected-areas",
+        "solrFilterQueryParam": "environmentalDomain:\"drinking-water-protected-areas\"",
+        "dataSetNumber": ["11,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "drinking-water-protection-areas-supply-zones-safeguard-zones",
+        "label": "Drinking water protection areas, supply zones, safeguard zones",
+        "solrFilterQueryFieldValue": "drinking-water-protection-areas-supply-zones-safeguard-zones",
+        "solrFilterQueryParam": "environmentalDomain:\"drinking-water-protection-areas-supply-zones-safeguard-zones\"",
+        "dataSetNumber": ["20,01", "21,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": "grouping",
+        "id": "drinking-water-protection-areas-supply-zones-safeguard-zones-grouping",
+        "label": "Drinking water protection areas, supply zones, safeguard zones",
+        "solrFilterQueryFieldValue": "drinking-water-protection-areas-supply-zones-safeguard-zones-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"drinking-water-protection-areas-supply-zones-safeguard-zones-grouping\"",
+        "dataSetNumber": ["20,01", "21,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "industrial-emissions",
+        "definition": null,
+        "id": "e-prtr-emission-data",
+        "label": "E-PRTR emission data",
+        "solrFilterQueryFieldValue": "e-prtr-emission-data",
+        "solrFilterQueryParam": "environmentalDomain:\"e-prtr-emission-data\"",
+        "dataSetNumber": ["28,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "industrial-emissions",
+        "definition": null,
+        "id": "e-prtr-sites-facilities",
+        "label": "E-PRTR sites & facilities",
+        "solrFilterQueryFieldValue": "e-prtr-sites-facilities",
+        "solrFilterQueryParam": "environmentalDomain:\"e-prtr-sites-facilities\"",
+        "dataSetNumber": ["27,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "industrial emissions",
+        "definition": "grouping",
+        "id": "eu-registry-on-industrial-sites-grouping",
+        "label": "EU registry on industrial sites",
+        "solrFilterQueryFieldValue": "eu-registry-on-industrial-sites-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"eu-registry-on-industrial-sites-grouping\"",
+        "dataSetNumber": ["27,01", "29,01", "30,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "waste",
+        "definition": null,
+        "id": "extractive-waste-facilities",
+        "label": "Extractive waste facilities",
+        "solrFilterQueryFieldValue": "extractive-waste-facilities",
+        "solrFilterQueryParam": "environmentalDomain:\"extractive-waste-facilities\"",
+        "dataSetNumber": ["38,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": "grouping",
+        "id": "fd-flood-risk-zones-grouping",
+        "label": "FD flood risk zones",
+        "solrFilterQueryFieldValue": "fd-flood-risk-zones-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"fd-flood-risk-zones-grouping\"",
+        "dataSetNumber": ["16,01", "16,02", "16,03"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": "grouping",
+        "id": "fd-hazard-areas-grouping",
+        "label": "FD hazard areas",
+        "solrFilterQueryFieldValue": "fd-hazard-areas-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"fd-hazard-areas-grouping\"",
+        "dataSetNumber": ["15,01", "15,02", "15,03"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "floods-directive-areas-of-potential-significant-flood-risk",
+        "label": "FD areas of potential significant flood risk",
+        "solrFilterQueryFieldValue": "floods-directive-areas-of-potential-significant-flood-risk",
+        "solrFilterQueryParam": "environmentalDomain:\"floods-directive-areas-of-potential-significant-flood-risk\"",
+        "dataSetNumber": ["13,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "floods-directive-flood-hazard-areas-high-probability-scenario",
+        "label": "FD hazard area high probability scenario",
+        "solrFilterQueryFieldValue": "floods-directive-flood-hazard-areas-high-probability-scenario",
+        "solrFilterQueryParam": "environmentalDomain:\"floods-directive-flood-hazard-areas-high-probability-scenario\"",
+        "dataSetNumber": ["15,03"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "floods-directive-flood-hazard-areas-low-probability-scenario",
+        "label": "FD hazard areas low probability scenario",
+        "solrFilterQueryFieldValue": "floods-directive-flood-hazard-areas-low-probability-scenario",
+        "solrFilterQueryParam": "environmentalDomain:\"floods-directive-flood-hazard-areas-low-probability-scenario\"",
+        "dataSetNumber": ["15,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "floods-directive-flood-hazard-areas-medium-probability-scenario",
+        "label": "FD hazard areas medium probability scenario",
+        "solrFilterQueryFieldValue": "floods-directive-flood-hazard-areas-medium-probability-scenario",
+        "solrFilterQueryParam": "environmentalDomain:\"floods-directive-flood-hazard-areas-medium-probability-scenario\"",
+        "dataSetNumber": ["15,02"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "floods-directive-flood-risk-zones-high-probability-scenario",
+        "label": "FD flood risk zones high probability scenario",
+        "solrFilterQueryFieldValue": "floods-directive-flood-risk-zones-high-probability-scenario",
+        "solrFilterQueryParam": "environmentalDomain:\"floods-directive-flood-risk-zones-high-probability-scenario\"",
+        "dataSetNumber": ["16,03"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "floods-directive-flood-risk-zones-low-probability-scenario",
+        "label": "FD flood risk zones low probability scenario",
+        "solrFilterQueryFieldValue": "floods-directive-flood-risk-zones-low-probability-scenario",
+        "solrFilterQueryParam": "environmentalDomain:\"floods-directive-flood-risk-zones-low-probability-scenario\"",
+        "dataSetNumber": ["16,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "floods-directive-flood-risk-zones-medium-probability-scenario",
+        "label": "FD flood risk zones medium probability scenario",
+        "solrFilterQueryFieldValue": "floods-directive-flood-risk-zones-medium-probability-scenario",
+        "solrFilterQueryParam": "environmentalDomain:\"floods-directive-flood-risk-zones-medium-probability-scenario\"",
+        "dataSetNumber": ["16,02"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "floods-directive-management-units",
+        "label": "FD units of management",
+        "solrFilterQueryFieldValue": "floods-directive-management-units",
+        "solrFilterQueryParam": "environmentalDomain:\"floods-directive-management-units\"",
+        "dataSetNumber": ["17,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "floods-directive-preliminary-flood-risk-assessment-observed-events",
+        "label": "FD PFRA observed events",
+        "solrFilterQueryFieldValue": "floods-directive-preliminary-flood-risk-assessment-observed-events",
+        "solrFilterQueryParam": "environmentalDomain:\"floods-directive-preliminary-flood-risk-assessment-observed-events\"",
+        "dataSetNumber": ["14,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "floods-directive-preliminary-flood-risk-assessment-potential-future-events",
+        "label": "FD PFRA potential future events",
+        "solrFilterQueryFieldValue": "floods-directive-preliminary-flood-risk-assessment-potential-future-events",
+        "solrFilterQueryParam": "environmentalDomain:\"floods-directive-preliminary-flood-risk-assessment-potential-future-events\"",
+        "dataSetNumber": ["14,02"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": "grouping",
+        "id": "habitat-types-and-species-distribution-and-range-habitats-directive-grouping",
+        "label": "Habitat types and species distribution and range (Habitats Directive)",
+        "solrFilterQueryFieldValue": "habitat-types-and-species-distribution-and-range-habitats-directive-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"habitat-types-and-species-distribution-and-range-habitats-directive-grouping\"",
+        "dataSetNumber": ["24,01", "24,02", "24,03", "24,04", "25,05", "24,06"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": null,
+        "id": "habitat-types-distribution",
+        "label": "Habitat types distribution",
+        "solrFilterQueryFieldValue": "habitat-types-distribution",
+        "solrFilterQueryParam": "environmentalDomain:\"habitat-types-distribution\"",
+        "dataSetNumber": ["24,01", "24,05"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": "grouping",
+        "id": "habitat-types-distribution-grouping",
+        "label": "Habitat types distribution",
+        "solrFilterQueryFieldValue": "habitat-types-distribution-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"habitat-types-distribution-grouping\"",
+        "dataSetNumber": ["24,01", "24,05"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": null,
+        "id": "habitat-types-range",
+        "label": "Habitat types range",
+        "solrFilterQueryFieldValue": "habitat-types-range",
+        "solrFilterQueryParam": "environmentalDomain:\"habitat-types-range\"",
+        "dataSetNumber": ["24,02"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "macro",
+        "definition": null,
+        "id": "industrial-accidents",
+        "label": "Industrial accidents",
+        "solrFilterQueryFieldValue": "industrial-accidents",
+        "solrFilterQueryParam": "environmentalDomain:\"industrial-accidents\"",
+        "dataSetNumber": ["-"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "macro",
+        "definition": null,
+        "id": "industrial-emissions",
+        "label": "Industrial emissions",
+        "solrFilterQueryFieldValue": "industrial-emissions",
+        "solrFilterQueryParam": "environmentalDomain:\"industrial-emissions\"",
+        "dataSetNumber": ["-"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "industrial-emissions",
+        "definition": null,
+        "id": "industrial-emissions-directive-installations",
+        "label": "IED installations",
+        "solrFilterQueryFieldValue": "industrial-emissions-directive-installations",
+        "solrFilterQueryParam": "environmentalDomain:\"industrial-emissions-directive-installations\"",
+        "dataSetNumber": ["29,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "industrial-emissions",
+        "definition": null,
+        "id": "industrial-emissions-directive-lcp-emission-data",
+        "label": "IED/LCP emission data",
+        "solrFilterQueryFieldValue": "industrial-emissions-directive-lcp-emission-data",
+        "solrFilterQueryParam": "environmentalDomain:\"industrial-emissions-directive-lcp-emission-data\"",
+        "dataSetNumber": ["47,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "waste",
+        "definition": null,
+        "id": "location-of-landfill-of-waste-sites",
+        "label": "Location of landfill of waste sites",
+        "solrFilterQueryFieldValue": "location-of-landfill-of-waste-sites",
+        "solrFilterQueryParam": "environmentalDomain:\"location-of-landfill-of-waste-sites\"",
+        "dataSetNumber": ["48,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "major-air-transport",
+        "label": "Major air transport",
+        "solrFilterQueryFieldValue": "major-air-transport",
+        "solrFilterQueryParam": "environmentalDomain:\"major-air-transport\"",
+        "dataSetNumber": ["5,03"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "major-railways",
+        "label": "Major railways",
+        "solrFilterQueryFieldValue": "major-railways",
+        "solrFilterQueryParam": "environmentalDomain:\"major-railways\"",
+        "dataSetNumber": ["5,02"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "major-roads",
+        "label": "Major roads",
+        "solrFilterQueryFieldValue": "major-roads",
+        "solrFilterQueryParam": "environmentalDomain:\"major-roads\"",
+        "dataSetNumber": ["5,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": "grouping",
+        "id": "major-roads-railways-and-air-transport-network-grouping",
+        "label": "Major roads, railways and air transport network (Noise Directive)",
+        "solrFilterQueryFieldValue": "major-roads-railways-and-air-transport-network-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"major-roads-railways-and-air-transport-network-grouping\"",
+        "dataSetNumber": ["5,01", "5,02", "5,03"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "marine-strategy-framework-directive-marine-monitoring-stations",
+        "label": "MSFD marine monitoring stations",
+        "solrFilterQueryFieldValue": "marine-strategy-framework-directive-marine-monitoring-stations",
+        "solrFilterQueryParam": "environmentalDomain:\"marine-strategy-framework-directive-marine-monitoring-stations\"",
+        "dataSetNumber": ["19,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "marine-strategy-framework-directive-marine-reporting-units",
+        "label": "MSFD marine reporting units",
+        "solrFilterQueryFieldValue": "marine-strategy-framework-directive-marine-reporting-units",
+        "solrFilterQueryParam": "environmentalDomain:\"marine-strategy-framework-directive-marine-reporting-units\"",
+        "dataSetNumber": ["18,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "waste",
+        "definition": null,
+        "id": "mercury-storage-facilities",
+        "label": "Mercury storage facilities",
+        "solrFilterQueryFieldValue": "mercury-storage-facilities",
+        "solrFilterQueryParam": "environmentalDomain:\"mercury-storage-facilities\"",
+        "dataSetNumber": ["44,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": "grouping",
+        "id": "msfd-marine-reporting-units-grouping",
+        "label": "MSFD marine reporting units",
+        "solrFilterQueryFieldValue": "msfd-marine-reporting-units-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"msfd-marine-reporting-units-grouping\"",
+        "dataSetNumber": ["18,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": null,
+        "id": "nationally-designated-areas-cdda",
+        "label": "Nationally designated areas (CDDA)",
+        "solrFilterQueryFieldValue": "nationally-designated-areas-cdda",
+        "solrFilterQueryParam": "environmentalDomain:\"nationally-designated-areas-cdda\"",
+        "dataSetNumber": ["45,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature,water",
+        "definition": null,
+        "id": "natura-2000-sites",
+        "label": "Natura 2000 sites",
+        "solrFilterQueryFieldValue": "natura-2000-sites",
+        "solrFilterQueryParam": "environmentalDomain:\"natura-2000-sites\"",
+        "dataSetNumber": ["25,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "macro",
+        "definition": null,
+        "id": "nature",
+        "label": "Nature",
+        "solrFilterQueryFieldValue": "nature",
+        "solrFilterQueryParam": "environmentalDomain:\"nature\"",
+        "dataSetNumber": ["-"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "nitrates-directive-monitoring-stations",
+        "label": "NiD monitoring stations",
+        "solrFilterQueryFieldValue": "nitrates-directive-monitoring-stations",
+        "solrFilterQueryParam": "environmentalDomain:\"nitrates-directive-monitoring-stations\"",
+        "dataSetNumber": ["35,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "nitrates-directive-nitrate-vulnerable-zones",
+        "label": "NiD nitrate vulnerable zones",
+        "solrFilterQueryFieldValue": "nitrates-directive-nitrate-vulnerable-zones",
+        "solrFilterQueryParam": "environmentalDomain:\"nitrates-directive-nitrate-vulnerable-zones\"",
+        "dataSetNumber": ["36,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "macro",
+        "definition": null,
+        "id": "noise",
+        "label": "Noise",
+        "solrFilterQueryFieldValue": "noise",
+        "solrFilterQueryParam": "environmentalDomain:\"noise\"",
+        "dataSetNumber": ["-"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-agglomerations",
+        "label": "Noise agglomerations",
+        "solrFilterQueryFieldValue": "noise-agglomerations",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-agglomerations\"",
+        "dataSetNumber": ["6,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": "grouping",
+        "id": "noise-contour-map-for-aircraft-noise-in-agglomerations-grouping",
+        "label": "Noise contour map for aircraft noise in agglomerations",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-aircraft-noise-in-agglomerations-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-aircraft-noise-in-agglomerations-grouping\"",
+        "dataSetNumber": ["8,11", "8,12"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-aircraft-noise-in-agglomerations-lden",
+        "label": "Noise contour map for aircraft noise in agglomerations -Lden",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-aircraft-noise-in-agglomerations-lden",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-aircraft-noise-in-agglomerations-lden\"",
+        "dataSetNumber": ["8,11"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-aircraft-noise-in-agglomerations-lnight",
+        "label": "Noise contour map for aircraft noise in agglomerations -Lnight",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-aircraft-noise-in-agglomerations-lnight",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-aircraft-noise-in-agglomerations-lnight\"",
+        "dataSetNumber": ["8,12"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": "grouping",
+        "id": "noise-contour-map-for-industrial-noise-in-agglomerations-grouping",
+        "label": "Noise contour map for industrial noise in agglomerations",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-industrial-noise-in-agglomerations-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-industrial-noise-in-agglomerations-grouping\"",
+        "dataSetNumber": ["8,13", "8,14"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-industrial-noise-in-agglomerations-lden",
+        "label": "Noise contour map for industrial noise in agglomerations -Lden",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-industrial-noise-in-agglomerations-lden",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-industrial-noise-in-agglomerations-lden\"",
+        "dataSetNumber": ["8,13"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-industrial-noise-in-agglomerations-lnight",
+        "label": "Noise contour map for industrial noise in agglomerations -Lnight",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-industrial-noise-in-agglomerations-lnight",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-industrial-noise-in-agglomerations-lnight\"",
+        "dataSetNumber": ["8,14"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": "grouping",
+        "id": "noise-contour-map-for-major-airports-grouping",
+        "label": "Noise contour map for major airports",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-major-airports-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-major-airports-grouping\"",
+        "dataSetNumber": ["8,05", "8,06"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-major-airports-lden",
+        "label": "Noise contour map for major airports - Lden",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-major-airports-lden",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-major-airports-lden\"",
+        "dataSetNumber": ["8,05"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-major-airports-lnight",
+        "label": "Noise contour map for major airports -Lnight",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-major-airports-lnight",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-major-airports-lnight\"",
+        "dataSetNumber": ["8,06"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": "grouping",
+        "id": "noise-contour-map-for-major-railways-grouping",
+        "label": "Noise contour map for major railways",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-major-railways-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-major-railways-grouping\"",
+        "dataSetNumber": ["8,03", "8,04"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-major-railways-lden",
+        "label": "Noise contour map for major railways - Lden",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-major-railways-lden",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-major-railways-lden\"",
+        "dataSetNumber": ["8,03"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-major-railways-lnight",
+        "label": "Noise contour map for major railways - Lnight",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-major-railways-lnight",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-major-railways-lnight\"",
+        "dataSetNumber": ["8,04"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": "grouping",
+        "id": "noise-contour-map-for-major-roads-grouping",
+        "label": "Noise contour map for major roads",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-major-roads-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-major-roads-grouping\"",
+        "dataSetNumber": ["8,01", "8,02"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-major-roads-lden",
+        "label": "Noise contour map for major roads - Lden",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-major-roads-lden",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-major-roads-lden\"",
+        "dataSetNumber": ["8,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-major-roads-lnight",
+        "label": "Noise contour map for major roads - Lnight",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-major-roads-lnight",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-major-roads-lnight\"",
+        "dataSetNumber": ["8,02"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": "grouping",
+        "id": "noise-contour-map-for-railway-noise-in-agglomerations-grouping",
+        "label": "Noise contour map for railway noise in agglomerations",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-railway-noise-in-agglomerations-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-railway-noise-in-agglomerations-grouping\"",
+        "dataSetNumber": ["8,09", "8,10"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-railway-noise-in-agglomerations-lden",
+        "label": "Noise contour map for railway noise in agglomerations -Lden",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-railway-noise-in-agglomerations-lden",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-railway-noise-in-agglomerations-lden\"",
+        "dataSetNumber": ["8,09"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-railway-noise-in-agglomerations-lnight",
+        "label": "Noise contour map for railway noise in agglomerations -Lnight",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-railway-noise-in-agglomerations-lnight",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-railway-noise-in-agglomerations-lnight\"",
+        "dataSetNumber": ["8,1"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": "grouping",
+        "id": "noise-contour-map-for-road-noise-in-agglomerations-grouping",
+        "label": "Noise contour map for road noise in agglomerations",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-road-noise-in-agglomerations-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-road-noise-in-agglomerations-grouping\"",
+        "dataSetNumber": ["8,07", "8,08"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-road-noise-in-agglomerations-lden",
+        "label": "Noise contour map for road noise in agglomerations -Lden",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-road-noise-in-agglomerations-lden",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-road-noise-in-agglomerations-lden\"",
+        "dataSetNumber": ["8,07"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-for-road-noise-in-agglomerations-lnight",
+        "label": "Noise contour map for road noise in agglomerations -Lnight",
+        "solrFilterQueryFieldValue": "noise-contour-map-for-road-noise-in-agglomerations-lnight",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-for-road-noise-in-agglomerations-lnight\"",
+        "dataSetNumber": ["8,08"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": "grouping",
+        "id": "noise-contour-map-grouping",
+        "label": "Noise contour map",
+        "solrFilterQueryFieldValue": "noise-contour-map-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-grouping\"",
+        "dataSetNumber": ["8,01", "8,02", "8,03", "8,04", "8,05", "8,06", "8,07", "8,08", "8,09", "8,10", "8,11", "8,12", "8,13", "8,14", "8,15", "8,16"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": "grouping",
+        "id": "noise-contour-map-in-agglomerations-grouping",
+        "label": "Noise contour map in agglomerations",
+        "solrFilterQueryFieldValue": "noise-contour-map-in-agglomerations-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-in-agglomerations-grouping\"",
+        "dataSetNumber": ["8,15", "8,16"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-in-agglomerations-lnight",
+        "label": "Noise contour map in agglomerations -Lnight",
+        "solrFilterQueryFieldValue": "noise-contour-map-in-agglomerations-lnight",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-in-agglomerations-lnight\"",
+        "dataSetNumber": ["8,16"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "noise-contour-map-in-agglomerations-lnight-sic",
+        "label": "Noise contour map in agglomerations -Lden",
+        "solrFilterQueryFieldValue": "noise-contour-map-in-agglomerations-lnight-sic",
+        "solrFilterQueryParam": "environmentalDomain:\"noise-contour-map-in-agglomerations-lnight-sic\"",
+        "dataSetNumber": ["8,15"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "population",
+        "label": "Population",
+        "solrFilterQueryFieldValue": "population",
+        "solrFilterQueryParam": "environmentalDomain:\"population\"",
+        "dataSetNumber": ["7,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "noise",
+        "definition": null,
+        "id": "population-densely-populated-built-up-areas",
+        "label": "Population - densely populated built-up areas",
+        "solrFilterQueryFieldValue": "population-densely-populated-built-up-areas",
+        "solrFilterQueryParam": "environmentalDomain:\"population-densely-populated-built-up-areas\"",
+        "dataSetNumber": ["7,02"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": "grouping",
+        "id": "preliminary-flood-risk-assessment-floods-directive-grouping",
+        "label": "Preliminary flood risk assessment (Floods Directive)",
+        "solrFilterQueryFieldValue": "preliminary-flood-risk-assessment-floods-directive-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"preliminary-flood-risk-assessment-floods-directive-grouping\"",
+        "dataSetNumber": ["14,01", "14,02"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": "grouping",
+        "id": "protected-areas-water-framework-directive-grouping",
+        "label": "Protected areas (Water Framework Directive)",
+        "solrFilterQueryFieldValue": "protected-areas-water-framework-directive-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"protected-areas-water-framework-directive-grouping\"",
+        "dataSetNumber": ["11,01", "11,02", "11,03", "11,04", "22,01", "25,01", "34,01", "36,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "river-basin-district",
+        "label": "River basin district",
+        "solrFilterQueryFieldValue": "river-basin-district",
+        "solrFilterQueryParam": "environmentalDomain:\"river-basin-district\"",
+        "dataSetNumber": ["9,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "river-basin-district-sub-units",
+        "label": "River basin district sub-units",
+        "solrFilterQueryFieldValue": "river-basin-district-sub-units",
+        "solrFilterQueryParam": "environmentalDomain:\"river-basin-district-sub-units\"",
+        "dataSetNumber": ["9,02"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "river-network",
+        "label": "River network",
+        "solrFilterQueryFieldValue": "river-network",
+        "solrFilterQueryParam": "environmentalDomain:\"river-network\"",
+        "dataSetNumber": ["10,06"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "industrial-accidents",
+        "definition": null,
+        "id": "seveso-iii-directive-location-of-establishment",
+        "label": "Seveso III location of establishment",
+        "solrFilterQueryFieldValue": "seveso-iii-directive-location-of-establishment",
+        "solrFilterQueryParam": "environmentalDomain:\"seveso-iii-directive-location-of-establishment\"",
+        "dataSetNumber": ["39,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "small-water-supply-zones-wsz",
+        "label": "Small water supply zones (WSZ)",
+        "solrFilterQueryFieldValue": "small-water-supply-zones-wsz",
+        "solrFilterQueryParam": "environmentalDomain:\"small-water-supply-zones-wsz\"",
+        "dataSetNumber": ["21,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": null,
+        "id": "species-distribution",
+        "label": "Species distribution",
+        "solrFilterQueryFieldValue": "species-distribution",
+        "solrFilterQueryParam": "environmentalDomain:\"species-distribution\"",
+        "dataSetNumber": ["24,03", "24,06"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": "grouping",
+        "id": "species-distribution-grouping",
+        "label": "Species distribution",
+        "solrFilterQueryFieldValue": "species-distribution-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"species-distribution-grouping\"",
+        "dataSetNumber": ["24,03", "24,06"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "nature",
+        "definition": null,
+        "id": "species-range",
+        "label": "Species range",
+        "solrFilterQueryFieldValue": "species-range",
+        "solrFilterQueryParam": "environmentalDomain:\"species-range\"",
+        "dataSetNumber": ["24,04"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": "grouping",
+        "id": "surface-water-bodies-water-framework-directive-grouping",
+        "label": "Surface water bodies (Water Framework Directive)",
+        "solrFilterQueryFieldValue": "surface-water-bodies-water-framework-directive-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"surface-water-bodies-water-framework-directive-grouping\"",
+        "dataSetNumber": ["10,01", "10,02", "10,03", "10,04"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "urban-waste-water-treatment-directive-discharge-points",
+        "label": "UWWTD discharge points",
+        "solrFilterQueryFieldValue": "urban-waste-water-treatment-directive-discharge-points",
+        "solrFilterQueryParam": "environmentalDomain:\"urban-waste-water-treatment-directive-discharge-points\"",
+        "dataSetNumber": ["33,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "urban-waste-water-treatment-directive-plants",
+        "label": "UWWTD plants",
+        "solrFilterQueryFieldValue": "urban-waste-water-treatment-directive-plants",
+        "solrFilterQueryParam": "environmentalDomain:\"urban-waste-water-treatment-directive-plants\"",
+        "dataSetNumber": ["32,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "urban-waste-water-treatment-directive-sensitive-areas",
+        "label": "UWWTD sensitive areas",
+        "solrFilterQueryFieldValue": "urban-waste-water-treatment-directive-sensitive-areas",
+        "solrFilterQueryParam": "environmentalDomain:\"urban-waste-water-treatment-directive-sensitive-areas\"",
+        "dataSetNumber": ["34,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "urban-wastewater-treatment-directive-agglomerations",
+        "label": "UWWTD agglomerations",
+        "solrFilterQueryFieldValue": "urban-wastewater-treatment-directive-agglomerations",
+        "solrFilterQueryParam": "environmentalDomain:\"urban-wastewater-treatment-directive-agglomerations\"",
+        "dataSetNumber": ["31,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "macro",
+        "definition": null,
+        "id": "waste",
+        "label": "Waste",
+        "solrFilterQueryFieldValue": "waste",
+        "solrFilterQueryParam": "environmentalDomain:\"waste\"",
+        "dataSetNumber": ["-"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "macro",
+        "definition": null,
+        "id": "water",
+        "label": "Water",
+        "solrFilterQueryFieldValue": "water",
+        "solrFilterQueryParam": "environmentalDomain:\"water\"",
+        "dataSetNumber": ["-"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": "grouping",
+        "id": "water-bodies-water-framework-directive-grouping",
+        "label": "Water bodies (Water Framework Directive)",
+        "solrFilterQueryFieldValue": "water-bodies-water-framework-directive-grouping",
+        "solrFilterQueryParam": "environmentalDomain:\"water-bodies-water-framework-directive-grouping\"",
+        "dataSetNumber": ["10,01", "10,02", "10,03", "10,04", "10,05"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "water-framework-directive-groundwater-body",
+        "label": "WFD groundwater body",
+        "solrFilterQueryFieldValue": "water-framework-directive-groundwater-body",
+        "solrFilterQueryParam": "environmentalDomain:\"water-framework-directive-groundwater-body\"",
+        "dataSetNumber": ["10,05"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "water-framework-directive-monitoring-stations",
+        "label": "WFD monitoring stations",
+        "solrFilterQueryFieldValue": "water-framework-directive-monitoring-stations",
+        "solrFilterQueryParam": "environmentalDomain:\"water-framework-directive-monitoring-stations\"",
+        "dataSetNumber": ["12,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "water-framework-directive-protected-areas-not-reported-under-other-directives-freshwater-fish-designated-waters",
+        "label": "WFD protected areas not reported under other directives - freshwater fish designated waters",
+        "solrFilterQueryFieldValue": "water-framework-directive-protected-areas-not-reported-under-other-directives-freshwater-fish-designated-waters",
+        "solrFilterQueryParam": "environmentalDomain:\"water-framework-directive-protected-areas-not-reported-under-other-directives-freshwater-fish-designated-waters\"",
+        "dataSetNumber": ["11,03"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "water-framework-directive-protected-areas-not-reported-under-other-directives-other-protected-areas",
+        "label": "WFD protected areas not reported under other directives - other protected areas",
+        "solrFilterQueryFieldValue": "water-framework-directive-protected-areas-not-reported-under-other-directives-other-protected-areas",
+        "solrFilterQueryParam": "environmentalDomain:\"water-framework-directive-protected-areas-not-reported-under-other-directives-other-protected-areas\"",
+        "dataSetNumber": ["11,04"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "water-framework-directive-protected-areas-not-reported-under-other-directives-shellfish-designated-waters",
+        "label": "WFD protected areas not reported under other directives - shellfish designated waters",
+        "solrFilterQueryFieldValue": "water-framework-directive-protected-areas-not-reported-under-other-directives-shellfish-designated-waters",
+        "solrFilterQueryParam": "environmentalDomain:\"water-framework-directive-protected-areas-not-reported-under-other-directives-shellfish-designated-waters\"",
+        "dataSetNumber": ["11,02"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "water-framework-directive-surface-water-body-coastal-waters",
+        "label": "WFD surface water body coastal water",
+        "solrFilterQueryFieldValue": "water-framework-directive-surface-water-body-coastal-waters",
+        "solrFilterQueryParam": "environmentalDomain:\"water-framework-directive-surface-water-body-coastal-waters\"",
+        "dataSetNumber": ["10,04"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "water-framework-directive-surface-water-body-lake",
+        "label": "WFD surface water body lake",
+        "solrFilterQueryFieldValue": "water-framework-directive-surface-water-body-lake",
+        "solrFilterQueryParam": "environmentalDomain:\"water-framework-directive-surface-water-body-lake\"",
+        "dataSetNumber": ["10,01"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "water-framework-directive-surface-water-body-river",
+        "label": "WFD surface water body river",
+        "solrFilterQueryFieldValue": "water-framework-directive-surface-water-body-river",
+        "solrFilterQueryParam": "environmentalDomain:\"water-framework-directive-surface-water-body-river\"",
+        "dataSetNumber": ["10,02"]
+    }, {
+        "solrFilterQueryFieldName": "environmentalDomain",
+        "description": "water",
+        "definition": null,
+        "id": "water-framework-directive-surface-water-body-transitional-waters",
+        "label": "WFD surface water body transitional water",
+        "solrFilterQueryFieldValue": "water-framework-directive-surface-water-body-transitional-waters",
+        "solrFilterQueryParam": "environmentalDomain:\"water-framework-directive-surface-water-body-transitional-waters\"",
+        "dataSetNumber": ["10,03"]
+    }
+     ]

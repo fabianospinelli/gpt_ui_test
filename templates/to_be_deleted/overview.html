@@ -1,0 +1,754 @@
+<!doctype html>
+<html lang="en">
+    <head prefix="og: http://ogp.me/ns#">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
+        <meta name="description" content="The INSPIRE Geoportal is the central European access point to the data provided by EU Member States and several EFTA countries under the INSPIRE Directive.">
+        <meta name="keyword" content="INSPIRE Geoportal">
+        <meta name="author" content="European Commission - Joint Research Centre">
+
+        <meta property="og:title" content="INSPIRE Geoportal"/>
+        <meta property="og:description" content="The INSPIRE Geoportal is the central European access point to the data provided by EU Member States and several EFTA countries under the INSPIRE Directive."/>
+        <meta property="og:url" content="//inspire-geoportal.ec.europa.eu/"/>
+        <meta property="og:image" content="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-194x194.png"/>
+        <meta property="og:type" content="website"/>
+
+        <title>INSPIRE Geoportal</title>
+
+        <link rel="stylesheet" href="//inspire.ec.europa.eu/cdn/1.0/css/ec.eu.css">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-16x16.png" sizes="16x16">
+        <link rel="shortcut icon" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon.ico">
+        <meta name="msapplication-TileImage" content="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/mstile-144x144.png">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#003399">
+
+        <!-- see https://developers.google.com/speed/docs/insights/BlockingJS -->
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/bootstrap-select.min.js" integrity="sha384-OgLZWeeKn8Gxtho7YOapXP9cX8BASYnRr8XWu5+0u9PqK4b589JLWA6GzU/Kc7yy" crossorigin="anonymous" defer></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/fontawesome.all.min.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous" defer></script>
+
+        <!-- EU Cookie Consent Kit -->
+        <script src="//ec.europa.eu/wel/cookie-consent/consent.js" type="text/javascript"></script>
+
+        <script src="conf/conf.js" crossorigin="" defer></script>
+        <script src="js/app_common.js" crossorigin="" defer></script>
+
+        <!-- template custom section -->
+        <link rel="stylesheet" href="css/lara.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- page custom content below -->
+        <script>
+            try {
+                if (new URLSearchParams('q=%2B').get('q') !== '+')
+                    throw {};
+            } catch (error) {
+                window.URLSearchParams = void 0;
+                document.write('<script src="libs/url-search-params-polyfill/build/url-search-params.js"><' + '/script>');
+            }
+        </script>
+
+        <!-- themes and countries dictionaries -->
+        <script src="js/countries.min.js" crossorigin="" defer></script>
+        <script src="js/themes.min.js" crossorigin="" defer></script>
+        <script src="js/envDomains.min.js" crossorigin="" defer></script>
+        <script src="js/legislations.min.js" crossorigin="" defer></script>
+        <script src="js/featureTypes.js" crossorigin="" defer></script>
+        <script src="js/languages.min.js" crossorigin="" defer></script>
+
+        <!--leaflet v1.3.3 -->
+        <link rel="stylesheet" href="libs/leaflet/v1.3.3/leaflet.css" crossorigin=""/>
+        <script src="libs/leaflet/v1.3.3/leaflet.js" crossorigin="" defer></script>
+
+        <!-- leaflet maps scripts -->
+        <script src="js/eu_countries_geojson.js" crossorigin="" defer></script>
+        <script src="js/app_leaflet.js" crossorigin="" defer></script>
+
+        <!--Load app configuration-->
+        <script type="text/javascript" src="conf/conf.js" crossorigin="" defer></script>
+
+        <script src="mr2019/sheetjs/dist/xlsx.full.min.js" crossorigin=""></script>
+        <script src="mr2019/FileSaver/dist/FileSaver.min.js" crossorigin=""></script>
+
+        <script src="js/app.js" crossorigin="" defer></script>
+        <script src="js/app_overview.js" crossorigin="" defer></script>
+    </head>
+    <body role="document">
+        <div id="header"></div>
+
+        <div class="container maincontainer-line-height" id="maincontainer">
+            <div class="row">
+                <div id="title" class="text-center my-2 mb-3">
+                    <div id="title_header"></div>
+                    <!--                    <div id="load-stats" class="load-stats">
+                                            <span><i class="fa fa-spinner fa-spin"></i> Loading statistics ...</span>
+                                        </div>-->
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-9 mb-4">
+                    <div id="map" class="theme-leaflet-map"></div>
+                </div>
+
+                <div class="col-lg-3">
+
+                    <!--                    <div class="row">
+                                            <div class="col-4 float-left">
+                                                <span class="text-primary">Show:</span>
+                                            </div>
+                                            <div class="col-8">
+                                                <div class="btn-group float-right" role="group" aria-label="...">
+                                                    <button id="downloadableButton" type="button" class="btn btn-outline-secondary btn-sm active" onclick="showDownloadableEU()" data-toggle="tooltip" data-placement="bottom" title="Click for the view Downloadable">
+                                                        <i class="fas fa-download" aria-hidden="true"></i> Downloadable
+                                                    </button>
+                                                    <button id="viewableButton" type="button" class="btn btn-outline-secondary btn-sm" onclick="showViewableEU()" data-toggle="tooltip" data-placement="bottom" title="Click for the view Viewable">
+                                                        <i class="fa fa-eye" aria-hidden="true"></i> Viewable
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>-->
+
+                    <h3 class="text-primary pt-0">INSPIRE Geoportal Data Set Statistics</h3>
+                    <div class="row mt-2">
+                        <!--<div class="btn-group" data-toggle="buttons" style="display: inline">-->
+
+                        <div class="col-md-12">
+                            <button id="datasetStatisticsButton" onclick="changeView('metadata')" type="button" class="btn btn-primary column active bg-warning border-warning" style="width: 100%" data-toggle="tooltip" data-placement="right" title="The total number of MS metadata records harvested. Click to see the results on the map">
+                                <i class="far fa-file-alt fa-2x" aria-hidden="true" style="vertical-align: top;line-height: inherit;margin-right: 5px"></i>
+                                <span class="statsPerCountryBox_mdCount_eu" style="font-size: 30px; text-align: center">-</span>
+                                <br/>
+                                <span>Metadata records</span>
+                                <input type="radio" id="psmetadata"  style="display: none" name="ps[25]" value="1" />
+                            </button>
+                        </div>
+
+                        <div class="col-md-12 mt-2" id="downloadableDiv">
+                            <button id="downloadableStatisticsButton" onclick="changeView('download')" type="button" class="btn btn-primary column" style="width: 100%; " data-toggle="tooltip" data-placement="right" title="The number of Downloadable Data sets found. Click to see the results on the map">
+                                <i class="fas fa-download fa-2x" aria-hidden="true" style="vertical-align: top;line-height: inherit;margin-right: 5px"></i>
+                                <span class="statsPerCountryBox_dwCount_eu" style="font-size: 30px; text-align: center">-</span>
+                                <br/>
+                                <span>Downloadable Data Sets</span>
+                                <input type="radio" id="psdownload" style="display: none" name="ps[25]" value="3" checked="checked"/>
+                            </button>
+                        </div>
+
+                        <div class="col-md-12 mt-2" id="viewableDiv">
+                            <button id="viewableStatisticsButton" onclick="changeView('layer')" type="button" class="btn btn-primary column" style="width: 100%" data-toggle="tooltip" data-placement="right" title="The number of Viewable Data sets found. Click to see the results on the map">
+                                <i class="fa fa-eye fa-2x" aria-hidden="true" style="vertical-align: top;line-height: inherit;margin-right: 5px"></i>
+                                <span class="statsPerCountryBox_lyCount_eu" style="font-size: 30px; text-align: center">-</span>
+                                <br/>
+                                <span>Viewable Data Sets</span>
+                                <input type="radio" id="psviewable"  style="display: none" name="ps[25]" value="2" />
+                            </button>
+                        </div>
+                        <!--</div>-->
+                    </div>
+
+                    <div class="row mt-4">
+
+                        <div class="col-6">
+                            <!--<span class="text-primary">Spatial scope:</span>-->
+                            <span class="text-primary">Spatial scope coverage:</span>
+                        </div>
+                        <div class="col-6">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="right" title="Show data sets which intend to cover the national territory">
+                                        <input type="checkbox" class="custom-control-input" id="nationalButton" onchange="updatePage()">
+                                        <label class="custom-control-label" for="nationalButton"><i class="fas fa-flag text-secondary" aria-hidden="true"></i> National</label>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="custom-control custom-checkbox" data-toggle="tooltip" data-placement="right" title="Show data sets which intend to cover the territory of one or several sub-national level administrative units">
+                                        <input type="checkbox" class="custom-control-input" id="regionalButton" onchange="updatePage()">
+                                        <label class="custom-control-label" for="regionalButton"><i class="fas fa-map-marker-alt text-secondary" aria-hidden="true"></i> Regional</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <hr/>
+                    <div id="load-stats" class="load-stats mt-2">
+                        <span><i class="fa fa-spinner fa-spin"></i> Loading statistics ...</span>
+                    </div>
+
+
+                    <div class="row mt-3">
+                        <!-- DART TO BE REVIEWED -->
+                        <!--
+                        <div class="col-xs-12" data-toggle="tooltip" data-placement="bottom"  title="Download report for Addresses">
+                            <input name="download" id="download" type="submit" class="btn .btn-md btn-primary width100Per100" value="Download Report" />
+                        </div>
+                        -->
+
+                        <!-- disclaimer -->
+                        <div id="mapDisclaimer" class="collapse">
+                            <div class="panel panel-default">
+                                <div class="panel-body">
+                                    <h5>Map Disclaimer</h5>
+                                    <p class="small">
+                                        OpenStreetMap standard background services are not always in line with the official view of the European Union.
+                                        The designations employed and the presentation of material on this map do not imply the expression of any opinion whatsoever
+                                        on the part of the European Union concerning the legal status of any country, territory, city or area or of its authorities,
+                                        or concerning the delimitation of its frontiers or boundaries.
+                                        <!--
+                                        Kosovo*: This designation is without prejudice to positions on status, and is in line with UNSCR 1244/1999 and the ICJ Opinion on the Kosovo declaration of independence.
+                                        Palestine*: This designation shall not be construed as recognition of a State of Palestine and is without prejudice to the individual positions of the Member States on this issue.
+                                        -->
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h1 class="text-center text-primary my-3">
+                        <span>Select a COUNTRY</span>
+                    </h1>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-3">
+                    <ul class="forum-sidebar menu-list list-style-none pl-0 pr-0">
+                        <li class="listCountries small" id="listAT">
+                            <a class="has-icon countryElem" id="AT" href="" data-gpt-href="results.html?country=at">
+                                <img src="images/flags/11/at.svg" class="country-icon-md" alt="country icon">
+                                <span>Austria</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_at">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_at">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_at">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listBE">
+                            <a class="has-icon countryElem" id="BE" href="" data-gpt-href="results.html?country=be">
+                                <img src="images/flags/11/be.svg" class="country-icon-md" alt="country icon">
+                                <span>Belgium</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_be">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_be">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_be">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listBG">
+                            <a class="has-icon countryElem" id="BG" href="" data-gpt-href="results.html?country=bg">
+                                <img src="images/flags/11/bg.svg" class="country-icon-md" alt="country icon">
+                                <span>Bulgaria</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_bg">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_bg">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_bg">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listHR">
+                            <a class="has-icon countryElem" id="HR" href="" data-gpt-href="results.html?country=hr">
+                                <img src="images/flags/11/hr.svg" class="country-icon-md" alt="country icon">
+                                <span>Croatia</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_hr">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_hr">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_hr">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listCY">
+                            <a class="has-icon countryElem" id="CY" href="" data-gpt-href="results.html?country=cy">
+                                <img src="images/flags/11/cy.svg" class="country-icon-md" alt="country icon">
+                                <span>Cyprus</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_cy">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_cy">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_cy">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listCZ">
+                            <a class="has-icon countryElem" id="CZ" href="" data-gpt-href="results.html?country=cz">
+                                <img src="images/flags/11/cz.svg" class="country-icon-md" alt="country icon">
+                                <span>Czech Republic</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_cz">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_cz">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_cz">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listDK">
+                            <a class="has-icon countryElem" id="DK" href="" data-gpt-href="results.html?country=dk">
+                                <img src="images/flags/11/dk.svg" class="country-icon-md" alt="country icon">
+                                <span>Denmark</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_dk">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_dk">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_dk">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listEE">
+                            <a class="has-icon countryElem" id="EE" href="" data-gpt-href="results.html?country=ee">
+                                <img src="images/flags/11/ee.svg" class="country-icon-md" alt="country icon">
+                                <span>Estonia</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_ee">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_ee">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_ee">-</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="forum-sidebar menu-list list-style-none px-0">
+                        <li class="listCountries small" id="listFI">
+                            <a class="has-icon countryElem" id="FI" href="" data-gpt-href="results.html?country=fi">
+                                <img src="images/flags/11/fi.svg" class="country-icon-md" alt="country icon">
+                                <span>Finland</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_fi">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_fi">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_fi">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listFR">
+                            <a class="has-icon countryElem" id="FR" href="" data-gpt-href="results.html?country=fr">
+                                <img src="images/flags/11/fr.svg" class="country-icon-md" alt="country icon">
+                                <span>France</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_fr">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_fr">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_fr">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listDE">
+                            <a class="has-icon countryElem" id="DE" href="" data-gpt-href="results.html?country=de">
+                                <img src="images/flags/11/de.svg" class="country-icon-md" alt="country icon">
+                                <span>Germany</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_de">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_de">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_de">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listEL">
+                            <a class="has-icon countryElem" id="EL" href="" data-gpt-href="results.html?country=el">
+                                <img src="images/flags/11/el.svg" class="country-icon-md" alt="country icon">
+                                <span>Greece</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_el">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_el">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_el">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listHU">
+                            <a class="has-icon countryElem" id="HU" href="" data-gpt-href="results.html?country=hu">
+                                <img src="images/flags/11/hu.svg" class="country-icon-md" alt="country icon">
+                                <span>Hungary</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_hu">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_hu">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_hu">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listIS">
+                            <a class="has-icon countryElem" id="IS" href="" data-gpt-href="results.html?country=is">
+                                <img src="images/flags/11/is.svg" class="country-icon-md" alt="country icon">
+                                <span>Iceland</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_is">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_is">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_is">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listIE">
+                            <a class="has-icon countryElem" id="IE" href="" data-gpt-href="results.html?country=ie">
+                                <img src="images/flags/11/ie.svg" class="country-icon-md" alt="country icon">
+                                <span>Ireland</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_ie">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_ie">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_ie">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listIT">
+                            <a class="has-icon countryElem" id="IT" href="" data-gpt-href="results.html?country=it">
+                                <img src="images/flags/11/it.svg" class="country-icon-md" alt="country icon">
+                                <span>Italy</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_it">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_it">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_it">-</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="forum-sidebar menu-list list-style-none px-0">
+                        <li class="listCountries small" id="listLV">
+                            <a class="has-icon countryElem" id="LV" href="" data-gpt-href="results.html?country=lv">
+                                <img src="images/flags/11/lv.svg" class="country-icon-md" alt="country icon">
+                                <span>Latvia</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_lv">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_lv">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_lv">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listLI">
+                            <a class="has-icon countryElem" id="LI" href="" data-gpt-href="results.html?country=li">
+                                <img src="images/flags/11/li.svg" class="country-icon-md" alt="country icon">
+                                <span>Liechtenstein</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_li">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_li">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_li">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listLT">
+                            <a class="has-icon countryElem" id="LT" href="" data-gpt-href="results.html?country=lt">
+                                <img src="images/flags/11/lt.svg" class="country-icon-md" alt="country icon">
+                                <span>Lithuania</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_lt">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_lt">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_lt">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listLU">
+                            <a class="has-icon countryElem" id="LU" href="" data-gpt-href="results.html?country=lu">
+                                <img src="images/flags/11/lu.svg" class="country-icon-md" alt="country icon">
+                                <span>Luxembourg</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_lu">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_lu">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_lu">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listMT">
+                            <a class="has-icon countryElem" id="MT" href="" data-gpt-href="results.html?country=mt">
+                                <img src="images/flags/11/mt.svg" class="country-icon-md" alt="country icon">
+                                <span>Malta</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_mt">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_mt">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_mt">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listNL">
+                            <a class="has-icon countryElem" id="NL" href="" data-gpt-href="results.html?country=nl">
+                                <img src="images/flags/11/nl.svg" class="country-icon-md" alt="country icon">
+                                <span>Netherlands</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_nl">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_nl">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_nl">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listNO">
+                            <a class="has-icon countryElem" id="NO" href="" data-gpt-href="results.html?country=no">
+                                <img src="images/flags/11/no.svg" class="country-icon-md" alt="country icon">
+                                <span>Norway</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_no">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_no">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_no">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listPL">
+                            <a class="has-icon countryElem" id="PL" href="" data-gpt-href="results.html?country=pl">
+                                <img src="images/flags/11/pl.svg" class="country-icon-md" alt="country icon">
+                                <span>Poland</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_pl">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_pl">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_pl">-</span>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <ul class="forum-sidebar menu-list list-style-none px-0">
+                        <li class="listCountries small" id="listPT">
+                            <a class="has-icon countryElem" id="PT" href="" data-gpt-href="results.html?country=pt">
+                                <img src="images/flags/11/pt.svg" class="country-icon-md" alt="country icon">
+                                <span>Portugal</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_pt">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_pt">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_pt">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listRO">
+                            <a class="has-icon countryElem" id="RO" href="" data-gpt-href="results.html?country=ro">
+                                <img src="images/flags/11/ro.svg" class="country-icon-md" alt="country icon">
+                                <span>Romania</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_ro">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_ro">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_ro">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listSK">
+                            <a class="has-icon countryElem" id="SK" href="" data-gpt-href="results.html?country=sk">
+                                <img src="images/flags/11/sk.svg" class="country-icon-md" alt="country icon">
+                                <span>Slovakia</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_sk">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_sk">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_sk">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listSI">
+                            <a class="has-icon countryElem" id="SI" href="" data-gpt-href="results.html?country=si">
+                                <img src="images/flags/11/si.svg" class="country-icon-md" alt="country icon">
+                                <span>Slovenia</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_si">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_si">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_si">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listES">
+                            <a class="has-icon countryElem" id="ES" href="" data-gpt-href="results.html?country=es">
+                                <img src="images/flags/11/es.svg" class="country-icon-md" alt="country icon">
+                                <span>Spain</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_es">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_es">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_es">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listSE">
+                            <a class="has-icon countryElem" id="SE" href="" data-gpt-href="results.html?country=se">
+                                <img src="images/flags/11/se.svg" class="country-icon-md" alt="country icon">
+                                <span>Sweden</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_se">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_se">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_se">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <li class="listCountries small" id="listCH">
+                            <a class="has-icon countryElem" id="CH" href="" data-gpt-href="results.html?country=ch">
+                                <img src="images/flags/11/ch.svg" class="country-icon-md" alt="country icon">
+                                <span>Switzerland</span>
+                                <div class="float-right">
+                                    <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_ch">-</span>
+                                    <span> | </span>
+                                    <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_ch">-</span>
+                                    <span> | </span>
+                                    <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_ch">-</span>
+                                </div>
+                            </a>
+                        </li>
+
+                        <!--                        <li class="listCountries small" id="listUK">
+                                                    <a class="has-icon countryElem" id="UK" href="" data-gpt-href="results.html?country=uk">
+                                                        <img src="images/flags/11/uk.svg" class="country-icon-md" alt="country icon">
+                                                        <span>United Kingdom</span>
+                                                        <div class="float-right">
+                                                            <i class="far fa-file-alt text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsPerCountryBox_mdCount_uk">-</span>
+                                                            <span> | </span>
+                                                            <i class="fas fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsPerCountryBox_dwCount_uk">-</span>
+                                                            <span> | </span>
+                                                            <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsPerCountryBox_lyCount_uk">-</span>
+                                                        </div>
+                                                    </a>-->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- INSPGPTRLD-48 -->
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1 class="text-center text-primary my-3 float-right">
+                        <span>Select the whole
+                            <a class="countryElem" id="EU" href="" data-gpt-href="results.html?country=eu">
+                                <img src="images/flags/11/eu.svg" class="country-icon-md" alt="country icon"> EUROPE
+                            </a>
+                        </span>
+                    </h1>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-success float-right my-2" id="downloadOverview"><i class="fas fa-file-excel"></i> Download stats</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+
+        <!-- Piwik -->
+        <script type="text/javascript">
+            if (euCookieConsent.accepted("europa-analytics")) {
+                var _paq = _paq || [];
+
+                /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+                _paq.push(['trackPageView']);
+                _paq.push(['enableLinkTracking']);
+
+                (function() {
+                    var u = "//stats.jrc.ec.europa.eu/";
+                    _paq.push(['setTrackerUrl', u + 'piwik.php']);
+                    _paq.push(['setSiteId', '271']);
+
+                    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                    g.type = 'text/javascript';
+                    g.async = true;
+                    g.defer = true;
+                    g.src = u + 'piwik.js';
+                    s.parentNode.insertBefore(g, s);
+                })();
+            }
+        </script>
+        <!-- End Piwik Code --> 
+
+        <script type="application/ld+json">
+            {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "//inspire-geoportal.ec.europa.eu/geoportal/",
+            "potentialAction": { }
+            }
+        </script>
+
+    </body>
+</html>

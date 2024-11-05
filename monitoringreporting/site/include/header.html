@@ -1,0 +1,126 @@
+<!-- menu lib -->
+<script src="js/menu.js" crossorigin="" defer></script>
+<link href="libs/smartmenus/v1.1.0/addons/bootstrap-4/jquery.smartmenus.bootstrap-4.css" rel="stylesheet">
+<script src="libs/smartmenus/v1.1.0/jquery.smartmenus.min.js" defer></script>
+<script src="libs/smartmenus/v1.1.0/addons/bootstrap-4/jquery.smartmenus.bootstrap-4.min.js" defer></script>
+
+<header>
+    <div class="hb1">
+        <div class="container relative">
+            <a class="ec-logo" href="#"><img src="//inspire.ec.europa.eu/cdn/1.0/img/ec.logo/logo_en.gif" alt="European Commission logo"></a>
+            <span class="mt">INSPIRE Geoportal</span>
+
+            <div id="topm" class="topm d-none d-md-block">
+                <ul class="lnk small">
+                    <li><a href="about.html">About</a></li><!--
+                    --><li><a href="mailto:jrc-inspire-support@ec.europa.eu?subject=%5BGeoportal%20Helpdesk%5D">Contact</a></li><!--
+                    --><li><a href="//inspire.ec.europa.eu/privacy-policy/59294">Privacy policy</a></li><!--
+                    --><li><a href="//ec.europa.eu/info/legal-notice" target="_blank" rel="noopener">Legal notice</a></li><!--
+                    --><li><a href="//inspire.ec.europa.eu/cookie-notice">Cookies</a></li>
+                </ul>
+                <select data-live-search="true" class="selectpicker">
+                    <!--
+                    <option value="bg">български (bg)</option>
+                    <option value="cs">čeština (cs)</option>
+                    <option value="da">dansk (da)</option>
+                    <option value="de">Deutsch (de)</option>
+                    <option value="et">eesti keel (et)</option>
+                    <option value="el">ελληνικά (el)</option>
+                    -->
+                    <option value="en">English (en)</option>
+                    <!--
+                    <option value="es">español (es)</option>
+                    <option value="fr">français (fr)</option>
+                    <option value="hr">hrvatski (hr)</option>
+                    <option value="it">italiano (it)</option>
+                    <option value="lv">latviešu valoda (lv)</option>
+                    <option value="lt">lietuvių kalba (lt)</option>
+                    <option value="hu">magyar (hu)</option>
+                    <option value="mt">Malti (mt)</option>
+                    <option value="nl">Nederlands (nl)</option>
+                    <option value="pl">polski (pl)</option>
+                    <option value="pt">português (pt)</option>
+                    <option value="ro">română (ro)</option>
+                    <option value="sk">slovenčina (sk)</option>
+                    <option value="sl">slovenščina (sl)</option>
+                    <option value="fi">suomi (fi)</option>
+                    <option value="sv">svenska (sv)</option>
+                    -->
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="hb2">
+        <div class="container">
+            <span class="d-none d-sm-block">Enhancing access to European spatial data</span>
+        </div>
+    </div>
+    <div class="hb3 d-none d-sm-block">
+        <div class="container">
+            <ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+                <li property="itemListElement" typeof="ListItem">
+                    <a property="item" typeof="WebPage" href="//ec.europa.eu/index_en.htm"><span property="name">European Commission</span></a>
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    <a property="item" typeof="WebPage" href="//inspire.ec.europa.eu"><span property="name">INSPIRE</span></a>
+                </li>
+                <li property="itemListElement" typeof="ListItem">
+                    <a property="item" typeof="WebPage" href="index.html"><span property="name">Geoportal</span></a>
+                </li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="hb4">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top" role="navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".openmenu" aria-controls="openmenu" aria-expanded="false" aria-label="Navbar toggle">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse openmenu" id="navbarNavDropdown">
+                    <ul class="nav navbar-nav" id="main-menu">
+                        <!-- content filled via menu.js -->
+                    </ul>
+
+                    <div class="d-md-none">
+                        <hr/>
+                        <ul class="navbar-nav">
+                            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                            <li class="nav-item"><a class="nav-link" href="mailto:jrc-inspire-support@ec.europa.eu?subject=%5BGeoportal%20Helpdesk%5D">Contact</a></li>
+                            <li class="nav-item"><a class="nav-link" href="//inspire.ec.europa.eu/privacy-policy/59294">Privacy policy</a></li>
+                            <li class="nav-item"><a class="nav-link" href="//ec.europa.eu/info/legal-notice" target="_blank" rel="noopener">Legal notice</a></li>
+                            <li class="nav-item"><a class="nav-link" href="//inspire.ec.europa.eu/cookie-notice">Cookies</a></li>
+                        </ul>
+                        <hr/>
+                        <select data-live-search="true" class="selectpicker">
+                            <!--<option value="bg">български (bg)</option>
+                            <option value="cs">čeština (cs)</option>
+                            <option value="da">dansk (da)</option>
+                            <option value="de">Deutsch (de)</option>
+                            <option value="et">eesti keel (et)</option>
+                            <option value="el">ελληνικά (el)</option>
+                            --><option value="en">English (en)</option><!--
+                            <option value="es">español (es)</option>
+                            <option value="fr">français (fr)</option>
+                            <option value="hr">hrvatski (hr)</option>
+                            <option value="it">italiano (it)</option>
+                            <option value="lv">latviešu valoda (lv)</option>
+                            <option value="lt">lietuvių kalba (lt)</option>
+                            <option value="hu">magyar (hu)</option>
+                            <option value="mt">Malti (mt)</option>
+                            <option value="nl">Nederlands (nl)</option>
+                            <option value="pl">polski (pl)</option>
+                            <option value="pt">português (pt)</option>
+                            <option value="ro">română (ro)</option>
+                            <option value="sk">slovenčina (sk)</option>
+                            <option value="sl">slovenščina (sl)</option>
+                            <option value="fi">suomi (fi)</option>
+                            <option value="sv">svenska (sv)</option>-->
+                        </select>
+                        <hr/>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>

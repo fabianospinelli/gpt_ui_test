@@ -1,0 +1,447 @@
+<div class="ecl-container">
+
+	<div class="col-xl text-center">
+		<h1 class="ecl-u-type-heading-2">High-Value Datasets</h1>
+		<h4 class="ecl-u-type-heading-6">
+			<p>
+				The application provides an overview and access to geospatial high-value datasets and other core data (including priority datasets for eReporting), that fall into the scope of the <a class="ecl-link ecl-link--default ecl-u-type-color-blue-100" href="https://digital-strategy.ec.europa.eu/en/policies/legislation-open-data">Open Data Directive</a>.
+			</p>
+		</h4>
+	</div>
+
+	<br/>
+
+	<div class="col-xl text-center">
+		<div class="ecl-u-type-heading-6 text-center">
+			<h2 class="text-center">Please select a thematic category</h2>
+        </div>
+    </div>
+	
+    <div class="centered-item">
+		<div class="block_container">
+
+			<div class="single_card_33 height-300px text-center" id="cardGeospatial">
+				<a id="themeEuOverviewAnchor" href="overview.html?view=thematicEuOverview&theme=none" class="icon-box-4 h-100">
+					<div class="card-body">
+						<div class="block_container">
+							<div class="iconBrowse">
+								<i id="iconGeospatial" class="fa fa-map-marker float-right fa-3x inspire-blue"></i>
+							</div>
+							<div class="textBrowse">
+								<h2 class="card-title float-left" id="titleGeospatial">Geospatial</h2>
+							</div>
+						</div>
+					</div>
+				</a>
+				<button type="button" ng-click="makeHvdsTabHighValueVisible('geospatial')" id="buttonGeospatialHighValue" aria-label="Show more" class="ecl-button ecl-button--cta ecl-u-mb-l centeredButton">
+                    <span class="ecl-button__container">
+						<span class="ecl-button__label" data-ecl-label="true" id="buttonSpanGeospatialHighValue">Show more</span>
+                        <svg focusable="false" accesskey=""aria-hidden="true" data-ecl-icon="true" class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs ecl-icon--rotate-90">
+							<use xlink:href="../../catalog/views/inspireportal/images/icons.svg#corner-arrow"></use>
+						</svg>
+					</span>
+                </button>
+            </div>
+
+			<div class="single_card_33 height-300px text-center" id="cardEnvironment">
+				<a id="themeSelAnchor" href="../../srv/eng/catalog.search#/qsEnvDomain"  class="icon-box-4 h-100">
+					<div class="card-body">
+						<div class="block_container">
+							<div class="iconBrowse">
+								<i id="iconEnvironment" class="fa fa-globe float-right fa-3x inspire-blue"></i>
+                            </div>
+							<div class="textBrowse">
+								<h2 class="card-title float-left" id="titleEnvironment">Earth Observation and Environment</h2>
+							</div>
+						</div>
+					</div>
+				</a>
+				<button type="button" ng-click="makeHvdsTabHighValueVisible('environment')" id="buttonEnvironmentHighValue" aria-label="Show more" class="ecl-button ecl-button--cta ecl-u-mb-l centeredButton">
+					<span class="ecl-button__container">
+						<span class="ecl-button__label" data-ecl-label="true" id="buttonSpanEnvironmentHighValue">Show more</span>
+                        <svg focusable="false" accesskey=""aria-hidden="true" data-ecl-icon="true" class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs ecl-icon--rotate-90">
+							<use xlink:href="../../catalog/views/inspireportal/images/icons.svg#corner-arrow"></use>
+						</svg>
+					</span>
+                </button>
+            </div>
+
+            <div class="single_card_33 height-300px text-center" id="cardMobility">
+				<a id="themeSelAnchor" href="../../srv/eng/catalog.search#/qsLegislation"  class="icon-box-4 h-100">
+					<div class="card-body">
+						<div class="block_container">
+							<div class="iconBrowse">
+								<i id="iconMobility" class="fa fa-car float-right fa-3x inspire-blue"></i>
+                            </div>
+                            <div class="textBrowse">
+								<h2 class="card-title float-left" id="titleMobility">Mobility</h2>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+				<button type="button" ng-click="makeHvdsTabHighValueVisible('mobility')" id="buttonMobilityHighValue" aria-label="Show more" class="ecl-button ecl-button--cta ecl-u-mb-l centeredButton">
+                    <span class="ecl-button__container">
+						<span class="ecl-button__label" data-ecl-label="true" id="buttonSpanMobilityHighValue">Show more</span>
+                        <svg focusable="false" accesskey=""aria-hidden="true" data-ecl-icon="true" class="ecl-button__icon ecl-button__icon--after ecl-icon ecl-icon--xs ecl-icon--rotate-90">
+							<use xlink:href="../../catalog/views/inspireportal/images/icons.svg#corner-arrow"></use>
+                        </svg>
+					</span>
+                </button>
+            </div>
+
+        </div>
+
+		<br>
+
+		<div class="block_container" ng-if="hvdsTab == 'geospatial'">
+            <div class="single_card_100 text-center">
+				<h2 class="text-center">Agricultural parcels</h2>
+
+                <div class="ecl-col-sm-12 ecl-editor">
+					<p class="ecl-card__description">
+						This section includes spatial datasets inserted in the systems and subsystems as defined in Art. 68 of Regulation (EU) No 1306/2013.
+                    </p>
+                    <p class="ecl-card__description">
+						The Integrated Administration and Control System (IACS) consists of computerised databases of the subsystems. The Identification System for Agricultural Parcels (better known as LPIS - Land Parcel Identification System) and the Aid Applications and Payments Claims subsystems of IACS contain the spatial data components.
+                    </p>
+                </div>
+
+				<div class="col-s-12 col-md-6 col-lg-50" style="margin-top: 20px;">
+					<div class="card" style="background-color: #f5f5f5; height: 200px!important; padding: 5px;">
+						<div class="card-header">
+							<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+						  
+								<div class="col-md-12" ><i id="iconMobility" class="fa fa-tractor float-center fa-3x inspire-blue"></i></div>
+								<div class="col-md-12" style="border:  0px solid green;">
+									<b><a href="/component-library/example" class="ecl-link ecl-link--standalone"> GSAA </a></b>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+								<div class="col-md-12 "  style="border:  0px solid green;">
+									<em> Geospatial aid application as part of the Aid applications subsystem of IACS, defined by Art. 68 of Regulation 1306/2013.</em>
+								</div> 
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="ecl-u-f-c ">
+								<i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsThemeSelectionBox_mdCount_ad">{{generateNumber('dataThemes', 45)}}</span>	<span> | </span>
+								<i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsThemeSelectionBox_dwCount_ad">{{generateNumber('dataThemes', 23)}}</span>	<span> | </span>
+								<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsThemeSelectionBox_lyCount_ad">{{generateNumber('dataThemes', 65)}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-s-12 col-md-6 col-lg-50" style="margin-top: 20px;">
+					<div class="card" style="background-color: #f5f5f5; height: 200px!important; padding: 5px;">
+						<div class="card-header">
+							<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+						  
+								<div class="col-md-12" ><i id="iconMobility" class="fa fa-map-marker float-center fa-3x inspire-blue"></i></div>
+								<div class="col-md-12" style="border:  0px solid green;">
+									<b><a href="/component-library/example" class="ecl-link ecl-link--standalone"> LPIS </a></b>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+								<div class="col-md-12 "  style="border:  0px solid green;">
+									<em>Land Parcel Identification System, a subsystem of Integrated Administration and Control System (IACS) as defined by Art. 68 of Regulation 1306/2013.</em>
+								</div> 
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="ecl-u-f-c ">
+								<i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsThemeSelectionBox_mdCount_ad">{{generateNumber('dataThemes', 37)}}</span>	<span> | </span>
+								<i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsThemeSelectionBox_dwCount_ad">{{generateNumber('dataThemes', 83)}}</span>	<span> | </span>
+								<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsThemeSelectionBox_lyCount_ad">{{generateNumber('dataThemes', 117)}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<br>
+				<br>
+				<div class="clearfix"></div>
+				
+				<h2 class="text-center">Other Core reference data</h2>
+
+				<div class="col-s-12 col-md-6 col-lg-33" style="margin-top: 20px;">
+					<div class="card" style="background-color: #f5f5f5; height: 170px!important; padding: 5px;">
+						<div class="card-header">
+							<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+						  
+								<div class="col-md-12" ><img src="../../catalog/views/inspireportal/images/ad.svg" style="width:60px;"></div>
+								<div class="col-md-12" style="border:  0px solid green;">
+									<b><a href="/component-library/example" class="ecl-link ecl-link--standalone"> Addresses </a></b>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="ecl-u-f-c ">
+								<i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsThemeSelectionBox_mdCount_ad">{{generateNumber('dataThemes', 37)}}</span>	<span> | </span>
+								<i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsThemeSelectionBox_dwCount_ad">{{generateNumber('dataThemes', 83)}}</span>	<span> | </span>
+								<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsThemeSelectionBox_lyCount_ad">{{generateNumber('dataThemes', 117)}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-s-12 col-md-6 col-lg-33" style="margin-top: 20px;">
+					<div class="card" style="background-color: #f5f5f5; height: 170px!important; padding: 5px;">
+						<div class="card-header">
+							<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+						  
+								<div class="col-md-12" ><img src="../../catalog/views/inspireportal/images/au.svg" style="width:60px;"></div>
+								<div class="col-md-12" style="border:  0px solid green;">
+									<b><a href="/component-library/example" class="ecl-link ecl-link--standalone"> Administrative units </a></b>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="ecl-u-f-c ">
+								<i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsThemeSelectionBox_mdCount_ad">{{generateNumber('dataThemes', 67)}}</span>	<span> | </span>
+								<i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsThemeSelectionBox_dwCount_ad">{{generateNumber('dataThemes', 112)}}</span>	<span> | </span>
+								<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsThemeSelectionBox_lyCount_ad">{{generateNumber('dataThemes', 43)}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-s-12 col-md-6 col-lg-33" style="margin-top: 20px;">
+					<div class="card" style="background-color: #f5f5f5; height: 170px!important; padding: 5px;">
+						<div class="card-header">
+							<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+						  
+								<div class="col-md-12" ><img src="../../catalog/views/inspireportal/images/cp.svg" style="width:60px;"></div>
+								<div class="col-md-12" style="border:  0px solid green;">
+									<b><a href="/component-library/example" class="ecl-link ecl-link--standalone"> Cadastral parcels </a></b>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="ecl-u-f-c ">
+								<i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsThemeSelectionBox_mdCount_ad">{{generateNumber('dataThemes', 47)}}</span>	<span> | </span>
+								<i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsThemeSelectionBox_dwCount_ad">{{generateNumber('dataThemes', 46)}}</span>	<span> | </span>
+								<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsThemeSelectionBox_lyCount_ad">{{generateNumber('dataThemes', 23)}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="clearfix"></div>
+
+				<div class="col-s-12 col-md-6 col-lg-50" style="margin-top: 20px;">
+					<div class="card" style="background-color: #f5f5f5; height: 170px!important; padding: 5px;">
+						<div class="card-header">
+							<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+						  
+								<div class="col-md-12" ><img src="../../catalog/views/inspireportal/images/gn.svg" style="width:60px;"></div>
+								<div class="col-md-12" style="border:  0px solid green;">
+									<b><a href="/component-library/example" class="ecl-link ecl-link--standalone"> Geographical names </a></b>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="ecl-u-f-c ">
+								<i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsThemeSelectionBox_mdCount_ad">{{generateNumber('dataThemes', 86)}}</span>	<span> | </span>
+								<i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsThemeSelectionBox_dwCount_ad">{{generateNumber('dataThemes', 91)}}</span>	<span> | </span>
+								<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsThemeSelectionBox_lyCount_ad">{{generateNumber('dataThemes', 34)}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-s-12 col-md-6 col-lg-50" style="margin-top: 20px;">
+					<div class="card" style="background-color: #f5f5f5; height: 170px!important; padding: 5px;">
+						<div class="card-header">
+							<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+						  
+								<div class="col-md-12" ><img src="../../catalog/views/inspireportal/images/bu.svg" style="width:60px;"></div>
+								<div class="col-md-12" style="border:  0px solid green;">
+									<b><a href="/component-library/example" class="ecl-link ecl-link--standalone"> Buildings </a></b>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer">
+							<div class="ecl-u-f-c ">
+								<i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsThemeSelectionBox_mdCount_ad">{{generateNumber('dataThemes', 67)}}</span>	<span> | </span>
+								<i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsThemeSelectionBox_dwCount_ad">{{generateNumber('dataThemes', 12)}}</span>	<span> | </span>
+								<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsThemeSelectionBox_lyCount_ad">{{generateNumber('dataThemes', 189)}}</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			
+			
+		</div>
+
+		<div class="block_container" ng-if="hvdsTab == 'environment'">
+            <div class="single_card_100 text-center">
+				<h2 class="text-center">Priority Dataset for eReporting</h2>
+
+                <div class="ecl-col-sm-12 ecl-editor">
+					<p class="ecl-card__description">
+						This section includes the datasets identified by EU Member States and EFTA countries as priority datasets for environmental reporting. You can filter by environmental domain, environmental legislation and country.
+                    </p>
+                    <p class="ecl-card__description">
+						The list of priority datasets has been defined and is being further developed in the framework of INSPIRE Maintenance and Implementation Work Plan 2016-2020 (MIWP).
+                    </p>
+                    <p class="ecl-card__description">
+						The Priority Datasets Viewer provides statistical overviews of the availability of priority dataset as well as simplified access to view or download selected datasets.
+                    </p>
+
+					<div class="col-s-12 col-md-6 col-lg-33" style="margin-top: 20px;">
+						<div class="card" style="background-color: #f5f5f5; height: 200px!important; padding: 5px;">
+							<div class="card-header">
+								<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+							  
+									<div class="col-md-12" ><i id="iconMobility" class="fa fa-map-marker float-center fa-3x inspire-blue"></i></div>
+									<div class="col-md-12" style="border:  0px solid green;">
+										<b><a href="/component-library/example" class="ecl-link ecl-link--standalone"> Country Overview </a></b>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+									<div class="col-md-12 "  style="border:  0px solid green;">
+										<em> Priority Datasets grouped by individual EU & EFTA countries</em>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-s-12 col-md-6 col-lg-33" style="margin-top: 20px;">
+						<div class="card" style="background-color: #f5f5f5; height: 200px!important; padding: 5px;">
+							<div class="card-header">
+								<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+							  
+									<div class="col-md-12" ><i id="iconMobility" class="fa fa-tag float-center fa-3x inspire-blue"></i></div>
+									<div class="col-md-12" style="border:  0px solid green;">
+										<b><a href="../../srv/eng/catalog.search#/qsEnvDomain" class="ecl-link ecl-link--standalone"> Environmental Domains </a></b>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+									<div class="col-md-12 "  style="border:  0px solid green;">
+										<em> Priority Datasets grouped by the Environmental Domains or individual datasets</em>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-s-12 col-md-6 col-lg-33" style="margin-top: 20px;">
+						<div class="card" style="background-color: #f5f5f5; height: 200px!important; padding: 5px;">
+							<div class="card-header">
+								<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+							  
+									<div class="col-md-12" ><i id="iconMobility" class="fa fa-building-columns float-center fa-3x inspire-blue"></i></div>
+									<div class="col-md-12" style="border:  0px solid green;">
+										<b><a href="../../srv/eng/catalog.search#/qsLegislation" class="ecl-link ecl-link--standalone"> Environmental Legislation </a></b>
+									</div>
+								</div>
+							</div>
+							<div class="card-body">
+								<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+									<div class="col-md-12 "  style="border:  0px solid green;">
+										<em> Priority Datasets grouped by relevant environmental reporting legislation</em>
+									</div> 
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<br>
+					<br>
+					<div class="clearfix"></div>
+					
+					<h2 class="text-center">Other high-value datasets</h2>
+
+					<div class="clearfix"></div>
+
+					<div ng-repeat="theme in themes.data | filter: checkOtherHighValues"  ng-init="myVariable = $index+1">
+						<div class="clearfix" ng-if="$index % 4 == 0"></div>
+						
+						<div class="col-s-12 col-md-6  col-lg-3" style="margin-top: 20px;">
+							<div class="card" style="background-color: #f5f5f5; height: 220px!important; padding: 5px;">
+								<div class="card-header">
+									<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+								  
+										<div class="col-md-12" ><img src="../../catalog/views/inspireportal/images/{{theme.id}}.svg" style="width:48px;"></div>
+										<div class="col-md-12" style="border:  0px solid green;">
+											<b><a href="/component-library/example" class="ecl-link ecl-link--standalone"> {{theme.label}} </a></b>
+										</div>
+									</div>
+								</div>
+								<div class="card-body">
+									<div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+										<div class="col-md-12 "  style="border:  0px solid green;">
+											<b>Def:</b> <em> {{theme.definition | truncate:50:wordwise:60}}...</em>
+										</div> 
+									</div>
+								</div>
+								<div class="card-footer">
+									<div class="ecl-u-f-l">
+									   <a target="_blank" href="https://inspire.ec.europa.eu/Themes/{{theme.id}}" class="ecl-link ecl-link--standalone">
+										  <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Click for more details"></i>
+									   </a>
+									</div>
+					 
+									<div class="ecl-u-f-r ">
+										<i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsThemeSelectionBox_mdCount_ad">{{generateNumber('dataThemes', 100 + $index)}}</span>	<span> | </span>
+										<i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsThemeSelectionBox_dwCount_ad">{{generateNumber('dataThemes', 100 + $index)}}</span>	<span> | </span>
+										<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsThemeSelectionBox_lyCount_ad">{{generateNumber('dataThemes', 100 + $index)}}</span>
+									</div>
+								</div>
+							</div>
+						</div> 
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="block_container" ng-if="hvdsTab == 'mobility'">
+            <div class="single_card_100 text-center">
+				<h2 class="text-center">Mobility</h2>
+
+				  <div class="col-s-12 col-md-6 col-lg-100" style="margin-top: 20px;">
+				 
+			 
+				   
+					  <div class="card" style="background-color: #f5f5f5; height: 150px!important; padding: 5px;">
+						<div class="card-header">
+						  <div class="row text-center justify-content-center"  style="border: 0px solid red;"> 
+						  
+						  <div class="col-md-12" ><img src="../../catalog/views/inspireportal/images/tn.svg" style="width:60px;"></div>
+						  <div class="col-md-12" style="border:  0px solid green;">
+							<b  ><a href="/component-library/example" class="ecl-link ecl-link--standalone"> Transport Network </a></b></div>
+						  </div>
+						</div>
+						<div class="card-footer">
+							<div class="ecl-u-f-c ">
+								<i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsThemeSelectionBox_mdCount_ad">{{generateNumber('dataThemes', 100 + $index)}}</span>	<span> | </span>
+								<i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsThemeSelectionBox_dwCount_ad">{{generateNumber('dataThemes', 100 + $index)}}</span>	<span> | </span>
+								<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsThemeSelectionBox_lyCount_ad">{{generateNumber('dataThemes', 100 + $index)}}</span>
+							</div>
+						</div>
+			   
+
+						</div>
+					  </div> 
+			 
+					</div>
+
+			</div>
+		</div>
+
+    </div>
+			
+</div>

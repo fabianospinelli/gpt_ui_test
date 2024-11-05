@@ -1,0 +1,72 @@
+<div class="ecl-container">
+  <div class="ecl-row">
+
+    <div class="ecl-col-s-12">
+      <h2 class="ecl-u-type-heading-2">Environmental Reporting Legislation</h2>
+        <p class="ecl-u-type-paragraph-m">
+          Explore Member States' priority datasets grouped by related e-Reporting legislation.
+        </p>
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div ng-repeat="legislation in legislations.data | filter: { solrFilterQueryFieldName: 'legislation'}"
+      ng-init="myVariable = $index+1">
+
+      <div class="clearfix" ng-if="$index % 4 == 0">
+      </div>
+
+      <div class="col-s-12 col-md-6 col-lg-3 margin-top-20">
+
+        <div class="card legislation-card">
+          <div class="card-header">
+            <div class="row text-center justify-content-center">
+
+              <div class="col-md-12"><i class="fa fa-file text-primary ecl-color" aria-hidden="true"
+                  data-toggle="tooltip" data-placement="top" title="Metadata"></i>
+              </div>
+              <div class="col-md-12">
+                <b><a href="../../srv/eng/catalog.search#/overview?view=priorityOverview&legislation={{legislation.id}}"
+                    class="ecl-link ecl-link--standalone"> {{legislation.label}} </a></b>
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="row text-center justify-content-center">
+              <div class="col-md-12 ">
+                <em> {{legislation.definition | truncate:60:wordwise:60}}</em>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer pos-text">
+            <div class="ecl-u-f-l">
+              <a target="_blank" href="{{legislation.href}}" class="ecl-link ecl-link--standalone">
+                <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top"
+                  title="Click for more details"></i>
+              </a>
+            </div>
+
+            {{getStatsLegislationData('qsLegislation', legislation, 'MT')}}
+            <div class="ecl-u-f-c">
+              <i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top"
+                title="Metadata"></i>
+              <span id="qsLegislation_{{legislation.id}}_MT" class="statsThemeSelectionBox_mdCount_ad"> </span>
+              <span> | </span>
+              <i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+                data-placement="top" title="Downloadable"></i>
+              <span id="qsLegislation_{{legislation.id}}_DW" class="statsThemeSelectionBox_dwCount_ad"> </span>
+              <span> | </span>
+              <i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top"
+                title="Viewable"></i>
+              <span id="qsLegislation_{{legislation.id}}_VW" class="statsThemeSelectionBox_lyCount_ad"> </span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>

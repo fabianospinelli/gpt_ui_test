@@ -1,0 +1,113 @@
+<footer>
+    <div class="ft1">
+        <div class="container">
+            <div class="row">
+                <div class="col">INSPIRE Geoportal</div>
+                <div class="col"><span class="float-right">Version: <a href="release-notes.html" id="version-box" class="text-white"></a></span></div>
+            </div>
+        </div>
+    </div>
+    <div class="ft2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm d-none d-md-block">
+                    <img class="ec-inspire-logo" src="//inspire.ec.europa.eu/cdn/1.0/img/ec.inspire.logo/logo_en.png" alt="INSPIRE logo">
+                </div>
+                <div class="col-sm">
+                    <h4>INSPIRE
+                        <a data-toggle="collapse" href="#c1" aria-expanded="false" aria-controls="c1" class="navbar-toggle d-sm-none">&nbsp;</a>
+                    </h4>
+                    <ol id="c1" class="collapse multi-collapse show">
+                        <li><a href="//inspire.ec.europa.eu/">Knowledge Base</a></li>
+                        <li><a href="//inspire.ec.europa.eu/legislation">Legislation</a></li>
+                        <li><a href="//inspire.ec.europa.eu/library">Library</a></li>
+                        <li><a href="//inspire.ec.europa.eu/Themes">Themes</a></li>
+                        <li><a href="//inspire.ec.europa.eu/thematic-clusters">Thematic Clusters</a></li>
+                    </ol>
+                </div>
+                <div class="col-sm">
+                    <h4>NEWS &amp; EVENTS
+                        <a data-toggle="collapse" href="#c2" aria-expanded="false" aria-controls="c2" class="navbar-toggle d-sm-none">&nbsp;</a>
+                    </h4>
+                    <ol id="c2" class="collapse multi-collapse show">
+                        <li><a href="//inspire.ec.europa.eu/news">News</a></li>
+                        <li><a href="//inspire.ec.europa.eu/Events">Events</a></li>
+                        <li><a href="//inspire.ec.europa.eu/portfolio/inspire-conferences">Conferences</a></li>
+                        <li><a href="//inspire.ec.europa.eu/news_rss">RSS News</a></li>
+                    </ol>
+                </div>
+                <div class="col-sm">
+                    <h4>INSPIRE Tools
+                        <a data-toggle="collapse" href="#c3" aria-expanded="false" aria-controls="c3" class="navbar-toggle d-sm-none">&nbsp;</a>
+                    </h4>
+                    <ol id="c3" class="collapse multi-collapse show">
+                        <li><a href="//inspire.ec.europa.eu/inspire-tools">Toolkit</a></li>
+                        <li><a href="//inspire-geoportal.ec.europa.eu/">Geoportal</a></li>
+                        <li><a href="//inspire.ec.europa.eu/validator/">Validator</a></li>
+                        <li><a href="//inspire.ec.europa.eu/registry/">Registry</a></li>
+                        <li><a href="//inspire-regadmin.jrc.ec.europa.eu/dataspecification/">Data Specification toolkit</a></li>
+                    </ol>
+                </div>
+                <div class="col-sm">
+                    <h4>Geoportal
+                        <a data-toggle="collapse" href="#c4" aria-expanded="false" aria-controls="c4" class="navbar-toggle d-sm-none">&nbsp;</a>
+                    </h4>
+                    <ol id="c4" class="collapse multi-collapse show">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="pdv_home.html">Priority Data Sets Viewer</a></li>
+                        <li><a href="tv_home.html">INSPIRE Thematic Viewer</a></li>
+                        <!--<li><a href="ft_home.html">INSPIRE Feature Types</a></li>-->
+                        <li><a href="harvesting_status.html">Harvesting status</a></li>
+                        <!-- <li><a href="//inspire-sandbox.jrc.ec.europa.eu/validator/">INSPIRE Reference Validator</a></li> -->
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ft3">
+        <div class="container">
+            <div class="float-right">
+                <ol>
+                    <li><a href="#">About</a></li>
+                    <li><a href="mailto:jrc-inspire-support@ec.europa.eu?subject=%5BGeoportal%20Helpdesk%5D">Contact</a></li>
+                    <li><a href="//inspire.ec.europa.eu/privacy-policy/59294">Privacy policy</a></li>
+                    <li><a href="//ec.europa.eu/info/legal-notice" target="_blank" rel="noopener">Legal notice</a></li>
+                    <li><a href="//inspire.ec.europa.eu/cookie-notice">Cookies</a></li>
+                </ol>
+                <div class="social">
+                    <div>
+                        <a href="https://twitter.com/INSPIRE_EU"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://www.linkedin.com/groups/1066897"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/groups/inspiredirective/"><i class="fab fa-facebook-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    // Display the version number
+    let version_box = $('#version-box');
+    if (version_box.length) {
+        $.ajax({
+            url: thematicViewerApp.geoportalHostURL + thematicViewerApp.versionFile,
+            dataType: 'json',
+            beforeSend: function (xhr) {
+                if (xhr.overrideMimeType)
+                {
+                    xhr.overrideMimeType("application/json");
+                }
+            }
+        }).done(function (data) {
+            version_box.html(data.version);
+        });
+    }
+    
+    let brexitContentDisclaimerElement = $('#brexit-content-disclaimer');
+    let publicationDate = new Date(2020,1,1,0,0,1,0);
+    let currentDate = new Date();
+    
+    if(currentDate.getTime()>=publicationDate.getTime()){
+        brexitContentDisclaimerElement.removeAttr('style');
+    }    
+</script>

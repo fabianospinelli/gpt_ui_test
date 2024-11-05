@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head prefix="og: http://ogp.me/ns#">
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Geoportal" />
+        <meta name="keyword" content="INSPIRE Geoportal" />
+        <meta name="author" content="European Commission - Joint Research Centre" />
+
+        <meta property="og:title" content="INSPIRE Geoportal" />
+        <meta property="og:description" content="Geoportal" />
+        <meta property="og:url" content="http://localhost" />
+        <meta property="og:image" content="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-194x194.png" />
+        <meta property="og:type" content="website" />
+
+        <meta name="robots" content="none noindex nofollow noarchive" />
+
+        <title>INSPIRE Geoportal</title>
+
+        <link rel="stylesheet" href="//inspire.ec.europa.eu/cdn/1.0/css/ec.eu.css">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-16x16.png" sizes="16x16">
+        <link rel="shortcut icon" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon.ico">
+        <meta name="msapplication-TileImage" content="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/mstile-144x144.png">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#003399">
+
+        <script src="//inspire.ec.europa.eu/cdn/1.2/js/jquery.min.js"></script>
+        <script src="//inspire.ec.europa.eu/cdn/1.2/js/popper.min.js" defer></script>
+        <script src="//inspire.ec.europa.eu/cdn/1.2/js/bootstrap.min.js" defer></script>
+        <script src="//inspire.ec.europa.eu/cdn/1.2/js/bootstrap-select.min.js" defer></script>
+        <script src="//inspire.ec.europa.eu/cdn/1.2/js/fontawesome.all.min.js" defer></script>
+
+        <script>
+            try {
+                if (new URLSearchParams('q=%2B').get('q') !== '+')
+                    throw {};
+            } catch (error) {
+                window.URLSearchParams = void 0;
+                document.write('<script src="res/libs/url-search-params-polyfill/url-search-params.js"><' + '/script>');
+            }
+        </script>
+
+        <link rel="stylesheet" href="style.css">
+
+        <script src="app.gn_es_country_map.js" crossorigin="" defer></script>
+
+        <script src="app.common.js" crossorigin="" defer></script>
+        <script src="app.es.js" crossorigin="" defer></script>
+        <script src="app.monitoring_indicators.js" crossorigin="" defer></script>
+    </head>
+
+    <body>
+        <header>
+            <div class="hb1">
+                <div class="container relative">
+                    <a class="ec-logo" href="#"><img src="//inspire.ec.europa.eu/cdn/1.0/img/ec.logo/logo_en.gif" alt="European Commission logo"/></a>
+                    <span class="mt">INSPIRE</span>
+
+                    <div class="topm d-none d-md-block">
+                        <ul class="lnk small">
+                            <li><a href="//inspire-geoportal.ec.europa.eu/about.html">About</a></li><!--
+                            --><li><a href="mailto:JRC-INSPIRE-SUPPORT@ec.europa.eu">Contact</a></li><!--
+                            --><li><a href="//inspire.ec.europa.eu/privacy-policy/59294">Privacy Policy</a></li><!--
+                            --><li><a href="//ec.europa.eu/info/legal-notice">Legal notice</a></li><!--
+                            --><li><a href="//inspire.ec.europa.eu/cookie-notice">Cookies</a></li>
+                        </ul><!--
+                        --><select id="cngl" data-live-search="true" class="selectpicker">
+                            <option selected="selected" value="en">English (en)</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="hb2">
+                <div class="container">
+                    <span>Harvest Console</span>
+                </div>
+            </div>
+
+            <div class="hb3 d-none d-sm-block">
+                <div class="container">
+                    <ol class="breadcrumb" vocab="http://schema.org/" typeof="BreadcrumbList">
+                        <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="//ec.europa.eu/index_en.htm"><span property="name">European Commission</span></a></li>
+                        <li property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="//inspire.ec.europa.eu"><span property="name">INSPIRE</span></a></li>
+                        <li class="active" property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage" href="//inspire-geoportal.ec.europa.eu"><span property="name">Geoportal</span></a></li>
+                    </ol>
+                </div></div>
+
+            <div class="hb4">
+                <div class="container">
+                    <nav class="navbar navbar-expand-lg navbar-light sticky-top">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".openmenu" aria-controls="openmenu" aria-expanded="false" aria-label="">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                    </nav></div>
+            </div>
+
+        </header><div class="container">
+
+            <div class="row bdot">
+                <div class="col-md-10 offset-md-1 text-center">
+                    <h1>Indicators in support of Commission Decision (EU) 2019/1372 implementing Directive 2007/2/EC (INSPIRE) as regards to monitoring and reporting</h1>
+                </div>
+                <div class="col-sm-12">
+                    <p>Use parameter "country" and optional "gnHarvesterUuid" in the URL to calculate the indicators.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <!--
+                <div class="col-md-8">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="solrHostInfo-label">Solr Host URL</span>
+                        </div>
+                        <input id="ind-solrHostInfo-input" type="text" class="form-control" placeholder="http://<hostname>" aria-label="solrHostInfo" aria-describedby="solrHostInfo-label">
+                        <a class="btn btn-warning disabled" href="" id="ind-solrHostInfo-update-btn" role="button">Update</a>
+                    </div>
+                </div>
+                -->
+                <div class="col-md-8">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="country-label">Country</span>
+                        </div>
+                        <input id="ind-country-input" type="text" class="form-control" placeholder="two-letter-code" aria-label="countryCode" aria-describedby="country-label">
+                        <a class="btn btn-warning disabled" href="" id="ind-country-update-btn" role="button">QuickReload</a>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text" id="sessioninfo-label">SessionId</span>
+                        </div>
+                        <input id="ind-sessioninfo-input" type="text" class="form-control" placeholder="INSPIRE-xxx" aria-label="sessionId" aria-describedby="sessioninfo-label">
+                        <a class="btn btn-warning disabled" href="" id="ind-sessioninfo-update-btn" role="button">QuickReload</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Monitoring of the availability of spatial data and service</h5>
+
+                        <div class="card-deck">
+                            <div class="card">
+                                <div class="card-body" title="The number of spatial data sets for which metadata exist" data-toggle="tooltip" data-placement="top">
+                                    <p class="h3 text-center" id="DSi_1_1">-</p>
+                                    <p class="card-text text-center">DSi1.1</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body" title="The number of spatial data services for which metadata exist"  data-toggle="tooltip" data-placement="top">
+                                    <p class="h3 text-center" id="DSi_1_2">-</p>
+                                    <p class="card-text text-center">DSi1.2</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-deck mt-3">
+                            <div class="card" title="The number of spatial data sets for which the metadata contains one or more keywords from a register provided by the Commission indicating that the spatial data set is used for reporting under the environmental legislation"  data-toggle="tooltip" data-placement="top">
+                                <div class="card-body">
+                                    <p class="h3 text-center" id="DSi_1_3">-</p>
+                                    <p class="card-text text-center">DSi1.3</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-deck mt-3">
+                            <div class="card">
+                                <div class="card-body" title="The number of spatial data sets for which the metadata contains a keyword from a register provided by the Commission indicating that the spatial data set covers regional territory"  data-toggle="tooltip" data-placement="top">
+                                    <p class="h3 text-center" id="DSi_1_4">-</p>
+                                    <p class="card-text text-center">DSi1.4</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body" title="The number of spatial data sets for which the metadata contains a keyword from a register provided by the Commission indicating that the spatial data set covers national territory"  data-toggle="tooltip" data-placement="top">
+                                    <p class="h3 text-center" id="DSi_1_5">-</p>
+                                    <p class="card-text text-center">DSi1.5</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card border-0">
+                    <div class="card-body p-0">
+                        <!-- DART this section is disabled, so potentially not up-to-date with the rest of the page -->
+                        <!--
+                        <div class="card w-100 m-0 d-none">
+                            <div class="card-body">
+                                <h5 class="card-title text-secondary">Monitoring of the conformity of metadata</h5>
+
+                                <div class="card-deck">
+                                    <div class="card text-secondary">
+                                        <div class="card-body" title="Percentage of metadata for spatial data sets conformant with Commission Regulation (EC) No 1205/2008 as regards metadata"  data-toggle="tooltip" data-placement="top">
+                                            <p class="h4 text-center" id="MDi_1_1">-</p>
+                                            <p class="card-text text-center">MDi1.1</p>
+                                            <p class="font-weight-light">See notes below</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body text-secondary" title="Percentage of metadata for spatial data services conformant with Commission Regulation (EC) No 1205/2008 as regards metadata"  data-toggle="tooltip" data-placement="top">
+                                            <p class="h4 text-center" id="MDi_1_2">-</p>
+                                            <p class="card-text text-center">MDi1.2</p>
+                                            <p class="font-weight-light">See notes below</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-3">
+                                    <div class="col-sm-12">
+                                        <a class="btn btn-warning float-right disabled" href="" role="button">Validate and Calculate</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                        <div class="card w-100 m-0">
+                            <div class="card-body">
+                                <h5 class="card-title">Monitoring of the conformity of spatial data sets</h5>
+
+                                <div class="card-deck mt-3">
+                                    <div class="card">
+                                        <div class="card-body" title="Percentage of spatial data sets that are in conformity with Commission Regulation (EU) No 1089/2010 as regards interoperability of spatial data sets"  data-toggle="tooltip" data-placement="top">
+                                            <span class="h4 text-center" id="DSi_2_0_rating"></span>
+                                            <!-- Use d-none class to hide percentages text like <p class="h3 text-center d-none" id="DSi_2_0">-</p>-->
+                                            <p class="h3 text-center" id="DSi_2_0">-</p>
+                                            <p class="card-text text-center">DSi2</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-deck mt-3">
+                                    <div class="card">
+                                        <div class="card-body" title="Percentage of spatial data sets, corresponding to the themes listed in Annex I, that are in conformity with Commission Regulation (EU) No 1089/2010 as regards interoperability of spatial data sets"  data-toggle="tooltip" data-placement="top">
+                                            <span class="h4 text-center" id="DSi_2_1_rating"></span>
+                                            <p class="h3 text-center" id="DSi_2_1">-</p>
+                                            <p class="card-text text-center">DSi2.1</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body" title="Percentage of spatial data sets, corresponding to the themes listed in Annex II, that are in conformity with Commission Regulation (EU) No 1089/2010 as regards interoperability of spatial data sets"  data-toggle="tooltip" data-placement="top">
+                                            <span class="h4 text-center" id="DSi_2_2_rating"></span>
+                                            <p class="h3 text-center" id="DSi_2_2">-</p>
+                                            <p class="card-text text-center">DSi2.2</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body" title="Percentage of spatial data sets, corresponding to the themes listed in Annex III, that are in conformity with Commission Regulation (EU) No 1089/2010 as regards interoperability of spatial data sets"  data-toggle="tooltip" data-placement="top">
+                                            <span class="h4 text-center" id="DSi_2_3_rating"></span>
+                                            <p class="h3 text-center" id="DSi_2_3">-</p>
+                                            <p class="card-text text-center">DSi2.3</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-deck mt-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Monitoring of the accessibility of spatial data sets through view and download services</h5>
+
+                        <div class="card-deck mt-3">
+                            <div class="card">
+                                <div class="card-body" title="The percentage of spatial data sets that are accessible through view and the download services"  data-toggle="tooltip" data-placement="top">
+                                    <span class="h5 text-center" id="NSi_2_0_rating"></span>
+                                    <p class="h5 text-center" id="NSi_2_0">-</p>
+                                    <p class="card-text text-center">NSi2</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-deck mt-3">
+                            <div class="card">
+                                <div class="card-body" title="The percentage of spatial data sets that are accessible through view services"  data-toggle="tooltip" data-placement="top">
+                                    <span class="h5 text-center" id="NSi_2_1_rating"></span>
+                                    <p class="h5 text-center" id="NSi_2_1">-</p>
+                                    <p class="card-text text-center">NSi2.1</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body" title="The percentage of spatial data sets that are accessible through download services"  data-toggle="tooltip" data-placement="top">
+                                    <span class="h5 text-center" id="NSi_2_2_rating"></span>
+                                    <p class="h5 text-center" id="NSi_2_2">-</p>
+                                    <p class="card-text text-center">NSi2.2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Monitoring of the conformity of the network services</h5>
+
+                        <div class="card-deck">
+                            <div class="card">
+                                <div class="card-body" title="Percentage of the network services that are in conformity with Commission Regulation (EC) No 976/2009 as regards the Network Services"  data-toggle="tooltip" data-placement="top">
+                                    <span class="h5 text-center" id="NSi_4_0_rating"></span>
+                                    <p class="h5 text-center" id="NSi_4_0">-</p>
+                                    <p class="card-text text-center">NSi4</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card-deck mt-3">
+                            <div class="card">
+                                <div class="card-body" title="Percentage of the discovery services that are in conformity with Commission Regulation (EC) No 976/2009 as regards the Network Services"  data-toggle="tooltip" data-placement="top">
+                                    <span class="h6 text-center" id="NSi_4_1_rating"></span>
+                                    <p class="h6 text-center" id="NSi_4_1">-</p>
+                                    <p class="card-text text-center">NSi4.1</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body" title="Percentage of the view services that are in conformity with Commission Regulation (EC) No 976/2009 as regards the Network Services"  data-toggle="tooltip" data-placement="top">
+                                    <span class="h6 text-center" id="NSi_4_2_rating"></span>
+                                    <p class="h6 text-center" id="NSi_4_2">-</p>
+                                    <p class="card-text text-center">NSi4.2</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body" title="Percentage of the download services that are in conformity with Commission Regulation (EC) No 976/2009 as regards the Network Services"  data-toggle="tooltip" data-placement="top">
+                                    <span class="h6 text-center" id="NSi_4_3_rating"></span>
+                                    <p class="h6 text-center" id="NSi_4_3">-</p>
+                                    <p class="card-text text-center">NSi4.3</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body" title="Percentage of the transformation services that are in conformity with Commission Regulation (EC) No 976/2009 as regards the Network Services"  data-toggle="tooltip" data-placement="top">
+                                    <span class="h6 text-center" id="NSi_4_4_rating"></span>
+                                    <p class="h6 text-center" id="NSi_4_4">-</p>
+                                    <p class="card-text text-center">NSi4.4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-sm-12">
+                    <a id="jsonDownloadAnchorElem" style="display:none"></a>
+                    <a class="btn btn-warning w-100 disabled" href="" id="ind-download-btn" role="button">
+                        Download Monitoring statistics
+                        <i class="fas fa-folder-plus"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="errorModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Error</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <p>There was an error processing your request.</p>
+                        <p>Please, check the Console tab in the Developer tab for additional information.</p>
+                        <p>If the error persist, please contact the Geoportal Helpdesk team</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="ft1">
+                <div class="container">
+                    <div class="row">
+                        <div class="col">INSPIRE&nbsp;Geoportal</div>
+                        <div class="col"><span class="float-right">Version: <a href="/release-notes.html" id="version-box" class="text-white"></a></div>
+                        <!--<div class="col"><span class="float-right">v. 1.0.1-beta</span></div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="ft2">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm d-none d-md-block">
+                            <img class="ec-inspire-logo" src="//inspire.ec.europa.eu/cdn/1.0/img/ec.inspire.logo/logo_en.png"  alt="INSPIRE logo">
+                        </div>
+                        <div class="col-sm">
+                            <h4>INSPIRE<a data-toggle="collapse" href="#c1" aria-expanded="false" aria-controls="c1" class="navbar-toggle d-sm-none">&nbsp;</a></h4>
+                            <ol id="c1" class="collapse multi-collapse show">
+                                <li><a href="http://inspire.ec.europa.eu/">INSPIRE Knowledge Base</a></li>
+                                <li><a href="http://inspire.ec.europa.eu/legislation">INSPIRE Legislation</a></li>
+                                <li><a href="http://inspire.ec.europa.eu/library">INSPIRE Library</a></li>
+                                <li><a href="http://inspire.ec.europa.eu/thematic-clusters">INSPIRE Thematic clusters</a></li>
+                            </ol>
+                        </div>
+                        <div class="col-sm">
+                            <h4>NEWS & EVENTS<a data-toggle="collapse" href="#c2" aria-expanded="false" aria-controls="c2" class="navbar-toggle d-sm-none">&nbsp;</a></h4>
+                            <ol id="c2" class="collapse multi-collapse show">
+                                <li><a href="http://inspire.ec.europa.eu/news">News</a></li>
+                                <li><a href="http://inspire.ec.europa.eu/events">Events</a></li>
+                                <li><a href="http://inspire.ec.europa.eu/rssnew.cfm">RSS News</a></li>
+                            </ol>
+                        </div>
+                        <div class="col-sm">
+                            <h4>INSPIRE Tools<a data-toggle="collapse" href="#c3" aria-expanded="false" aria-controls="c3" class="navbar-toggle d-sm-none">&nbsp;</a>
+                            </h4>
+                            <ol id="c3" class="collapse multi-collapse show">
+                                <li><a href="http://inspire-geoportal.ec.europa.eu/">Geoportal</a></li>
+                                <li><a href="http://inspire-geoportal.ec.europa.eu/validator2/">Validator</a></li>
+                                <li><a href="http://inspire-geoportal.ec.europa.eu/editor/">Metadata Editor</a></li>
+                                <li><a href="http://inspire.ec.europa.eu/registry/">Registry</a></li>
+                                <li><a href="http://inspire-regadmin.jrc.ec.europa.eu/dataspecification/">Data Specification toolkit</a></li>
+                            </ol>
+                        </div>
+                        <div class="col-sm">
+                            <h4>Harvest console<a data-toggle="collapse" href="#c4" aria-expanded="false" aria-controls="c4" class="navbar-toggle d-sm-none">&nbsp;</a>
+                            </h4>
+                            <ol id="c4" class="collapse multi-collapse show">
+                                <li><a href="private.jsp">Dashboard</a></li>
+                                <li><a href="help.jsp">Help</a></li>
+                                <li><a href=""></a></li>
+                                <li><a href=""></a></li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ft3">
+                <div class="container">
+                    <div class="float-right">
+                        <ol>
+                            <li><a href="//inspire-geoportal.ec.europa.eu/about.html">About</a></li><!--
+                            --><li><a href="mailto:JRC-INSPIRE-SUPPORT@ec.europa.eu">Contact</a></li><!--
+                            --><li><a href="//inspire.ec.europa.eu/terms-use">Terms of use</a></li><!--
+                            --><li><a href="//inspire.ec.europa.eu/privacy-policy/59294">Privacy Policy</a></li><!--
+                            --><li><a href="//ec.europa.eu/info/legal-notice">Legal notice</a></li><!--
+                            --><li><a href="//inspire.ec.europa.eu/cookie-notice">Cookies</a></li>
+                        </ol>
+                        <div class="social">
+                            <div>
+                                <a href="//twitter.com/INSPIRE_EU"><i class="fab fa-twitter-square"></i></a>
+                                <a href="//www.linkedin.com/groups/1066897"><i class="fab fa-linkedin"></i></a>
+                                <a href="//www.facebook.com/groups/inspiredirective/"><i class="fab fa-facebook-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>

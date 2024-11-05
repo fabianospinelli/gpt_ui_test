@@ -1,0 +1,1073 @@
+<!doctype html>
+<html lang="en">
+    <head prefix="og: http://ogp.me/ns#">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="description" content="The INSPIRE Geoportal is the central European access point to the data provided by EU Member States and several EFTA countries under the INSPIRE Directive.">
+        <meta name="keyword" content="INSPIRE Geoportal">
+        <meta name="author" content="European Commission - Joint Research Centre">
+        <meta property="og:title" content="INSPIRE Geoportal"/>
+        <meta property="og:description" content="The INSPIRE Geoportal is the central European access point to the data provided by EU Member States and several EFTA countries under the INSPIRE Directive."/>
+        <meta property="og:url" content="//inspire-geoportal.ec.europa.eu/"/>
+        <meta property="og:image" content="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-194x194.png"/>
+        <meta property="og:type" content="website"/>
+
+        <title>INSPIRE Geoportal</title>
+        <meta name=”robots” content=”noindex,nofollow”>
+
+        <link rel="stylesheet" href="//inspire.ec.europa.eu/cdn/1.0/css/ec.eu.css">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-16x16.png" sizes="16x16">
+        <link rel="shortcut icon" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon.ico">
+        <meta name="msapplication-TileImage" content="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/mstile-144x144.png">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#003399">
+
+        <!-- see https://developers.google.com/speed/docs/insights/BlockingJS -->
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/bootstrap-select.min.js" integrity="sha384-OgLZWeeKn8Gxtho7YOapXP9cX8BASYnRr8XWu5+0u9PqK4b589JLWA6GzU/Kc7yy" crossorigin="anonymous" defer></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/fontawesome.all.min.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous" defer></script>
+
+        <!-- EU Cookie Consent Kit -->
+        <script src="//ec.europa.eu/wel/cookie-consent/consent.js" type="text/javascript"></script>
+
+        <script src="conf/conf.js" crossorigin="" defer></script>
+        <script src="js/app_common.js" crossorigin="" defer></script>
+
+        <!-- template custom section -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- page custom content below -->
+        <script>
+            try {
+                if (new URLSearchParams('q=%2B').get('q') !== '+')
+                    throw {};
+            } catch (error) {
+                window.URLSearchParams = void 0;
+                document.write('<script src="libs/url-search-params-polyfill/build/url-search-params.js"><' + '/script>');
+            }
+        </script>
+
+    </head>
+    <body role="document">
+        <div id="header"></div>
+
+        <div class="container">
+
+            <div class="row text-dark">
+                <div class="col-md-12 smaller">
+                    <div class="page-header">
+                        <h1>INSPIRE Monitoring 2019</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <div class="col-md-12">
+                    <p class="card-title">MS resources processing status - completed on 15.04.2020</p>
+                </div>
+
+            </div>
+
+            <div id="elements" class="row">
+                <div class="col">
+                    <div class="card-deck">
+
+                        <!--ROW 1-->
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=at" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-2 h4">Austria <img src="images/flags/11/at.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">502</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">242</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=fi" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-2 h4">Finland <img src="images/flags/11/fi.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">540</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">191</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">69</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>            
+
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=lv" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-4 h4">Latvia <img src="images/flags/11/lv.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">124</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">142</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=pt" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center  mb-4 h4">Portugal <img src="images/flags/11/pt.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">644</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">620</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">3</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+                        <div class="w-100 d-none d-lg-block"><!-- wrap every 4 from lg on --></div>
+
+                        <!--ROW 2-->
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=be" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-4 h4">Belgium <img src="images/flags/11/be.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">573</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">186</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">35</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>  
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=fr" class="icon-box-4 h-100">
+                                <div class="card-body pb-1 text-dark">
+                                    <h5 class="card-title text-center mb-4 h4">France <img src="images/flags/11/fr.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">42311</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">52632</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">1113</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>            
+
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=li" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center  mb-4 h4">Liechtenstein <img src="images/flags/11/li.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">60</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">3</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=ro" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">	
+                                    <h5 class="card-title text-center  mb-4 h4">Romania <img src="images/flags/11/ro.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">111</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">48</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">4</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+                        <div class="w-100 d-none d-lg-block"><!-- wrap every 4 from lg on --></div>
+
+
+                        <!--ROW 3-->
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=bg" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center  mb-4 h4">Bulgaria <img src="images/flags/11/bg.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">118</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">4</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=de" class="icon-box-4 h-100">	
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-4 h4">Germany <img src="images/flags/11/de.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">32311</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">35046</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">208</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>         
+
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=lt" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-4 h4">Lithuania <img src="images/flags/11/lt.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">115</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">62</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=sk" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">	
+                                    <h5 class="card-title text-center mb-4 h4">Slovakia <img src="images/flags/11/sk.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">256</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">210</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">7</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+                        <div class="w-100 d-none d-lg-block"><!-- wrap every 4 from lg on --></div>
+
+                        <!--ROW 4-->
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=hr" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center  mb-4 h4">Croatia <img src="images/flags/11/hr.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">92</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">134</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">22</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=el" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-2 h4">Greece <img src="images/flags/11/el.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">57</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">17</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>            
+
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=lu" class="icon-box-4 h-100">		
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-2 h4">Luxembourg <img src="images/flags/11/lu.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">215</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">49</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=si" class="icon-box-4 h-100">			
+                                <div class="card-body pb-1">	
+                                    <h5 class="card-title text-center mb-4 h4">Slovenia <img src="images/flags/11/si.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">92</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">56</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+                        <div class="w-100 d-none d-lg-block"><!-- wrap every 4 from lg on --></div>
+
+
+                        <!--ROW 5-->
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=cy" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-4 h4">Cyprus <img src="images/flags/11/cy.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">42</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">52</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=hu" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-4 h4">Hungary <img src="images/flags/11/hu.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">119</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">64</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>            
+
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=mt" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center  mb-4 h4">Malta <img src="images/flags/11/mt.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">158</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">175</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=es" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-4 h4">Spain <img src="images/flags/11/es.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">215</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">240</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">2</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+                        <div class="w-100 d-none d-lg-block"><!-- wrap every 4 from lg on --></div>
+
+
+                        <!--ROW 6-->
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=cz" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center  mb-4 h4">Czech Republic <img src="images/flags/11/cz.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">129</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">185</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">24</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>  
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=is" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-4 h4">Iceland <img src="images/flags/11/is.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">134</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">16</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">8</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>       
+
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=nl" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-4 h4">Netherlands <img src="images/flags/11/nl.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">214</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">296</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=se" class="icon-box-4 h-100">		
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-4 h4">Sweden <img src="images/flags/11/se.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">334</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">213</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+                        <div class="w-100 d-none d-lg-block"><!-- wrap every 4 from lg on --></div>
+
+
+                        <!--ROW 7-->
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=dk" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">	
+                                    <h5 class="card-title text-center mb-4 h4">Denmark <img src="images/flags/11/dk.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">176</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">135</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=ie" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center  mb-4 h4">Ireland <img src="images/flags/11/ie.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">76</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">16</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>            
+
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=no" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-4 h4">Norway <img src="images/flags/11/no.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">164</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">245</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">0</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=ch" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center  mb-4 h4">Switzerland <img src="images/flags/11/ch.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">202</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">26</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">3</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+                        <div class="w-100 d-none d-lg-block"><!-- wrap every 4 from lg on --></div>
+
+
+                        <!--ROW 8-->
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">		
+                            <a href="mr2019_details.html?country=ee" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-2 h4">Estonia <img src="images/flags/11/ee.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">73</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">80</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">2</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">		
+                            <a href="mr2019_details.html?country=it" class="icon-box-4 h-100">
+                                <div class="card-body pb-1">
+                                    <h5 class="card-title text-center mb-4 h4">Italy <img src="images/flags/11/it.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">22337</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">2636</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">403</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>            
+
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">		
+                            <a href="mr2019_details.html?country=pl" class="icon-box-4 h-100">
+                                <div class="card-body pb-1 text-dark">
+                                    <h5 class="card-title text-center mb-4 h4">Poland <img src="images/flags/11/pl.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small ">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">35488</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">3887</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">8</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="card mb-4 item border-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Click for more details">
+                            <a href="mr2019_details.html?country=uk" class="icon-box-4 h-100">	
+                                <div class="card-body pb-1 text-dark">
+                                    <h5 class="card-title text-center mb-4 h4">United Kingdom <img src="images/flags/11/uk.svg" class="country-icon-md" alt="country icon"></h5>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="small">Metadata</span><br>
+                                        </div>
+                                    </div>
+                                    <div class="row text-dark">
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">21334</span><br>
+                                            <span class="small">Dataset</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">634</span><br>
+                                            <span class="small">Services</span>
+                                        </div>
+                                        <div class="col-sm text-center">
+                                            <span class="blockquote">1292</span><br>
+                                            <span class="small">Series</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+                        <div class="w-100 d-none d-lg-block"><!-- wrap every 4 from lg on --></div>
+
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+
+                        <div class="card mb-4 border-none d-none d-sm-block"><!-- dummy card as filler --></div>
+                        <div class="card mb-4 border-none d-none d-sm-block"><!-- dummy card as filler --></div>
+
+                        <div class="w-100 d-none d-sm-block d-md-block d-lg-none"><!-- wrap every 2 on sm and md --></div>
+                        <div class="w-100 d-none d-lg-block"><!-- wrap every 4 from lg on --></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-dark">
+                <div class="col-md-12">
+                    <h4>Documentation:</h4>
+                    <p class="card-title"><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2019.220.01.0001.01.ENG&toc=OJ:L:2019:220:FULL" target="_blank">Commission Implementing Decision (EU) 2019/1372 of 19 August 2019 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards monitoring and reporting <i class="fas fa-external-link-alt"></i></a></p>
+                    <p class="card-title"><a href="https://webgate.ec.europa.eu/fpfis/wikis/display/InspireMIG/10th+MIG+meeting+2019-06-20" target="_blank">Guidance document for the calculation of indicators (DOC 6) <i class="fas fa-external-link-alt"></i></a></p>
+                    <p class="card-title"><a href="https://webgate.ec.europa.eu/fpfis/wikis/pages/viewpage.action?pageId=403577978" target="_blank">Indicators calculation (PRES-1.1) <i class="fas fa-external-link-alt"></i></a></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+        <style>
+            a.icon-box-4 {
+                background-color: #0065A2;
+                text-decoration: none;
+            }
+            a.icon-box-4, a.icon-box-4 h2, a.icon-box-4 p, a.icon-box-4 i, a.icon-box-4 svg, a.icon-box-4 span, a.icon-box-4 h5 {
+                text-decoration: none;
+                color: #fff !important;
+            }
+            a.icon-box-4:hover h2, a.icon-box-4:hover h5,a.icon-box-4:hover p, a.icon-box-4:hover i, a.icon-box-4:hover svg, a.icon-box-4:hover span {
+                color: #FFFF00 !important;
+            }
+        </style>
+
+
+        <!-- Piwik -->
+        <script type="text/javascript">
+            if (euCookieConsent.accepted("europa-analytics")) {
+                var _paq = _paq || [];
+
+                /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+                _paq.push(['trackPageView']);
+                _paq.push(['enableLinkTracking']);
+
+                (function() {
+                    var u = "//stats.jrc.ec.europa.eu/";
+                    _paq.push(['setTrackerUrl', u + 'piwik.php']);
+                    _paq.push(['setSiteId', '271']);
+
+                    var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+                    g.type = 'text/javascript';
+                    g.async = true;
+                    g.defer = true;
+                    g.src = u + 'piwik.js';
+                    s.parentNode.insertBefore(g, s);
+                })();
+            }
+        </script>
+        <!-- End Piwik Code --> 
+
+        <script type="application/ld+json">
+            {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "//inspire-geoportal.ec.europa.eu/geoportal/",
+            "potentialAction": { }
+            }
+        </script>
+    </body>
+</html>

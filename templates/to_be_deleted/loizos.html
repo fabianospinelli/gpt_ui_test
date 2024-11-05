@@ -1,0 +1,55 @@
+
+<div class="container" style="max-width: 65%;">
+
+   
+   <div class="col-xl text-center">
+      <h1 class="ecl-u-type-heading-2">INSPIRE Data Themes</h1>
+      <h4 class="ecl-u-type-heading-6">Explore all Member States' INSPIRE data sets by selecting an INSPIRE data theme.</h4>
+ 
+  </div>
+   
+   
+   <div ng-repeat="annex in annexList">
+        <h2 class="text-center ecl-u-type-heading-2">Annex {{annex.label}}</h2>
+
+      <div class="row">
+         <div ng-repeat="theme in themes.data | filter: { annexGroupId: annex.id}">
+            <div style="margin-top: 0px;"   ng-if="$index % 4 == 0"></div>
+             <div class="clearfix"  style="padding: 20px;" ng-if="$index % 4 == 0"></div>
+             <div class="col-md-3">
+     
+      
+
+               <article class="ecl-card" style="padding-bottom: 20px;" >
+                  <div class="ecl-card__image" aria-label="card image" role="img"
+                    style="background-image:url('../../catalog/views/inspireportal/images/{{theme.id}}.svg');  background-size: contain, cover;  background-repeat: no-repeat;"></div>
+                  <div class="ecl-card__body">
+              
+         
+                    <h1 class="ecl-card__title"><a href="/component-library/example" class="ecl-link ecl-link--standalone"> {{theme.label}} </a></h1>
+                    <div class="ecl-card__description" >  
+                       <span class="limittext">
+                     Def.:  <em>{{theme.definition}}</em>
+                  </span>
+               </div>
+               <hr>
+               <div class="ecl-u-f-l">
+                  <a target="_blank" href="https://inspire.ec.europa.eu/Themes/{{theme.id}}">
+                     <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top" title="Click for more details"></i>
+                  </a>
+            </div>
+
+                  <div class="ecl-u-f-r">
+                    <i class="fa fa-file text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsThemeSelectionBox_mdCount_ad">0</span>	<span> | </span>
+                 	<i class="fa fa-download text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsThemeSelectionBox_dwCount_ad">0</span>	<span> | </span>
+                <i class="fa fa-eye text-primary" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsThemeSelectionBox_lyCount_ad">0</span>
+                  </div>
+                    </div>
+                </article>
+              
+               
+ 
+ 
+     </div>
+</div>
+</div>

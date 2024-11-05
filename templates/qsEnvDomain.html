@@ -1,0 +1,974 @@
+<div class="ecl-container">
+	<div>
+		<div class="col-xl text-center">
+			<h1 class="ecl-u-type-heading-2">Environmental Domains</h1>
+		</div>
+
+		<p class="ecl-u-type-paragraph-m">Explore Member States' priority datasets grouped by the following
+			Environmental Domains or individual datasets.</p>
+
+		<div class="ecl-u-f-r">
+			<div class="btn-group ecl-u-f-r" role="group" aria-label="...">
+				<button type="submit"
+					ng-class="showEnvDomains == 'Domains' ? 'ecl-button--primary' : 'ecl-button--secondary'"
+					class="ecl-button" ng-click="displayDomains('Domains')"><i class="fa fa-th" aria-hidden="true"></i>
+					Domains</button>
+				<button type="submit"
+					ng-class="showEnvDomains == 'Thematic' ? 'ecl-button--primary' : 'ecl-button--secondary'"
+					class="ecl-button" ng-click="displayDomains('Thematic')"><i class="fa fa-object-group"></i> Thematic
+					Grouping</button>
+				<button type="submit"
+					ng-class="showEnvDomains == 'List' ? 'ecl-button--primary' : 'ecl-button--secondary'"
+					class="ecl-button" ng-click="reloadtab()"><i class="fa fa-table" aria-hidden="true"></i> List of
+					Datasets</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="ecl-u-f-r" ng-if="showEnvDomains == 'Domains'">
+		<div class="centered-item">
+			<div class="block_container">
+				<div class="single_card_50 text-center colorAir">
+					<a href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain=air&basedomain=1" aria-label="Air Covers ambient air quality and cleaner air for Europe.."
+						class="icon-box-4 h-100">
+						<div class="card-body height-170">
+							<div class="block_container">
+								<div class="iconBrowse">
+									<i class="fa fa-paper-plane float-right fa-2x textWhite"></i>
+								</div>
+								<div class="textBrowse textWhite">
+									<h2 class="card-title float-left">Air</h2>
+								</div>
+							</div>
+
+							<p class="card-text mt-2 text-secondary text-center textWhite">
+								Covers ambient air quality and cleaner air for Europe...
+							</p>
+						</div>
+						<div class="card-footer-95">
+							<div class="ecl-u-f-l" tabindex="0">
+								<a class="btn btn-data-sets border-white toggle text-decoration-none" 
+									data-toggle="collapse" role="button" aria-expanded="false" aria-controls="nature"
+									ng-click="clickSubCard(0)">
+									<i class="fas fa-stream textWhite" data-toggle="tooltip" data-placement="top"
+										title="Click to see the related priority datasets"></i>
+									<span class="small textWhite">Individual Datasets </span>
+								</a>
+							</div>
+
+							{{getStatsEnvDomainsData('qsEnvDomain', 'domains', 'air', 'MT')}}
+							<div class="ecl-u-f-r textWhite topMargin-10">
+								<i class="fa fa-file text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Metadata"></i> <span
+									class="statsThemeSelectionBox_mdCount_ad" id="qsEnvDomain_domains_air_MT">-</span>
+								<span> | </span>
+								<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+									data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+									class="statsThemeSelectionBox_dwCount_ad" id="qsEnvDomain_domains_air_DW">-</span>
+								<span> | </span>
+								<i class="fa fa-eye text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Viewable"></i> <span
+									class="statsThemeSelectionBox_lyCount_ad" id="qsEnvDomain_domains_air_VW">-</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="single_card_50 text-center colorNature">
+					<a 
+						href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain=nature&basedomain=1" aria-label="Nature Covers conservation of natural habitats and wild fauna and flora, wild birds..."
+						class="icon-box-4 h-100">
+						<div class="card-body height-170">
+							<div class="block_container">
+								<div class="iconBrowse">
+									<i class="fa fa-leaf float-right fa-2x textWhite"></i>
+								</div>
+								<div class="textBrowse textWhite">
+									<h2 class="card-title float-left">Nature</h2>
+								</div>
+							</div>
+
+							<p class="card-text mt-2 text-secondary text-center textWhite">
+								Covers conservation of natural habitats and wild fauna and flora, wild birds...
+							</p>
+						</div>
+						<div class="card-footer-95">
+							<div class="ecl-u-f-l" tabindex="0">
+								<a class="btn btn-data-sets border-white toggle text-decoration-none" 
+									data-toggle="collapse" role="button" aria-expanded="false" aria-controls="nature"
+									ng-click="clickSubCard(1)">
+									<i class="fas fa-stream textWhite" data-toggle="tooltip" data-placement="top"
+										title="Click to see the related priority datasets"></i>
+									<span class="small textWhite">Individual Datasets </span>
+								</a>
+							</div>
+
+							{{getStatsEnvDomainsData('qsEnvDomain', 'domains', 'nature', 'MT')}}
+							<div class="ecl-u-f-r textWhite topMargin-10">
+								<i class="fa fa-file text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Metadata"></i> <span
+									class="statsThemeSelectionBox_mdCount_ad"
+									id="qsEnvDomain_domains_nature_MT">-</span> <span> | </span>
+								<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+									data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+									class="statsThemeSelectionBox_dwCount_ad"
+									id="qsEnvDomain_domains_nature_DW">-</span> <span> | </span>
+								<i class="fa fa-eye text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Viewable"></i> <span
+									class="statsThemeSelectionBox_lyCount_ad"
+									id="qsEnvDomain_domains_nature_VW">-</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+
+			</div>
+		</div>
+
+		<div class="centered-item" ng-show="subCard[0] == true">
+			<div class="block_container">
+				<div id="subCard_Air" class="single_card_100 text-center">
+					<p class="card-text mt-2 text-secondary text-center textWhite">
+					<div ng-repeat="envDomain in envDomains.data | filter: { description: 'air', definition: null }"
+						ng-init="myVariable = $index+1">
+						<div class="clearfix" ng-if="$index % 4 == 0">
+						</div>
+						<div class="col-s-12 col-md-6 col-lg-3 margin-top-20">
+							<div class="card card-env-domain colorAir textWhite">
+								<div class="card-header">
+									<div class="row text-center justify-content-center">
+										<div class="col-md-12">
+											<img
+												ng-src="../../catalog/views/inspireportal/images/{{theme.id}}.svg" />
+											</div>
+										<div class="col-md-12">
+											<b><a href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain={{envDomain.id}}"
+													class="ecl-link ecl-link--standalone textWhite">{{envDomain.dataSetNumber[0]}}
+													- {{envDomain.label}} </a></b>
+										</div>
+									</div>
+								</div>
+								{{getStatsEnvDomainsData('qsEnvDomain', 'domains', envDomain.id, 'MT')}}
+								<div class="card-footer">
+									<div class="ecl-u-f-c ">
+										<i class="fa fa-file text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span
+											class="statsThemeSelectionBox_mdCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_MT">-</span> <span> | </span>
+										<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+											class="statsThemeSelectionBox_dwCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_DW">-</span> <span> | </span>
+										<i class="fa fa-eye text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span
+											class="statsThemeSelectionBox_lyCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_VW">-</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="centered-item" ng-show="subCard[1] == true">
+			<div class="block_container">
+				<div id="subCard_Air" class="single_card_100 text-center">
+					<p class="card-text mt-2 text-secondary text-center textWhite">
+						<div ng-repeat="envDomain in envDomains.data | filter: { description: 'nature', definition: null }"
+							ng-init="myVariable = $index+1">
+							<div class="clearfix" ng-if="$index % 4 == 0">
+							</div>
+							<div class="col-s-12 col-md-6 col-lg-3 margin-top-20">
+								<div class="card card-env-domain colorNature textWhite">
+									<div class="card-header">
+										<div class="row text-center justify-content-center">
+											<div class="col-md-12">
+												<img ng-src="../../catalog/views/inspireportal/images/{{theme.id}}.svg" />
+											</div>
+											<div class="col-md-12">
+												<b><a href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain={{envDomain.id}}"
+														class="ecl-link ecl-link--standalone textWhite">{{envDomain.dataSetNumber[0]}}
+														- {{envDomain.label}} </a></b>
+											</div>
+										</div>
+									</div>
+									{{getStatsEnvDomainsData('qsEnvDomain', 'domains', envDomain.id, 'MT')}}
+									<div class="card-footer">
+										<div class="ecl-u-f-c ">
+											<i class="fa fa-file text-primary textWhite" aria-hidden="true"
+												data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span
+												class="statsThemeSelectionBox_mdCount_ad"
+												id="qsEnvDomain_domains_{{envDomain.id}}_MT">-</span>
+											<span> | </span>
+											<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+												data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+												class="statsThemeSelectionBox_dwCount_ad"
+												id="qsEnvDomain_domains_{{envDomain.id}}_DW">-</span>
+											<span> | </span>
+											<i class="fa fa-eye text-primary textWhite" aria-hidden="true"
+												data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span
+												class="statsThemeSelectionBox_lyCount_ad"
+												id="qsEnvDomain_domains_{{envDomain.id}}_VW">-</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="centered-item">
+			<div class="block_container">
+				<div class="single_card_50 text-center colorWater">
+					<a
+						href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain=water&basedomain=1" aria-label="Water Covers the Water Framework Directives, Urban waste water, bathing water..."
+						class="icon-box-4 h-100">
+						<div class="card-body height-170">
+							<div class="block_container">
+								<div class="iconBrowse">
+									<i class="fa fa-tint float-right fa-2x textWhite"></i>
+								</div>
+								<div class="textBrowse textWhite">
+									<h2 class="card-title float-left">Water</h2>
+								</div>
+							</div>
+
+							<p class="card-text mt-2 text-secondary text-center textWhite">
+								Covers the Water Framework Directives, Urban waste water, bathing water...
+							</p>
+						</div>
+						<div class="card-footer-95">
+							<div class="ecl-u-f-l" tabindex="0">
+								<a class="btn btn-data-sets border-white toggle text-decoration-none" 
+									data-toggle="collapse" role="button" aria-expanded="false" aria-controls="nature"
+									ng-click="clickSubCard(2)">
+									<i class="fas fa-stream textWhite" data-toggle="tooltip" data-placement="top"
+										title="Click to see the related priority datasets"></i>
+									<span class="small textWhite">Individual Datasets </span>
+								</a>
+							</div>
+
+							{{getStatsEnvDomainsData('qsEnvDomain', 'domains', 'water', 'MT')}}
+							<div class="ecl-u-f-r textWhite topMargin-10">
+								<i class="fa fa-file text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Metadata"></i> <span
+									class="statsThemeSelectionBox_mdCount_ad" id="qsEnvDomain_domains_water_MT">-</span>
+								<span> | </span>
+								<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+									data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+									class="statsThemeSelectionBox_dwCount_ad" id="qsEnvDomain_domains_water_DW">-</span>
+								<span> | </span>
+								<i class="fa fa-eye text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Viewable"></i> <span
+									class="statsThemeSelectionBox_lyCount_ad" id="qsEnvDomain_domains_water_VW">-</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="single_card_50 text-center colorNoise">
+					<a 
+						href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain=noise&basedomain=1" aria-label="Noise Covers ambient noise quality and noise for Europe..."
+						class="icon-box-4 h-100">
+						<div class="card-body height-170">
+							<div class="block_container">
+								<div class="iconBrowse">
+									<i class="fa fa-volume-up float-right fa-2x textWhite"></i>
+								</div>
+								<div class="textBrowse textWhite">
+									<h2 class="card-title float-left">Noise</h2>
+								</div>
+							</div>
+
+							<p class="card-text mt-2 text-secondary text-center textWhite">
+								Covers ambient noise quality and noise for Europe...
+							</p>
+						</div>
+						<div class="card-footer-95">
+							<div class="ecl-u-f-l" tabindex="0">
+								<a class="btn btn-data-sets border-white toggle text-decoration-none" 
+									data-toggle="collapse" role="button" aria-expanded="false" aria-controls="nature"
+									ng-click="clickSubCard(3)">
+									<i class="fas fa-stream textWhite" data-toggle="tooltip" data-placement="top"
+										title="Click to see the related priority datasets"></i>
+									<span class="small textWhite">Individual Datasets </span>
+								</a>
+							</div>
+
+							{{getStatsEnvDomainsData('qsEnvDomain', 'domains', 'noise', 'MT')}}
+							<div class="ecl-u-f-r textWhite topMargin-10">
+								<i class="fa fa-file text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Metadata"></i> <span
+									class="statsThemeSelectionBox_mdCount_ad" id="qsEnvDomain_domains_noise_MT">-</span>
+								<span> | </span>
+								<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+									data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+									class="statsThemeSelectionBox_dwCount_ad" id="qsEnvDomain_domains_noise_DW">-</span>
+								<span> | </span>
+								<i class="fa fa-eye text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Viewable"></i> <span
+									class="statsThemeSelectionBox_lyCount_ad" id="qsEnvDomain_domains_noise_VW">-</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="centered-item" ng-show="subCard[2] == true">
+			<div class="block_container">
+				<div id="subCard_Air" class="single_card_100 text-center">
+					<p class="card-text mt-2 text-secondary text-center textWhite">
+					<div ng-repeat="envDomain in envDomains.data | filter: { description: 'water', definition: null }"
+						ng-init="myVariable = $index+1">
+						<div class="clearfix" ng-if="$index % 4 == 0">
+						</div>
+						<div class="col-s-12 col-md-6 col-lg-3 margin-top-20">
+							<div class="card card-env-domain colorWater textWhite">
+								<div class="card-header">
+									<div class="row text-center justify-content-center">
+										<div class="col-md-12">
+											<img ng-src="../../catalog/views/inspireportal/images/{{theme.id}}.svg" />
+										</div>
+										<div class="col-md-12">
+											<b><a href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain={{envDomain.id}}"
+													class="ecl-link ecl-link--standalone textWhite">{{envDomain.dataSetNumber[0]}}
+													- {{envDomain.label}} </a></b>
+										</div>
+									</div>
+								</div>
+								{{getStatsEnvDomainsData('qsEnvDomain', 'domains', envDomain.id, 'MT')}}
+								<div class="card-footer">
+									<div class="ecl-u-f-c">
+										<i class="fa fa-file text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span
+											class="statsThemeSelectionBox_mdCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_MT">-</span> <span> | </span>
+										<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+											class="statsThemeSelectionBox_dwCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_DW">-</span> <span> | </span>
+										<i class="fa fa-eye text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span
+											class="statsThemeSelectionBox_lyCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_VW">-</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="centered-item" ng-show="subCard[3] == true">
+			<div class="block_container">
+				<div id="subCard_Air" class="single_card_100 text-center">
+					<p class="card-text mt-2 text-secondary text-center textWhite">
+					<div ng-repeat="envDomain in envDomains.data | filter: { description: 'noise', definition: null }"
+						ng-init="myVariable = $index+1">
+						<div class="clearfix" ng-if="$index % 4 == 0">
+						</div>
+						<div class="col-s-12 col-md-6 col-lg-3 margin-top-20">
+							<div class="card card-env-domain colorNoise textWhite">
+								<div class="card-header">
+									<div class="row text-center justify-content-center">
+										<div class="col-md-12">
+											<img ng-src="../../catalog/views/inspireportal/images/{{theme.id}}.svg" />
+										</div>
+										<div class="col-md-12">
+											<b><a href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain={{envDomain.id}}"
+													class="ecl-link ecl-link--standalone textWhite">{{envDomain.dataSetNumber[0]}}
+													- {{envDomain.label}} </a></b>
+										</div>
+									</div>
+								</div>
+								{{getStatsEnvDomainsData('qsEnvDomain', 'domains', envDomain.id, 'MT')}}
+								<div class="card-footer">
+									<div class="ecl-u-f-c">
+										<i class="fa fa-file text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span
+											class="statsThemeSelectionBox_mdCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_MT">-</span> <span> | </span>
+										<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+											class="statsThemeSelectionBox_dwCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_DW">-</span> <span> | </span>
+										<i class="fa fa-eye text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span
+											class="statsThemeSelectionBox_lyCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_VW">-</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="centered-item">
+			<div class="block_container">
+				<div class="single_card_33 text-center colorWaste">
+					<a 
+						href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain=waste&basedomain=1" aria-label="Waste Covers the landfill of waste, waste from extractive industries, soil..."
+						class="icon-box-4 h-100">
+						<div class="card-body height-170">
+							<div class="block_container">
+								<div class="iconBrowse">
+									<i class="fa fa-trash float-right fa-2x textWhite"></i>
+								</div>
+								<div class="textBrowse textWhite">
+									<h2 class="card-title float-left">Waste</h2>
+								</div>
+							</div>
+
+							<p class="card-text mt-2 text-secondary text-center textWhite">
+								Covers the landfill of waste, waste from extractive industries, soil...
+							</p>
+						</div>
+						<div class="card-footer-95">
+							<div class="ecl-u-f-l" tabindex="0">
+								<a class="btn btn-data-sets border-white toggle text-decoration-none" 
+									data-toggle="collapse" role="button" aria-expanded="false" aria-controls="nature"
+									ng-click="clickSubCard(4)">
+									<i class="fas fa-stream textWhite" data-toggle="tooltip" data-placement="top"
+										title="Click to see the related priority datasets"></i>
+									<span class="small textWhite">Individual Datasets </span>
+								</a>
+							</div>
+
+							{{getStatsEnvDomainsData('qsEnvDomain', 'domains', 'waste', 'MT')}}
+							<div class="ecl-u-f-r textWhite topMargin-10">
+								<i class="fa fa-file text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Metadata"></i> <span
+									class="statsThemeSelectionBox_mdCount_ad" id="qsEnvDomain_domains_waste_MT">-</span>
+								<span> | </span>
+								<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+									data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+									class="statsThemeSelectionBox_dwCount_ad" id="qsEnvDomain_domains_waste_DW">-</span>
+								<span> | </span>
+								<i class="fa fa-eye text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Viewable"></i> <span
+									class="statsThemeSelectionBox_lyCount_ad" id="qsEnvDomain_domains_waste_VW">-</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="single_card_33 text-center colorIndustrialEm">
+					<a 
+						href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain=industrial-emissions&basedomain=1" aria-label="Industrial emissions Covers industrial emissions..."
+						class="icon-box-4 h-100">
+						<div class="card-body height-170">
+							<div class="block_container">
+								<div class="iconBrowse">
+									<i class="fa fa-smog float-right fa-2x textWhite"></i>
+								</div>
+								<div class="textBrowse textWhite">
+									<h2 class="card-title float-left">Industrial emissions</h2>
+								</div>
+							</div>
+
+							<p class="card-text mt-2 text-secondary text-center textWhite">
+								Covers industrial emissions...
+							</p>
+						</div>
+						<div class="card-footer-95">
+							<div class="ecl-u-f-l" tabindex="0">
+								<a class="btn btn-data-sets border-white toggle text-decoration-none" 
+									data-toggle="collapse" role="button" aria-expanded="false" aria-controls="nature"
+									ng-click="clickSubCard(5)">
+									<i class="fas fa-stream textWhite" data-toggle="tooltip" data-placement="top"
+										title="Click to see the related priority datasets"></i>
+									<span class="small textWhite">Individual Datasets </span>
+								</a>
+							</div>
+
+							{{getStatsEnvDomainsData('qsEnvDomain', 'domains', 'industrial-emissions', 'MT')}}
+							<div class="ecl-u-f-r textWhite topMargin-10">
+								<i class="fa fa-file text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Metadata"></i> <span
+									class="statsThemeSelectionBox_mdCount_ad"
+									id="qsEnvDomain_domains_industrial-emissions_MT">-</span>
+								<span> | </span>
+								<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+									data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+									class="statsThemeSelectionBox_dwCount_ad"
+									id="qsEnvDomain_domains_industrial-emissions_DW">-</span>
+								<span> | </span>
+								<i class="fa fa-eye text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Viewable"></i> <span
+									class="statsThemeSelectionBox_lyCount_ad"
+									id="qsEnvDomain_domains_industrial-emissions_VW">-</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+				<div class="single_card_33 text-center colorIndustrialAc">
+					<a 
+						href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain=industrial-accidents&basedomain=1" aria-label="Industrial accidents Covers industrial accidents..."
+						class="icon-box-4 h-100">
+						<div class="card-body height-170">
+							<div class="block_container">
+								<div class="iconBrowse">
+									<i class="fa fa-industry float-right fa-2x textWhite"></i>
+								</div>
+								<div class="textBrowse textWhite">
+									<h2 class="card-title float-left">Industrial accidents</h2>
+								</div>
+							</div>
+
+							<p class="card-text mt-2 text-secondary text-center textWhite">
+								Covers industrial accidents...
+							</p>
+						</div>
+						<div class="card-footer-95">
+							<div class="ecl-u-f-l" tabindex="0">
+								<a class="btn btn-data-sets border-white toggle text-decoration-none" 
+									data-toggle="collapse" role="button" aria-expanded="false" aria-controls="nature"
+									ng-click="clickSubCard(6)">
+									<i class="fas fa-stream textWhite" data-toggle="tooltip" data-placement="top"
+										title="Click to see the related priority datasets"></i>
+									<span class="small textWhite">Individual Datasets </span>
+								</a>
+							</div>
+
+							{{getStatsEnvDomainsData('qsEnvDomain', 'domains', 'industrial-accidents', 'MT')}}
+							<div class="ecl-u-f-r textWhite topMargin-10">
+								<i class="fa fa-file text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Metadata"></i> <span
+									class="statsThemeSelectionBox_mdCount_ad"
+									id="qsEnvDomain_domains_industrial-accidents_MT">-</span>
+								<span> | </span>
+								<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+									data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+									class="statsThemeSelectionBox_dwCount_ad"
+									id="qsEnvDomain_domains_industrial-accidents_DW">-</span>
+								<span> | </span>
+								<i class="fa fa-eye text-primary textWhite" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Viewable"></i> <span
+									class="statsThemeSelectionBox_lyCount_ad"
+									id="qsEnvDomain_domains_industrial-accidents_VW">-</span>
+							</div>
+						</div>
+					</a>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="centered-item" ng-show="subCard[4] == true">
+			<div class="block_container">
+				<div id="subCard_Air" class="single_card_100 text-center">
+					<p class="card-text mt-2 text-secondary text-center textWhite">
+					<div ng-repeat="envDomain in envDomains.data | filter: { description: 'waste', definition: null }"
+						ng-init="myVariable = $index+1">
+						<div class="clearfix" ng-if="$index % 4 == 0">
+						</div>
+						<div class="col-s-12 col-md-6 col-lg-3 margin-top-20">
+							<div class="card card-env-domain colorWaste textWhite">
+								<div class="card-header">
+									<div class="row text-center justify-content-center">
+										<div class="col-md-12">
+											<img ng-src="../../catalog/views/inspireportal/images/{{theme.id}}.svg" />
+										</div>
+										<div class="col-md-12">
+											<b><a href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain={{envDomain.id}}"
+													class="ecl-link ecl-link--standalone textWhite">{{envDomain.dataSetNumber[0]}}
+													- {{envDomain.label}} </a></b>
+										</div>
+									</div>
+								</div>
+								{{getStatsEnvDomainsData('qsEnvDomain', 'domains', envDomain.id, 'MT')}}
+								<div class="card-footer">
+									<div class="ecl-u-f-c">
+										<i class="fa fa-file text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span
+											class="statsThemeSelectionBox_mdCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_MT">-</span> <span> | </span>
+										<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+											class="statsThemeSelectionBox_dwCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_DW">-</span> <span> | </span>
+										<i class="fa fa-eye text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span
+											class="statsThemeSelectionBox_lyCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_VW">-</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="centered-item" ng-show="subCard[5] == true">
+			<div class="block_container">
+				<div id="subCard_Air" class="single_card_100 text-center">
+					<p class="card-text mt-2 text-secondary text-center textWhite">
+					<div ng-repeat="envDomain in envDomains.data | filter: { description: 'industrial-emissions', definition: null }"
+						ng-init="myVariable = $index+1">
+						<div class="clearfix" ng-if="$index % 4 == 0">
+						</div>
+						<div class="col-s-12 col-md-6 col-lg-3 margin-top-20">
+							<div class="card card-env-domain colorIndustrialEm textWhite">
+								<div class="card-header">
+									<div class="row text-center justify-content-center">
+										<div class="col-md-12">
+											<img ng-src="../../catalog/views/inspireportal/images/{{theme.id}}.svg" />
+										</div>
+										<div class="col-md-12">
+											<b><a href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain={{envDomain.id}}"
+													class="ecl-link ecl-link--standalone textWhite">{{envDomain.dataSetNumber[0]}}
+													- {{envDomain.label}} </a></b>
+										</div>
+									</div>
+								</div>
+								{{getStatsEnvDomainsData('qsEnvDomain', 'domains', envDomain.id, 'MT')}}
+								<div class="card-footer">
+									<div class="ecl-u-f-c">
+										<i class="fa fa-file text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span
+											class="statsThemeSelectionBox_mdCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_MT">-</span>
+										<span> | </span>
+										<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+											class="statsThemeSelectionBox_dwCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_DW">-</span>
+										<span> | </span>
+										<i class="fa fa-eye text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span
+											class="statsThemeSelectionBox_lyCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_VW">-</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="centered-item" ng-show="subCard[6] == true">
+			<div class="block_container">
+				<div id="subCard_Air" class="single_card_100 text-center">
+					<p class="card-text mt-2 text-secondary text-center textWhite">
+					<div ng-repeat="envDomain in envDomains.data | filter: { description: 'industrial-accidents', definition: null }"
+						ng-init="myVariable = $index+1">
+						<div class="clearfix" ng-if="$index % 4 == 0">
+						</div>
+						<div class="col-s-12 col-md-6 col-lg-3 margin-top-20">
+							<div class="card card-env-domain colorIndustrialAc textWhite">
+								<div class="card-header">
+									<div class="row text-center justify-content-center">
+										<div class="col-md-12">
+											<img ng-src="../../catalog/views/inspireportal/images/{{theme.id}}.svg" />
+										</div>
+										<div class="col-md-12">
+											<b><a href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain={{envDomain.id}}"
+													class="ecl-link ecl-link--standalone textWhite">{{envDomain.dataSetNumber[0]}}
+													- {{envDomain.label}} </a></b>
+										</div>
+									</div>
+								</div>
+								{{getStatsEnvDomainsData('qsEnvDomain', 'domains', envDomain.id, 'MT')}}
+								<div class="card-footer">
+									<div class="ecl-u-f-c">
+										<i class="fa fa-file text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span
+											class="statsThemeSelectionBox_mdCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_MT">-</span>
+										<span> | </span>
+										<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+											class="statsThemeSelectionBox_dwCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_DW">-</span>
+										<span> | </span>
+										<i class="fa fa-eye text-primary textWhite" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span
+											class="statsThemeSelectionBox_lyCount_ad"
+											id="qsEnvDomain_domains_{{envDomain.id}}_VW">-</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					</p>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="ecl-u-f-c" ng-if="showEnvDomains == 'Thematic'">
+
+		<div class="container">
+			<div class="centered-item">
+
+				<div ng-repeat="(key, value) in envDomainsThematic | groupBy:'description'"
+					id="card_{{key}}">
+					<div class="row">
+
+						<div ng-repeat="val in value">
+							<div ng-class="value.length  == 1 ? 'col-lg-12' : (value.length == 2 ? 'col-lg-6' : 'col-lg-3')"
+								class="margin-top-20">
+								<div class="card textCard color{{key | limitTo:1 | uppercase}}{{key.substr(1) | lowercase }} card-env-domain-thematic">
+									<div class="card-body">
+										<h4 class="card-title textWhite">
+											<p>
+												<a href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain={{val.id}}"
+													class="textWhite">
+													{{val.label}}
+												</a>
+											</p>
+										</h4>
+										<p class="card-text breakstring  textWhite ">
+										<div ng-repeat="tag in val.dataSetNumber" class="sinsingline textWhite">
+											{{tag}}
+											<span ng-if="!$last" class="sinsingline textWhite">
+												-
+											</span>
+										</div>
+										</p>
+									</div>
+									<div class="card-footer-95 textWhite card-footer-small">
+										<!--<div class="ecl-u-f-l textWhite">
+											<a target="_blank" href="https://inspire.ec.europa.eu/Themes/{{theme.id}}"
+												class="ecl-link ecl-link--standalone textWhite">
+												<i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top"
+													title="Click for more details"></i>
+											</a>
+										</div>-->
+										{{getStatsEnvDomainsData('qsEnvDomain', 'grouping', val.id, 'MT')}}
+										<div class="ecl-u-f-c textWhite">
+											<i class="fa fa-file text-primary textWhite" aria-hidden="true"
+												data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span
+												class="statsThemeSelectionBox_mdCount_ad"
+												id="qsEnvDomain_grouping_{{val.id}}_MT">-</span>
+											<span> | </span>
+											<i class="fa fa-download text-primary textWhite" aria-hidden="true"
+												data-toggle="tooltip" data-placement="top" title="Downloadable"></i>
+											<span class="statsThemeSelectionBox_dwCount_ad"
+												id="qsEnvDomain_grouping_{{val.id}}_DW">-</span>
+											<span> | </span>
+											<i class="fa fa-eye text-primary textWhite" aria-hidden="true"
+												data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span
+												class="statsThemeSelectionBox_lyCount_ad"
+												id="qsEnvDomain_grouping_{{val.id}}_VW">-</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+
+			</div>
+		</div>
+
+	</div>
+
+	<div class="ecl-u-f-r" ng-if="showEnvDomains == 'List'">
+
+		<div>
+			<br />
+			<div class="centered-item">
+				<div class="ecl-form-group ecl-u-f-l itemsAndSearch">
+					<label for="select-default" class="ecl-form-label">Items per page:</label>
+					<div class="ecl-select__container ecl-select__container--m">
+						<select ng-click="setItemsPerPage()" class="ecl-select" id="select-items-page" required="">
+							<option value="10" selected="">10</option>
+							<option value="25">25</option>
+							<option value="50">50</option>
+							<option value="100">100</option>
+						</select>
+						<div class="ecl-select__icon">
+							<svg class="ecl-icon ecl-icon--s ecl-icon--rotate-180 ecl-select__icon-shape"
+								focusable="false" aria-hidden="true">
+								<use xlink:href="../../catalog/views/inspireportal/images/icons.svg#corner-arrow"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="ecl-form-group ecl-u-f-r itemsAndSearch">
+					<label for="example-input-id-1" class="ecl-form-label">Search:</label>
+					<input type="text" id="searchText" ng-model="searchText" ng-change="typeSearch()"
+						class="ecl-text-input ecl-text-input--m" placeholder="Search text" />
+				</div>
+
+				<table class="envdata ecl-table ecl-table--zebra">
+					<thead class="ecl-table__head">
+						<tr class="ecl-table__row">
+							<th class="ecl-table__header">
+								<a href="" ng-click="reverse=!reverse;order('dataSetNumber[0]', reverse)">ID</a>
+							<th class="ecl-table__header">
+								<a href="" ng-click="reverse=!reverse;order('label', reverse)">Priority Datasets</a>
+							</th>
+							<th class="ecl-table__header">
+								<a href="" ng-click="reverse=!reverse;order('description',reverse)">Domains</a>
+							</th>
+							<th class="ecl-table__header">
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Results </th>
+						</tr>
+					</thead>
+					<tbody class="ecl-table__body">
+						<tr class="ecl-table__row"
+							ng-show="($index >= (arraylist.currentPage-1)*arraylist.pageSize) && ($index < arraylist.currentPage*arraylist.pageSize)"
+							ng-repeat="envdataitem in arraylist.data | filter:cust() as filtered"> <!-- track by $index -->
+							<td ng-if="envdataitem.definition == 'grouping'" class="ecl-table__cell"
+								class="ecl-table__cell">
+								<p ng-bind-html="displayList(envdataitem.dataSetNumber)"></p>
+								<span class="badge badge-secondary">Grouping</span>
+							</td>
+							<td ng-if="(envdataitem.definition == null) && (envdataitem.dataSetNumber[0] != '-')"
+								class="ecl-table__cell" class="ecl-table__cell">
+								{{envdataitem.dataSetNumber[0]}}
+							</td>
+							<td class="ecl-table__cell"><a
+									href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain={{envdataitem.id}}">{{envdataitem.label}}</a>
+							</td>
+							<td class="ecl-table__cell h5" ng-if="envdataitem.description == 'air'">
+								<a class="text-white badge bg-info"
+									href="../../srv/eng/catalog.search#/overview?view=priorityOverview&amp;envdomain=air&basedomain=1">Air</a>
+							</td>
+							<td class="ecl-table__cell h5" ng-if="envdataitem.description == 'industrial-accidents'">
+								<a class="text-white badge bg-dark"
+									href="../../srv/eng/catalog.search#/overview?view=priorityOverview&amp;envdomain=industrial-accidents&basedomain=1">Industrial
+									Accidents</a>
+							</td>
+							<td class="ecl-table__cell h5" ng-if="envdataitem.description == 'industrial-emissions'">
+								<a class="text-white badge bg-danger"
+									href="../../srv/eng/catalog.search#/overview?view=priorityOverview&amp;envdomain=industrial-emissions&basedomain=1">Industrial
+									Emissions</a>
+							</td>
+							<td class="ecl-table__cell h5" ng-if="envdataitem.description == 'nature'">
+								<a class="text-white badge bg-success"
+									href="../../srv/eng/catalog.search#/overview?view=priorityOverview&amp;envdomain=nature&basedomain=1">Nature</a>
+							</td>
+							<td class="ecl-table__cell h5" ng-if="envdataitem.description == 'noise'">
+								<a class="text-white badge bg-warning"
+									href="../../srv/eng/catalog.search#/overview?view=priorityOverview&amp;envdomain=noise&basedomain=1">Noise</a>
+							</td>
+							<td class="ecl-table__cell h5" ng-if="envdataitem.description == 'waste'">
+								<a class="text-white badge bg-secondary"
+									href="../../srv/eng/catalog.search#/overview?view=priorityOverview&amp;envdomain=waste&basedomain=1">Waste</a>
+							</td>
+							<td class="ecl-table__cell h5" ng-if="envdataitem.description == 'water'">
+								<a class="text-white badge bg-primary"
+									href="../../srv/eng/catalog.search#/overview?view=priorityOverview&amp;envdomain=water&basedomain=1">Water</a>
+							</td>
+							<td class="ecl-table__cell h5" ng-if="envdataitem.description == 'nature,water'">
+								<a class="text-white badge bg-success"
+									href="../../srv/eng/catalog.search#/overview?view=envDomainOverview&amp;envdomain=nature&basedomain=1">Nature</a>
+								<a class="text-white badge bg-primary"
+									href="../../srv/eng/catalog.search#/overview?view=priorityOverview&amp;envdomain=water&basedomain=1">Water</a>
+							</td>
+							<td ng-if="listview">
+
+								<div ng-repeat="codelist in envdataitem.codelists">
+									<a class="codelist-item" href="{{codelist}}" target="_blank">{{codelist}}</a>
+								</div>
+							</td>
+							<td ng-if="!listview">
+								{{getStatsEnvDomainsData('qsEnvDomain', 'list', envdataitem.id, 'MT')}}
+								<div class="ecl-u-f-r">
+									<i class="fa fa-file text-primary ecl-color" aria-hidden="true"
+										data-toggle="tooltip" data-placement="top" title="Metadata"></i>
+									<span class="statsThemeSelectionBox_mdCount_ad ng-binding"
+										id="qsEnvDomain_list_{{envdataitem.id}}_MT">-</span>
+									<span> | </span>
+									<i class="fa fa-download text-primary ecl-color" aria-hidden="true"
+										data-toggle="tooltip" data-placement="top" title="Downloadable"></i>
+									<span class="statsThemeSelectionBox_dwCount_ad ng-binding"
+										id="qsEnvDomain_list_{{envdataitem.id}}_DW">-</span>
+									<span> | </span>
+									<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+										data-placement="top" title="Viewable"></i>
+									<span class="statsThemeSelectionBox_lyCount_ad ng-binding"
+										id="qsEnvDomain_list_{{envdataitem.id}}_VW">-</span>
+									<span>&nbsp;&nbsp;&nbsp;</span>
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+
+				<nav class="ecl-u-mt-l ecl-pagination" aria-label="Pagination">
+					<ul class="ecl-pagination__list">
+						<li class="ecl-pagination__item ecl-pagination__item--previous">
+							<a aria-label="Go to previous page" ng-click="prevPage()"
+							   class="ecl-link ecl-link--standalone ecl-link--icon ecl-pagination__link ecl-link--icon-only">
+								<svg focusable="false" aria-hidden="true"
+									 class="ecl-link__icon ecl-icon ecl-icon--xs ecl-icon--rotate-270">
+									<use
+											xlink:href="../../catalog/views/inspireportal/images/icons.svg#corner-arrow">
+									</use>
+								</svg><span class="ecl-link__label">Previous</span>
+							</a>
+						</li>
+						<li class="ecl-pagination__item"
+							ng-class="{'ecl-pagination__item--current': ($index+1) == arraylist.currentPage}"
+							ng-repeat="n in [].constructor(roundNumber(filtered.length/arraylist.pageSize)) track by $index+1"
+							ng-show="(($index+1) < (arraylist.pageSize + 1)) || (($index+1) == arraylist.currentPage) || (($index+1) > (arraylist.numPages-4))">
+							<span ng-if="($index+1) == arraylist.currentPage"
+								class="ecl-pagination__text ecl-pagination__text--summary"
+								aria-label="Page {{$index+1}}" aria-current="true">{{$index+1}}</span>
+							<span class="ecl-pagination__text ecl-pagination__text--full" aria-current="true">Page
+								{{$index+1}}</span>
+							<a ng-if="(($index+1) == 10) && (arraylist.currentPage != 10)" aria-label="separator1"
+								class="ecl-pagination__link ecl-link ecl-link--standalone">...</a>
+							<a ng-if="(($index+1) != arraylist.currentPage) && (($index+1) != 10) && (($index+1) != (arraylist.numPages-3))"
+								aria-label="Go to page {{$index+1}}" ng-click="changePage($index+1)"
+								class="ecl-pagination__link ecl-link ecl-link--standalone cursor-pointer">{{$index+1}}</a>
+						</li>
+						<li class="ecl-pagination__item ecl-pagination__item--next">
+							<a aria-label="Go to next page" ng-click="nextPage()"
+							   class="ecl-link ecl-link--standalone ecl-link--icon ecl-pagination__link ecl-link--icon-only">
+								<span class="ecl-link__label">Next</span>
+								<svg focusable="false" aria-hidden="true"
+									 class="ecl-link__icon ecl-icon ecl-icon--xs ecl-icon--rotate-90">
+									<use
+											xlink:href="../../catalog/views/inspireportal/images/icons.svg#corner-arrow">
+									</use>
+								</svg>
+							</a>
+						</li>
+					</ul>
+				</nav>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!--
+	<div class="container">
+		<div class="centered-item">
+			<div class="col-100 textPage">
+				<p>
+					See more details about the list of <a class="inspire-blue underline"
+						href="../../srv/eng/catalog.search#/qsEnvDomain?showcodelists=1">priority datasets</a> to
+					support environmental reporting.
+				</p>
+			</div>
+		</div>
+	</div>
+	-->
+</div>

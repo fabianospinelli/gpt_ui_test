@@ -1,0 +1,89 @@
+<div class="ecl-container">
+
+   
+	<div class="col-xl text-center">
+		<h1 class="ecl-u-type-heading-2">INSPIRE Data Sets - EU & EFTA Country overview</h1>
+	</div>
+	
+	<div id="toto">I'm the "toto" container</div>
+	<button ng-click="showsbkm()">Switch to share</button>
+	
+	<div class="rowMap">
+		<div class="columnLeftMap">
+			<script type="application/json">
+				{
+				  "service": "map",
+				  "version": "3.0",
+				  "map": {
+					"center" : [51,11],
+					"zoom" : 4,
+					"height": 490,
+					"width": 690
+				  },
+				  "config": {
+					"disclaimer": "<a href='http://leafletjs.com' title='A JS library for interactive maps'>Leaflet</a> | Credits: © <a rel='external' href='https://openstreetmap.org/copyright'>OpenStreetMap</a> contributors | <a rel='external' href='https://ec.europa.eu/eurostat/web/gisco/overview'>EC-GISCO</a>, © EuroGeographics for the administrative boundaries <a data-toggle='collapse' href='#mapDisclaimer' aria-expanded='false' aria-controls='mapDisclaimer'>(disclaimer)</a>"
+				  },
+				  "sidebar" : {
+					"home": true,
+					"zoomin" : true,
+					"zoomout" : true,
+					"print" : false,
+					"fullscreen": false
+				  },
+				  "custom" : ["../../catalog/views/inspireportal/customs/map.js"]
+				}
+			</script>
+		</div>
+		<div class="columnRightMap">
+			<h2 class="ecl-u-type-heading-3">INSPIRE Geoportal<br/> Dataset Statistics</h2>
+			<button type="submit" ng-class="overviewMapType == 'Metadata' ? 'ecl-button--primary' : 'ecl-button--secondary'" class="ecl-button countryBigButtons" ng-click="changeOverviewMapType('Metadata')"><i class="fa fa-file" aria-hidden="true"></i> {{generateNumber('dataThemes', 5392 + $index)}} <br/>Metadata records</button><br/>
+			<br/>
+			<button type="submit" ng-class="overviewMapType == 'Downloadable' ? 'ecl-button--primary' : 'ecl-button--secondary'" class="ecl-button countryBigButtons" ng-click="changeOverviewMapType('Downloadable')"><i class="fa fa-download"></i> {{generateNumber('dataThemes', 6218 + $index)}}<br/>Downloadable Data Sets</button><br/>
+			<br/>
+			<button type="submit" ng-class="overviewMapType == 'Viewable' ? 'ecl-button--primary' : 'ecl-button--secondary'" class="ecl-button countryBigButtons" ng-click="changeOverviewMapType('Viewable')"><i class="fa fa-eye" aria-hidden="true"></i> {{generateNumber('dataThemes', 365 + $index)}}<br/>Viewable Data Sets</button>
+		</div>
+	</div>
+		
+	<div class="col-xl text-center">
+		<h2 class="text-center ecl-u-type-heading-2">Select a COUNTRY</h2>
+	</div>
+
+	<div class="row">
+		<div ng-repeat="country in countries.data | filter: { membership: 'EU', id: '!EU'}"  ng-init="myVariable = $index+1">
+	 
+			<div class="clearfix" ng-if="$index % 4 == 0">
+			</div>
+	 
+			<div class="col-s-12 col-md-6  col-lg-3" style="margin-top: 20px;">
+				<img class="countryFlag" src="../../catalog/views/inspireportal/images/flags/{{country.id}}.svg"/> <span class="countryLabel">{{country.label}}</span>
+                <div class="ecl-u-f-r">
+                    <i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span class="statsThemeSelectionBox_mdCount_ad countryLabel">{{generateNumber('dataThemes', 100 + $index)}}</span>	<span> | </span>
+                    <i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span class="statsThemeSelectionBox_dwCount_ad countryLabel">{{generateNumber('dataThemes', 100 + $index)}}</span>	<span> | </span>
+					<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip" data-placement="top" title="Viewable"></i> <span class="statsThemeSelectionBox_lyCount_ad countryLabel">{{generateNumber('dataThemes', 100 + $index)}}</span>
+                </div>
+			</div>
+		</div>
+	</div>
+
+	<br/>
+
+	<div class="row">
+			<div class="col-s-12 col-md-6  col-lg-33" style="margin-top: 20px;">
+			</div>
+			<div class="col-s-12 col-md-6  col-lg-33" style="margin-top: 20px;">
+				<div class="col-xl text-center">
+					<h3 class="text-center ecl-u-type-heading-3">Select the whole <img class="countryFlag" src="../../catalog/views/inspireportal/images/flags/eu.svg"/> EUROPE</h3>
+				</div>
+			</div>
+			<div class="col-s-12 col-md-6 col-lg-33" style="margin-top: 20px;">
+				<button class="ecl-button ecl-button--cta" type="submit"><span class="ecl-button__container"><span
+				  class="ecl-button__label" data-ecl-label="true">Download stats</span><svg
+				  class="ecl-icon ecl-icon--xs ecl-icon--rotate-90 ecl-button__icon ecl-button__icon--after" focusable="false"
+				  aria-hidden="true" data-ecl-icon="">
+				  <use xlink:href="../../catalog/views/inspireportal/images/icons.svg#corner-arrow"></use>
+				</svg></span></button>
+			</div>
+
+
+	
+</div>

@@ -1,0 +1,522 @@
+<div class="ecl-container">
+
+	<div class="ecl-row">
+		<div class="ecl-col-s-12">
+
+			<h2 class="ecl-u-type-heading-2">High-Value Datasets</h2>
+
+			<p class="ecl-u-type-paragraph-m">
+				Application providing an overview and accessing to geospatial high-value datasets and other core datasets (including priority datasets for eReporting), which fall under the scope of the <a class = "inspire-blue  underline" target="_newLink" href="https://eur-lex.europa.eu/eli/dir/2019/1024/oj">Open Data Directive</a> according to the 
+				related <a class = "inspire-blue  underline" target="_newLink" href="https://eur-lex.europa.eu/eli/reg_impl/2023/138/oj">Implementing Act</a>.
+			</p>
+
+		</div>
+	</div>
+
+	<div class="ecl-row">
+		<div class="ecl-col-s-12">
+			<h2 class="ecl-u-type-heading-2">Please select a thematic category:</h2>
+		</div>
+	</div>
+
+	<div class="ecl-row">
+
+		<div class="ecl-content-item-block__item ecl-u-mb-l ecl-col-12 ecl-col-l-4 last-item-column topMargin-10">
+
+			<article class="ecl-card" id="cardGeospatial">
+
+				<div class="pos-icon">
+					<i id="iconGeospatial" class="fa fa-map-marker fa-3x inspire-blue"></i>
+				</div>
+
+				<div class="ecl-card__body">
+					<div class="ecl-content-block ecl-card__content-block">
+
+						<h1 class="ecl-content-block__title pos-text" id="titleGeospatial">
+							Geospatial
+						</h1>
+
+					</div>
+				</div>
+
+				<br /><br />
+
+				<button class="ecl-button ecl-button--cta centeredButton2" aria-label="geospatial"
+					ng-click="makeHvdsTabHighValueVisible('geospatial')" id="buttonGeospatialHighValue" >
+				</button>
+
+			</article>
+		</div>
+
+		<div class="ecl-content-item-block__item ecl-u-mb-l ecl-col-12 ecl-col-l-4 last-item-column topMargin-10">
+
+			<article class="ecl-card" id="cardEnvironment">
+
+				<div class="pos-icon">
+					<i id="iconEnvironment" class="fa fa-globe fa-3x inspire-blue"></i>
+				</div>
+
+				<div class="ecl-card__body">
+					<div class="ecl-content-block ecl-card__content-block">
+
+						<h1 class="ecl-content-block__title pos-text" id="titleEnvironment">
+							Earth Observation and Environment
+						</h1>
+
+					</div>
+				</div>
+
+				<br /><br />
+				<button class="ecl-button ecl-button--cta centeredButton2" aria-label="environment"
+					ng-click="makeHvdsTabHighValueVisible('environment')" id="buttonEnvironmentHighValue"> </button>
+
+			</article>
+
+		</div>
+
+		<div
+			class="ecl-content-item-block__item ecl-u-mb-l ecl-col-12 ecl-col-l-4 last-item-column last-item topMargin-10">
+
+			<article class="ecl-card" id="cardMobility">
+
+				<div class="pos-icon">
+					<i id="iconMobility" class="fa fa-car fa-3x inspire-blue"></i>
+				</div>
+
+				<div class="ecl-card__body">
+					<div class="ecl-content-block ecl-card__content-block">
+
+						<h1 class="ecl-content-block__title pos-text" id="titleMobility">
+							Mobility
+						</h1>
+
+					</div>
+				</div>
+
+				<br /><br />
+				<button class="ecl-button ecl-button--cta centeredButton2" aria-label="mobility"
+					ng-click="makeHvdsTabHighValueVisible('mobility')" id="buttonMobilityHighValue"> </button>
+
+			</article>
+
+		</div>
+	</div>
+
+	<div class="ecl-row">
+		<div class="hvds-main-content" ng-if="hvdsTab == 'geospatial'">
+			<div class="ecl-col-s-12">
+				<h2 class="ecl-u-type-heading-2">Agricultural parcels</h2>
+
+				<p class="ecl-u-type-paragraph-m">
+					This section includes spatial datasets inserted in the systems and subsystems as defined in Art. 68 of <a class = "inspire-blue  underline" target="_newLink" href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32013R1306">Regulation (EU) No 1306/2013</a>.
+				</p>
+				<p class="ecl-u-type-paragraph-m">
+					The Integrated Administration and Control System (IACS) consists of computerised databases of the subsystems. The Identification System for Agricultural Parcels (better known as LPIS - Land Parcel Identification System) and the Aid Applications and Payments Claims subsystems of IACS contain the spatial data components.
+				</p>
+
+				<div class="col-s-12 col-md-6 margin-top-20">
+					<div class="card card-hvds  card-hvds-180">
+						<div class="card-header">
+							<div class="row text-center justify-content-center">
+
+								<div class="col-md-12"><i id="iconMobility"
+										class="fa fa-tractor float-center fa-3x inspire-blue"></i></div>
+								<div class="col-md-12">
+									<b><a href="../../srv/eng/catalog.search#/overview?view=IACSOverview&iacs=gsaa"
+											class="ecl-link ecl-link--standalone ng-binding"> GSAA </a></b>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="row text-center justify-content-center">
+								<div class="col-md-12">
+									<div class="theme-def"> <a
+									      href="../../srv/eng/catalog.search#/overview?view=IACSOverview&iacs=gsaa"
+									      class="ecl-link ecl-link--standalone">Geospatial aid application as part of the Aid applications subsystem of
+										IACS, defined by Art. 68 of Regulation 1306/2013.</a></div>
+								</div>
+							</div>
+						</div>
+						<div class="card-footer pos-text">
+							{{getStatsGSAA()}}
+
+							<div class="ecl-u-f-c ">
+								<i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Metadata"></i> <span
+									class="statsThemeSelectionBox_mdCount_ad" id="GSAA_{{id}}_MT"> </span> <span> |
+								</span>
+								<i class="fa fa-download text-primary ecl-color" aria-hidden="true"
+									data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+									class="statsThemeSelectionBox_dwCount_ad" id="GSAA_{{id}}_DW"> </span> <span> |
+								</span>
+								<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Viewable"></i> <span
+									class="statsThemeSelectionBox_lyCount_ad" id="GSAA_{{id}}_VW"> </span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-s-12 col-md-6 margin-top-20">
+
+					<div class="card card-hvds card-hvds-180">
+
+						<div class="card-header">
+							<div class="row text-center justify-content-center">
+
+								<div class="col-md-12"><i id="iconMobility"
+										class="fa fa-map-marker float-center fa-3x inspire-blue"></i></div>
+								<div class="col-md-12">
+									<b><a href="../../srv/eng/catalog.search#/overview?view=IACSOverview&iacs=lpis"
+											class="ecl-link ecl-link--standalone ng-binding"> LPIS </a></b>
+								</div>
+							</div>
+						</div>
+
+						<div class="card-body">
+							<div class="row text-center justify-content-center">
+								<div class="col-md-12">
+									<div class="theme-def"> <a
+									      href="../../srv/eng/catalog.search#/overview?view=IACSOverview&iacs=lpis"
+									      class="ecl-link ecl-link--standalone">Land Parcel Identification System, a subsystem of Integrated Administration
+										and Control System (IACS) as defined by Art. 68 of Regulation
+										1306/2013.</a></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="card-footer pos-text">
+							{{getStatsLPIS()}}
+							<div class="ecl-u-f-c ">
+								<i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Metadata"></i> <span
+									class="statsThemeSelectionBox_mdCount_ad" id="LPIS_{{id}}_MT"> </span> <span> |
+								</span>
+								<i class="fa fa-download text-primary ecl-color" aria-hidden="true"
+									data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+									class="statsThemeSelectionBox_dwCount_ad" id="LPIS_{{id}}_DW"> </span> <span> |
+								</span>
+								<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+									data-placement="top" title="Viewable"></i> <span
+									class="statsThemeSelectionBox_lyCount_ad" id="LPIS_{{id}}_VW"> </span>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<br /> <br />
+
+				<div class="clearfix"></div>
+
+				<h2 class="ecl-u-type-heading-2">Other Core reference datasets</h2>
+
+				<div ng-repeat="theme in themes.data | filter: checkOtherHighValues_tab1"
+					ng-init="myVariable = $index+1">
+					<div class="clearfix" ng-if="$index % 6 == 0"></div>
+
+					<div ng-class="$index <3 ? 'col-lg-4' : 'col-lg-6'" class="margin-top-20">
+
+						<div class="card card-hvds card-hvds-180">
+							<div class="card-header">
+								<div class="row text-center justify-content-center">
+
+									<div class="col-md-12">
+										<img ng-src="../../catalog/views/inspireportal/images/{{theme.id}}.svg" alt="theme" />
+									</div>
+									<div class="col-md-12">
+										<b><a href="../../srv/eng/catalog.search#/overview?view=themeOverview&theme={{theme.id}}"
+												class="ecl-link ecl-link--standalone ng-binding"> {{theme.label}} </a></b>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<div class="row text-center justify-content-center">
+
+								<div class="col-md-12">
+								  <div class="theme-def"><a
+								      href="../../srv/eng/catalog.search#/overview?view=themeOverview&theme={{theme.id}}"
+								      class="ecl-link ecl-link--standalone"> <span data-tooltip-text="{{theme.definition}}">
+									{{theme.definition | truncate:50:wordwise:60}}... </span> </a></div>
+								  </div>
+								</div>
+							</div>
+
+							<div class="card-footer pos-text">
+								<div class="ecl-u-f-l ">
+									<a target="_blank" ng-href="{{getIconURL(theme)}}"
+										class="ecl-link ecl-link--standalone ng-binding">
+										<i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top"
+											title="Click for more details"></i>
+									</a>
+								</div>
+
+								{{getStatsDataThemesData('hvdshome', theme, 'MT')}}
+								<div class="ecl-u-f-c ">
+									<i class="fa fa-file text-primary ecl-color" aria-hidden="true"
+										data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span
+										id="hvdshome_{{theme.id}}_MT" class="statsThemeSelectionBox_mdCount_ad"></span>
+									<span> | </span>
+									<i class="fa fa-download text-primary ecl-color" aria-hidden="true"
+										data-toggle="tooltip" data-placement="top" title="Downloadable"></i>
+									<span id="hvdshome_{{theme.id}}_DW"
+										class="statsThemeSelectionBox_dwCount_ad"></span>
+									<span> | </span>
+									<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+										data-placement="top" title="Viewable"></i> <span id="hvdshome_{{theme.id}}_VW"
+										class="statsThemeSelectionBox_lyCount_ad"></span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="hvds-main-content" ng-if="hvdsTab == 'environment'">
+			<div class="ecl-col-s-12">
+
+				<h2 class="ecl-u-type-heading-2">Priority Datasets for eReporting</h2>
+
+				<p class="ecl-u-type-paragraph-m">
+					This section includes the datasets identified by EU Member States and EFTA countries as priority datasets for environmental reporting. You can filter by environmental domain, environmental legislation and country.
+				</p>
+				<p class="ecl-u-type-paragraph-m">
+					The list of priority datasets has been defined and is being further developed in the framework of the <a target="_newLink" href="https://wikis.ec.europa.eu/display/InspireMIG/MIWP+2016-2020/" class="inspire-blue underline">INSPIRE Maintenance and Implementation Work Plan (MIWP) 2016-2020</a>.
+				</p>
+				<p class="ecl-u-type-paragraph-m">
+					The Priority Datasets Viewer provides statistical overviews of the availability of priority datasets as well as simplified access to view or download selected datasets.
+				</p>
+
+				<div class="col-s-12 col-md-6 col-lg-4 margin-top-20">
+					<div class="card card-hvds card-hvds-160">
+						<div class="card-header">
+							<div class="row text-center justify-content-center">
+
+								<div class="col-md-12">
+									<i id="iconMobility" class="fa fa-map-marker float-center fa-3x inspire-blue"></i>
+								</div>
+								<div class="col-md-12">
+									<b><a href="../../srv/eng/catalog.search#overview?view=priorityOverview&theme=none"
+											class="ecl-link ecl-link--standalone ng-binding"> Country Overview </a></b>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="row text-center justify-content-center">
+								<div class="col-md-12">
+									<div class="theme-def"> <a
+									      href="../../srv/eng/catalog.search#overview?view=priorityOverview&theme=none"
+									      class="ecl-link ecl-link--standalone">Priority Datasets grouped by individual EU & EFTA countries</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-s-12 col-md-6 col-lg-4 margin-top-20">
+					<div class="card card-hvds card-hvds-160">
+						<div class="card-header">
+							<div class="row text-center justify-content-center">
+
+								<div class="col-md-12">
+									<i id="iconMobility" class="fa fa-tag float-center fa-3x inspire-blue"></i>
+								</div>
+								<div class="col-md-12">
+									<b><a href="../../srv/eng/catalog.search#/qsEnvDomain"
+											class="ecl-link ecl-link--standalone ng-binding"> Environmental Domains </a></b>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="row text-center justify-content-center">
+								<div class="col-md-12">
+									<div class="theme-def"> <a
+									      href="../../srv/eng/catalog.search#/qsEnvDomain"
+									      class="ecl-link ecl-link--standalone">Priority Datasets grouped by the Environmental Domains or individual
+										datasets</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-s-12 col-md-6 col-lg-4 margin-top-20">
+					<div class="card card-hvds card-hvds-160">
+						<div class="card-header">
+							<div class="row text-center justify-content-center">
+
+								<div class="col-md-12"><i id="iconMobility"
+										class="fa fa-building-columns float-center fa-3x inspire-blue"></i></div>
+								<div class="col-md-12">
+									<b><a href="../../srv/eng/catalog.search#/qsLegislation"
+											class="ecl-link ecl-link--standalone ng-binding"> Environmental Legislation
+										</a></b>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<div class="row text-center justify-content-center">
+								<div class="col-md-12">
+									<div class="theme-def"> <a
+									      href="../../srv/eng/catalog.search#/qsLegislation"
+									      class="ecl-link ecl-link--standalone">Priority Datasets grouped by relevant environmental reporting
+										legislation</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<br /><br />
+
+				<div class="clearfix"></div>
+
+				<h2 class="ecl-u-type-heading-2">Other High-value datasets</h2>
+
+				<div ng-repeat="theme in themes.data | filter: checkOtherHighValues_tab2"
+					ng-init="myVariable = $index+1">
+
+					<div class="clearfix" ng-if="$index % 4 == 0"></div>
+
+					<div class="col-s-12 col-md-6  col-lg-3 margin-top-20">
+
+						<div class="card card-hvds card-hvds-240">
+
+							<div class="card-header">
+								<div class="row text-center justify-content-center">
+
+									<div class="col-md-12">
+										<img ng-src="../../catalog/views/inspireportal/images/{{theme.id}}.svg" alt="theme" />
+									</div>
+									<div class="col-md-12">
+										<b><a href="../../srv/eng/catalog.search#/overview?view=themeOverview&theme={{theme.id}}"
+												class="ecl-link ecl-link--standalone ng-binding"> {{theme.label}} </a></b>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<div class="row text-center justify-content-center">
+									<div class="col-md-12">
+									  <div class="theme-def"><a
+									      href="../../srv/eng/catalog.search#/overview?view=themeOverview&theme={{theme.id}}"
+									      class="ecl-link ecl-link--standalone"> <span data-tooltip-text="{{theme.definition}}">
+										{{theme.definition | truncate:50:wordwise:60}}... </span> </a></div>
+									  </div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-footer pos-text">
+								<div class="ecl-u-f-l ">
+									<a target="_blank" ng-href="{{getIconURL(theme)}}"
+										class="ecl-link ecl-link--standalone ng-binding">
+										<i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top"
+											title="Click for more details"></i>
+									</a>
+								</div>
+
+								{{getStatsDataThemesData('hvdshome', theme, 'MT')}}
+								<div class="ecl-u-f-c ">
+									<i class="fa fa-file text-primary ecl-color" aria-hidden="true"
+										data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span
+										id="hvdshome_{{theme.id}}_MT" class="statsThemeSelectionBox_mdCount_ad"></span>
+									<span> | </span>
+									<i class="fa fa-download text-primary ecl-color" aria-hidden="true"
+										data-toggle="tooltip" data-placement="top" title="Downloadable"></i>
+									<span id="hvdshome_{{theme.id}}_DW"
+										class="statsThemeSelectionBox_dwCount_ad"></span> <span> | </span>
+									<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+										data-placement="top" title="Viewable"></i> <span id="hvdshome_{{theme.id}}_VW"
+										class="statsThemeSelectionBox_lyCount_ad"></span>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+		<div class="hvds-main-content hvds-main-content-mobility" ng-if="hvdsTab == 'mobility'">
+			<div class="ecl-col-s-12">
+
+				<h2 class="ecl-u-type-heading-2">Mobility</h2>
+
+				<div class="expander"> </div>
+
+				<div ng-repeat="theme in themes.data | filter: checkOtherHighValues_tab3"
+					ng-init="myVariable = $index+1">
+
+					<div class="col-s-12 col-md-12  col-lg-12">
+						<div class="card card-hvds card-hvds-180">
+
+							<div class="card-header">
+								<div class="row text-center justify-content-center">
+
+									<div class="col-md-12">
+										<img ng-src="../../catalog/views/inspireportal/images/{{theme.id}}.svg" alt="theme" />
+									</div>
+									<div class="col-md-12">
+										<b><a href="../../srv/eng/catalog.search#/overview?view=themeOverview&theme={{theme.id}}"
+												class="ecl-link ecl-link--standalone ng-binding"> {{theme.label}} </a></b>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-body">
+								<div class="row text-center justify-content-center">
+									<div class="col-md-12">
+									  <div class="theme-def"><a
+									      href="../../srv/eng/catalog.search#/overview?view=themeOverview&theme={{theme.id}}"
+									      class="ecl-link ecl-link--standalone"> <span data-tooltip-text="{{theme.definition}}">
+										{{theme.definition | truncate:50:wordwise:60}}... </span> </a></div>
+									  </div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card-footer pos-text">
+								<div class="ecl-u-f-l ">
+									<a target="_blank" ng-href="{{getIconURL(theme)}}"
+										class="ecl-link ecl-link--standalone ng-binding">
+										<i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top"
+											title="Click for more details"></i>
+									</a>
+								</div>
+
+								{{getStatsDataThemesData('hvdshome', theme, 'MT')}}
+								<div class="ecl-u-f-c ">
+									<i class="fa fa-file text-primary ecl-color" aria-hidden="true"
+										data-toggle="tooltip" data-placement="top" title="Metadata"></i> <span
+										id="hvdshome_{{theme.id}}_MT" class="statsThemeSelectionBox_mdCount_ad"></span>
+									<span> | </span>
+									<i class="fa fa-download text-primary ecl-color" aria-hidden="true"
+										data-toggle="tooltip" data-placement="top" title="Downloadable"></i> <span
+										id="hvdshome_{{theme.id}}_DW" class="statsThemeSelectionBox_dwCount_ad"></span>
+									<span> | </span>
+									<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+										data-placement="top" title="Viewable"></i> <span id="hvdshome_{{theme.id}}_VW"
+										class="statsThemeSelectionBox_lyCount_ad"></span>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+</div>

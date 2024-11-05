@@ -1,0 +1,592 @@
+<div class="ecl-container">
+
+	<div class="ecl-row">
+		<div class="ecl-col-12">
+
+			<div
+				ng-if="selectedTheme == 'none' && selectedLegislation == 'none' && iacstype == 'none' && selectedEnvDomain == 'none'">
+
+				<div class="fnbig">
+					Datasets by <span class="text-white badge bg-success">Country: <img class="countryFlag"
+							ng-src="../../catalog/views/inspireportal/images/flags/{{countryId}}.svg" id="dataFlag"
+							alt="" />
+						<span id="dataCountry">{{countryName}}</span>
+				</div>
+			</div>
+
+			<div ng-if="selectedTheme != 'none'">
+
+				<div class="fnbig">
+					Datasets by <span class="text-white badge bg-dark">Theme: <img class="countryFlag"
+							ng-src="../../catalog/views/inspireportal/images/{{selectedTheme}}.svg"
+							id="dataFlag_{{selectedTheme}}" alt="" />
+						<span id="dataCountry">{{decodeItem(selectedTheme,'themes')}}</span>
+					</span>
+					<span class="text-white badge bg-success">Country: <img class="countryFlag"
+							ng-src="../../catalog/views/inspireportal/images/flags/{{countryId}}.svg" id="dataFlag"
+							alt="" />
+						<span id="dataCountry">{{countryName}}</span>
+
+				</div>
+			</div>
+
+			<div ng-if="selectedLegislation != 'none'">
+				<div class="fnbig">
+					<!--Priority--> Datasets by
+
+					<span class="text-white badge bg-dark">Legislation:
+						<span id="dataCountry">{{decodeItem(selectedLegislation,'legislations')}}</span>
+					</span><span class="text-white badge bg-success">Country: <img class="countryFlag"
+							ng-src="../../catalog/views/inspireportal/images/flags/{{countryId}}.svg" id="dataFlag"
+							alt="" />
+						<span id="dataCountry">{{countryName}}</span>
+
+				</div>
+			</div>
+
+			<div ng-if="selectedEnvDomain != 'none' && basedomain == 1">
+				<div class="fnbig">
+					<!--Priority--> Datasets by
+					<span class="text-white badge bg-dark">Environmental Domain:
+
+						<span id="dataCountry">
+							{{selectedEnvDomain.toUpperCase()}}
+
+						</span>
+					</span><span class="text-white badge bg-success">Country: <img class="countryFlag"
+							ng-src="../../catalog/views/inspireportal/images/flags/{{countryId}}.svg" id="dataFlag"
+							alt="" />
+						<span id="dataCountry">{{countryName}}</span>
+
+				</div>
+			</div>
+
+			<div ng-if="iacstype != 'none'">
+				<div class="fnbig">
+					Datasets by
+
+					<span class="text-white badge bg-dark">IACS:
+						<span id="dataCountry">{{iacstype.toUpperCase()}}</span>
+					</span><span class="text-white badge bg-success">Country: <img class="countryFlag"
+							ng-src="../../catalog/views/inspireportal/images/flags/{{countryId}}.svg" id="dataFlag"
+							alt="" />
+						<span id="dataCountry">{{countryName}}</span>
+						<br />
+				</div>
+			</div>
+
+			<div ng-if="selectedEnvDomain != 'none'  && basedomain == 0">
+				<div class="fnbig">
+
+					<!--Priority--> Datasets by
+
+					<span class="text-white badge bg-dark">Environmental Domain:
+						<i ng-if="decodeCategory(selectedEnvDomain,'envdomains') == 'AIR'"
+							class="fa fa-paper-plane textWhite"></i>
+						<i ng-if="decodeCategory(selectedEnvDomain,'envdomains') == 'NATURE'"
+							class="fa fa-leaf textWhite"></i>
+						<i ng-if="decodeCategory(selectedEnvDomain,'envdomains') == 'WATER'"
+							class="fa fa-tint textWhite"></i>
+						<i ng-if="decodeCategory(selectedEnvDomain,'envdomains') == 'NOISE'"
+							class="fa fa-volume-up textWhite"></i>
+						<i ng-if="decodeCategory(selectedEnvDomain,'envdomains') == 'WASTE'"
+							class="fa fa-trash textWhite"></i>
+						<i ng-if="decodeCategory(selectedEnvDomain,'envdomains') == 'INDUSTRIAL-EMISSIONS'"
+							class="fa fa-smog textWhite"></i>
+						<i ng-if="decodeCategory(selectedEnvDomain,'envdomains') == 'INDUSTRIAL-ACCIDENTS'"
+							class="fa fa-industry textWhite"></i>
+						<span id="dataCountry">{{decodeCategory(selectedEnvDomain,'envdomains')}}</span>
+					</span>
+
+					<span class="text-white badge bg-primary">Dataset:
+						<span id="dataCountry">{{decodeItem(selectedEnvDomain,'envdomains')}}</span>
+					</span><span class="text-white badge bg-success">Country: <img class="countryFlag"
+							ng-src="../../catalog/views/inspireportal/images/flags/{{countryId}}.svg" id="dataFlag"
+							alt="" />
+						<span id="dataCountry">{{countryName}}</span>
+
+				</div>
+			</div>
+
+			<br />
+		</div>
+
+		<div class="ecl-row">
+			<div class="ecl-col-s-12 ecl-col-m-3">
+				<div><img class="countryFlag" ng-src="../../catalog/views/inspireportal/images/flags/{{countryId}}.svg"
+						id="dataFlag" alt="" />
+					<i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+						data-placement="top" title="Metadata"></i> <span
+						class="statsThemeSelectionBox_mdCount_ad countryLabel" id="overview_currentcountry_MT"> </span>
+					<span> | </span>
+					<i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+						data-placement="top" title="Downloadable"></i> <span
+						class="statsThemeSelectionBox_dwCount_ad countryLabel" id="overview_currentcountry_DW"> </span>
+					<span> | </span>
+					<i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+						data-placement="top" title="Viewable"></i> <span
+						class="statsThemeSelectionBox_lyCount_ad countryLabel" id="overview_currentcountry_VW"> </span>
+				</div>
+				<br>
+				<div>
+
+					<div class="ecl-accordion" data-ecl-auto-init="Accordion" data-ecl-accordion>
+						<div class="ecl-accordion__item">
+							<h3 class="ecl-accordion__title" ng-click="accordionClick('filter_options',null)">
+								<button type="button" class="ecl-accordion__toggle" data-ecl-accordion-toggle
+									data-ecl-label-expanded="Close" data-ecl-label-collapsed="Open"
+									aria-controls="filter_options-content">
+									<span class="ecl-accordion__toggle-flex">
+										<span class="ecl-accordion__toggle-indicator">
+											<span class="ecl-accordion__toggle-label">&nbsp;</span>
+											<svg class="ecl-icon ecl-icon--m ecl-accordion__toggle-icon"
+												focusable="false" aria-hidden="true" data-ecl-accordion-icon>
+												<use id="filter_options-icon"
+													xlink:href="../../catalog/views/inspireportal/images/icons.svg#plus">
+												</use>
+											</svg>
+										</span>
+										<span class="ecl-accordion__toggle-title"> Filter results by:</span>
+									</span>
+								</button>
+							</h3>
+							<div class="ecl-accordion__content" hidden id="filter_options-content" role="region">
+
+								<fieldset class="ecl-form-group" aria-describedby="checkbox-default-helper">
+									<legend class="ecl-form-label" id="checkbox-default-label">Properties:<span
+											class="ecl-form-label__optional"> </span>
+									</legend>
+
+									<div class="ecl-checkbox ecl-checkbox-custom">
+										<input type="checkbox" name="checkbox-default" class="ecl-checkbox__input"
+											value="dw" id="checkbox-dw" ng-click="updateAfterFilter();" />
+										<label for="checkbox-dw" class="ecl-checkbox__label">
+											<span class="ecl-checkbox__box">
+												<svg class="ecl-icon ecl-icon--m ecl-checkbox__icon" focusable="false"
+													aria-hidden="true">
+													<use
+														xlink:href="../../catalog/views/inspireportal/component-library/dist/sprites/icons.svg#check">
+													</use>
+												</svg>
+											</span>
+											<i class="fa fa-flag text-primary ecl-color fa-custom" aria-hidden="true"
+												data-toggle="tooltip" data-placement="top" title="Downloadable"></i>
+											<span class="ecl-checkbox__text"> Downloadable</span>
+										</label>
+									</div>
+									<div class="ecl-checkbox ecl-checkbox-custom">
+										<input type="checkbox" name="checkbox-default" class="ecl-checkbox__input"
+											value="vw" id="checkbox-vw" ng-click="updateAfterFilter();" />
+										<label for="checkbox-vw" class="ecl-checkbox__label">
+											<span class="ecl-checkbox__box">
+												<svg class="ecl-icon ecl-icon--m ecl-checkbox__icon" focusable="false"
+													aria-hidden="true">
+													<use
+														xlink:href="../../catalog/views/inspireportal/component-library/dist/sprites/icons.svg#check">
+													</use>
+												</svg>
+											</span>
+											<i class="fa fa-eye text-primary ecl-color fa-custom" aria-hidden="true"
+												data-toggle="tooltip" data-placement="top" title="Viewable"></i>
+											<span class="ecl-checkbox__text"> Viewable</span>
+										</label>
+									</div>
+
+								</fieldset>
+
+								<hr>
+
+								<fieldset class="ecl-form-group" aria-describedby="checkbox-default-helper">
+									<legend class="ecl-form-label" id="checkbox-default-label">Spatial scope coverage:<span class="ecl-form-label__optional"> </span>
+									</legend>
+
+									<div class="ecl-checkbox ecl-checkbox-custom">
+										<input type="checkbox" name="checkbox-default" class="ecl-checkbox__input"
+											value="national" id="checkbox-national" ng-click="updateAfterFilter();" />
+										<label for="checkbox-national" class="ecl-checkbox__label">
+											<span class="ecl-checkbox__box">
+												<svg class="ecl-icon ecl-icon--m ecl-checkbox__icon" focusable="false"
+													aria-hidden="true">
+													<use
+														xlink:href="../../catalog/views/inspireportal/component-library/dist/sprites/icons.svg#check">
+													</use>
+												</svg>
+											</span>
+											<i class="fa fa-flag text-primary ecl-color fa-custom" aria-hidden="true"
+												data-toggle="tooltip" data-placement="top" title="National"></i>
+											<span class="ecl-checkbox__text"> National</span>
+										</label>
+									</div>
+									<div class="ecl-checkbox ecl-checkbox-custom">
+										<input type="checkbox" name="checkbox-default" class="ecl-checkbox__input"
+											value="regional" id="checkbox-regional" ng-click="updateAfterFilter();" />
+										<label for="checkbox-regional" class="ecl-checkbox__label">
+											<span class="ecl-checkbox__box">
+												<svg class="ecl-icon ecl-icon--m ecl-checkbox__icon" focusable="false"
+													aria-hidden="true">
+													<use
+														xlink:href="../../catalog/views/inspireportal/component-library/dist/sprites/icons.svg#check">
+													</use>
+												</svg>
+											</span>
+											<i class="fa fa-flag-o text-primary ecl-color fa-custom" aria-hidden="true"
+												data-toggle="tooltip" data-placement="top" title="Regional"></i>
+											<span class="ecl-checkbox__text"> Regional</span>
+										</label>
+									</div>
+									<div class="ecl-checkbox ecl-checkbox-custom">
+										<input type="checkbox" name="checkbox-default" class="ecl-checkbox__input"
+											value="regional" id="checkbox-other" ng-click="updateAfterFilter();" />
+										<label for="checkbox-other" class="ecl-checkbox__label">
+											<span class="ecl-checkbox__box">
+												<svg class="ecl-icon ecl-icon--m ecl-checkbox__icon" focusable="false"
+													aria-hidden="true">
+													<use
+														xlink:href="../../catalog/views/inspireportal/component-library/dist/sprites/icons.svg#check">
+													</use>
+												</svg>
+											</span>
+											<i class="fa fa-flag-checkered text-primary ecl-color fa-custom" aria-hidden="true"
+												data-toggle="tooltip" data-placement="top" title="Other"></i>
+											<span class="ecl-checkbox__text"> Other</span>
+										</label>
+									</div>
+
+								</fieldset>
+
+							</div>
+						</div>
+						<div class="ecl-accordion__item">
+							<h3 class="ecl-accordion__title" ng-click="accordionClick('country_options')">
+								<button type="button" class="ecl-accordion__toggle" data-ecl-accordion-toggle
+									data-ecl-label-expanded="Close" data-ecl-label-collapsed="Open"
+									aria-controls="country_options-content">
+									<span class="ecl-accordion__toggle-flex">
+										<span class="ecl-accordion__toggle-indicator">
+											<span class="ecl-accordion__toggle-label">&nbsp;</span>
+											<svg class="ecl-icon ecl-icon--m ecl-accordion__toggle-icon"
+												focusable="false" aria-hidden="true" data-ecl-accordion-icon>
+												<use id="country_options-icon"
+													xlink:href="../../catalog/views/inspireportal/images/icons.svg#plus">
+												</use>
+											</svg>
+										</span>
+										<span class="ecl-accordion__toggle-title">Countries</span>
+									</span>
+								</button>
+							</h3>
+							<div class="ecl-accordion__content" hidden id="country_options-content" role="region">
+								<!--- View Options section --->
+								<table width="100%" border="0" cellspacing="4" cellpadding="4">
+									<tbody>
+										<tr ng-repeat="itemCountry in countries.data | filter: { membership: 'EU', id: '!EU'}"
+											ng-init="myVariable = $index+1">
+											<td>
+												<img class="countryFlag"
+													ng-src="../../catalog/views/inspireportal/images/flags/{{itemCountry.id}}.svg" />
+												<span class="countryLabel">
+													<a
+														href="../../srv/eng/catalog.search#/results?country={{itemCountry.id}}&view={{overviewView}}&theme=none&legislation=none">{{itemCountry.label}}</a></span>
+												<span id="results_badge_country_{{stringReplaceAll(itemCountry.label,' ','_')}}"
+													class="w3-badge w3-tiny w3-black display-none">0</span>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+
+						<div class="ecl-accordion__item">
+							<h3 class="ecl-accordion__title" ng-click="accordionClick('themes_options')">
+								<button type="button" class="ecl-accordion__toggle" data-ecl-accordion-toggle
+									data-ecl-label-expanded="Close" data-ecl-label-collapsed="Open"
+									aria-controls="themes_options-content">
+									<span class="ecl-accordion__toggle-flex">
+										<span class="ecl-accordion__toggle-indicator">
+											<span class="ecl-accordion__toggle-label">&nbsp;</span>
+											<svg class="ecl-icon ecl-icon--m ecl-accordion__toggle-icon"
+												focusable="false" aria-hidden="true" data-ecl-accordion-icon>
+												<use id="themes_options-icon"
+													xlink:href="../../catalog/views/inspireportal/images/icons.svg#plus">
+												</use>
+											</svg>
+										</span>
+										<span class="ecl-accordion__toggle-title">Themes</span>
+									</span>
+								</button>
+							</h3>
+							<div class="ecl-accordion__content" hidden id="themes_options-content" role="region">
+								<div ng-repeat="itemTheme in themes.data | filter: { annexGroupId: annex.id, label: '!All Themes',id:'!none'}"
+									ng-init="myVariable = $index+1">
+									<span class="countryLabel">
+										<img ng-src="../../catalog/views/inspireportal/images/{{itemTheme.id}}.svg"
+											class="item-theme-img" />
+										<a
+											href="../../srv/eng/catalog.search#/overview?view=themeOverview&theme={{itemTheme.id}}">{{itemTheme.label}}</a></span>
+									<span id="results_badge_theme_{{itemTheme.id}}"
+										class="w3-badge w3-tiny w3-black display-none">0</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="ecl-accordion__item">
+							<h3 class="ecl-accordion__title" ng-click="accordionClick('legislations_options')">
+								<button type="button" class="ecl-accordion__toggle" data-ecl-accordion-toggle
+									data-ecl-label-expanded="Close" data-ecl-label-collapsed="Open"
+									aria-controls="legislations_options-content">
+									<span class="ecl-accordion__toggle-flex">
+										<span class="ecl-accordion__toggle-indicator">
+											<span class="ecl-accordion__toggle-label">&nbsp;</span>
+											<svg class="ecl-icon ecl-icon--m ecl-accordion__toggle-icon"
+												focusable="false" aria-hidden="true" data-ecl-accordion-icon>
+												<use id="legislations_options-icon"
+													xlink:href="../../catalog/views/inspireportal/images/icons.svg#plus">
+												</use>
+											</svg>
+										</span>
+										<span class="ecl-accordion__toggle-title">Legislations</span>
+									</span>
+								</button>
+							</h3>
+							<div class="ecl-accordion__content" hidden id="legislations_options-content" role="region">
+								<div ng-repeat="itemLegislation in legislations.data | filter: { annexGroupId: annex.id, label: '!All Themes',id:'!none'}"
+									ng-init="myVariable = $index+1">
+									<span class="countryLabel"><a
+											href="../../srv/eng/catalog.search#/overview?view=priorityOverview&legislation={{itemLegislation.id}}">{{itemLegislation.label}}</a></span>
+									<span id="results_badge_legislation_{{itemLegislation.id}}"
+										class="w3-badge w3-tiny w3-black display-none">0</span>
+								</div>
+							</div>
+						</div>
+
+						<div class="ecl-accordion__item">
+							<h3 class="ecl-accordion__title" ng-click="accordionClick('envDomains_options')">
+								<button type="button" class="ecl-accordion__toggle" data-ecl-accordion-toggle
+									data-ecl-label-expanded="Close" data-ecl-label-collapsed="Open"
+									aria-controls="envDomains_options-content">
+									<span class="ecl-accordion__toggle-flex">
+										<span class="ecl-accordion__toggle-indicator">
+											<span class="ecl-accordion__toggle-label">&nbsp;</span>
+											<svg class="ecl-icon ecl-icon--m ecl-accordion__toggle-icon"
+												focusable="false" aria-hidden="true" data-ecl-accordion-icon>
+												<use id="envDomains_options-icon"
+													xlink:href="../../catalog/views/inspireportal/images/icons.svg#plus">
+												</use>
+											</svg>
+										</span>
+										<span class="ecl-accordion__toggle-title">Env. Domains</span>
+									</span>
+								</button>
+							</h3>
+							<div class="ecl-accordion__content" hidden id="envDomains_options-content" role="region">
+								<div ng-repeat="itemEnvDomain in envDomains.data | filter: { annexGroupId: annex.id, label: '!All Themes',id:'!none'}"
+									ng-init="myVariable = $index+1">
+									<span class="countryLabel"><a
+											href="../../srv/eng/catalog.search#/overview?view=priorityOverview&envdomain={{itemEnvDomain.id}}">{{itemEnvDomain.label}}</a></span>
+									<span id="results_badge_envdomain_{{itemEnvDomain.id}}"
+										class="w3-badge w3-tiny w3-black display-none">0</span>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="ecl-accordion__item">
+							<h3 class="ecl-accordion__title" ng-click="accordionClick('gdomains_options')">
+								<button type="button" class="ecl-accordion__toggle" data-ecl-accordion-toggle
+									data-ecl-label-expanded="Close" data-ecl-label-collapsed="Open"
+									aria-controls="gdomains_options-content">
+									<span class="ecl-accordion__toggle-flex">
+										<span class="ecl-accordion__toggle-indicator">
+											<span class="ecl-accordion__toggle-label">&nbsp;</span>
+											<svg class="ecl-icon ecl-icon--m ecl-accordion__toggle-icon"
+												focusable="false" aria-hidden="true" data-ecl-accordion-icon>
+												<use id="gdomains_options-icon"
+													xlink:href="../../catalog/views/inspireportal/images/icons.svg#plus">
+												</use>
+											</svg>
+										</span>
+										<span class="ecl-accordion__toggle-title" style="text-align: right">Geospatial
+											Domains</span>
+									</span>
+								</button>
+							</h3>
+							<div class="ecl-accordion__content" hidden id="gdomains_options-content" role="region">
+								<div ng-repeat="itemgdomain in gdomains.data" ng-init="myVariable = $index+1">
+									<span class="countryLabel">
+										<a
+											href="../../srv/eng/catalog.search#/overview?view=IACSOverview&iacs={{itemgdomain.id}}">{{itemgdomain.label.toUpperCase()}}</a></span>
+									<span id="results_badge_gdomain_{{itemgdomain.id}}"
+										class="w3-badge w3-tiny w3-black display-none">0</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+			<div class="ecl-col-s-12 ecl-col-m-9">
+
+				<div class="ecl-form-group ecl-u-f-l itemsAndSearch"><label for="select-default"
+						class="ecl-form-label">Items per page:</label>
+					<div class="ecl-select__container ecl-select__container--m"><select aria-label="select-default"
+							ng-click="setItemsPerPageResults()" class="ecl-select" id="select-items-page-results" required="">
+
+							<option value="20" ng-model="$scope.pageSize" selected>20</option>
+							<option value="40">40</option>
+							<option value="60">60</option>
+							<option value="80">80</option>
+							<option value="100">100</option>
+						</select>
+						<div class="ecl-select__icon"><svg
+								class="ecl-icon ecl-icon--s ecl-icon--rotate-180 ecl-select__icon-shape"
+								focusable="false" aria-hidden="true">
+								<use xlink:href="../../catalog/views/inspireportal/images/icons.svg#corner-arrow"></use>
+							</svg></div>
+					</div>
+				</div>
+
+				<div class="ecl-form-group ecl-u-f-r itemsAndSearch"><label for="example-input-id-1"
+						class="ecl-form-label">Search:</label>
+					<input type="text" id="searchText2" ng-model="searchText" ng-change="typeSearchResults()"
+						class="ecl-text-input ecl-text-input--m" placeholder="Search text" />
+				</div>
+
+				<table class="envdata ecl-table ecl-table--zebra">
+					<thead class="ecl-table__head">
+						<tr class="ecl-table__row">
+							<th scope="col" class="ecl-table__header"><a href="">Title</a></th>
+							<th scope="col" class="ecl-table__header" style="text-wrap: nowrap"><a href="">Properties</a></th>
+						</tr>
+					</thead>
+					<tbody class="ecl-table__body">
+						<!--- <tr class="ecl-table__row"   ng-show="($index >= (currentPage-1)*pageSize) && ($index < currentPage*pageSize)"  ng-repeat="envdataitem in envdata | orderBy : 'resourceTitle_automated_eng' | filter:cust_country() as filtered">  --->
+						<tr class="ecl-table__row" ng-repeat="item in arraylist.data ">
+							<!--- | orderBy : 'item._source.resourceTitleObject.default' --->
+							<td><a aria-label="{{item._source.resourceTitleObject.default}}"
+									href="../../srv/eng/catalog.search#/datasetdetails?country={{countryId}}&view={{overviewView}}&theme=none&resourceId={{item._source.uuid}}"><img
+										class="countryFlag"
+										ng-src="../../catalog/views/inspireportal/images/flags/{{getIsoCode(item._source.groupOwnerName).toLowerCase()}}.svg"
+										id="dataFlag" alt="" />
+									{{item._source.resourceTitleObject.default}}</a>
+								<br />
+							</td>
+							<td class="ecl-table__cell results-cell">
+								<div class="ecl-u-f-r">
+									<a aria-label="Metadata"
+										href="../../srv/eng/catalog.search#/datasetdetails?country={{countryId}}&view={{overviewView}}&theme=none&resourceId={{item._source.uuid}}"><i
+											class="fa fa-file text-primary ecl-color" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Metadata"></i></a>
+									<a aria-label="Downloadable"
+										href="../../srv/eng/catalog.search#/datasetdetails?country={{countryId}}&view={{overviewView}}&theme=none&resourceId={{item._source.uuid}}&accordion=download_options"><i
+											ng-show="item._source.indicator_INDICATOR_DOWNLOAD_LINK_TO_DATA == 'PASS'"
+											class="fa fa-download text-primary ecl-color" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Downloadable"></i></a>
+									<a aria-label="Viewable"
+										href="../../srv/eng/catalog.search#/datasetdetails?country={{countryId}}&view={{overviewView}}&theme=none&resourceId={{item._source.uuid}}&accordion=view_options"><i
+											ng-show="item._source.indicator_INDICATOR_VIEW_LINK_TO_DATA == 'PASS'"
+											class="fa fa-eye text-primary ecl-color" aria-hidden="true"
+											data-toggle="tooltip" data-placement="top" title="Viewable"></i></a>
+									<i ng-if="checkSpatialScope(item._source,'national')"
+										class="fa fa-flag text-primary ecl-color" aria-hidden="true"
+										data-toggle="tooltip" data-placement="top" title="National"></i>
+									<i ng-if="checkSpatialScope(item._source,'regional')"
+										class="fa fa-flag text-primary ecl-color" aria-hidden="true"
+										data-toggle="tooltip" data-placement="top" title="Regional"></i>
+									<i ng-if="checkSpatialScope(item._source,'other')"
+										class="fa fa-flag-checkered text-primary ecl-color" aria-hidden="true"
+										data-toggle="tooltip" data-placement="top" title="Regional"></i>
+								</div>
+							</td>
+
+						</tr>
+					</tbody>
+				</table>
+
+				<!---
+			  Current Page: {{arraylist.currentPage}}<br>
+			  Page Size: {{arraylist.pageSize}}<br>
+			  Start results: {{arraylist.startResult}}<br>
+			  End results: {{arraylist.endResult}}<br>
+			  Results size: {{arraylist.totalResults}}<br>
+			  Pages number: {{arraylist.numPages}}<br>
+			  --->
+
+				<div>
+					<nav class="ecl-u-mt-l ecl-pagination" aria-label="Pagination">
+						<ul class="ecl-pagination__list">
+							<li class="ecl-pagination__item ecl-pagination__item--previous"
+								ng-if="arraylist.numPages > 0">
+								<a aria-label="Go to previous page" ng-click="prevPageResults()"
+									class="ecl-link ecl-link--standalone ecl-link--icon ecl-pagination__link ecl-link--icon-only">
+									<svg focusable="false" aria-hidden="true"
+										class="ecl-link__icon ecl-icon ecl-icon--xs ecl-icon--rotate-270">
+										<use
+											xlink:href="../../catalog/views/inspireportal/images/icons.svg#corner-arrow">
+										</use>
+									</svg><span class="ecl-link__label">Previous</span>
+								</a>
+							</li>
+
+							<a ng-if="arraylist.currentPage >= 10"
+								aria-label="Go to page {{lowerLimit(arraylist.currentPage-1)}}"
+								ng-click="changePageResults(lowerLimit(arraylist.currentPage-1))"
+								class="ecl-pagination__link ecl-link ecl-link--standalone cursor-pointer">...</a>
+							<li class="ecl-pagination__item"
+								ng-class="{'ecl-pagination__item--current': n == arraylist.currentPage}"
+								ng-repeat="n in range(lowerLimit(arraylist.currentPage), upperLimit(arraylist.currentPage))">
+								<a ng-if="(n <= arraylist.numPages)" aria-label="Go to page {{n}}"
+									ng-click="changePageResults(n)"
+									class="ecl-pagination__link ecl-link ecl-link--standalone cursor-pointer">{{n}}</a>
+								<a ng-if="(n == upperLimit(arraylist.currentPage)) && (arraylist.numPages > 9) && arraylist.currentPage < arraylist.numPages"
+									aria-label="Go to page {{upperLimit(arraylist.currentPage)}}"
+									ng-click="changePageResults(upperLimit(arraylist.currentPage))"
+									class="ecl-pagination__link ecl-link ecl-link--standalone cursor-pointer">...</a>
+							</li>
+
+							<li class="ecl-pagination__item ecl-pagination__item--next" ng-if="arraylist.numPages > 0">
+								<a aria-label="Go to next page" ng-click="nextPageResults()"
+									class="ecl-link ecl-link--standalone ecl-link--icon ecl-pagination__link ecl-link--icon-only">
+									<span class="ecl-link__label">Next</span>
+									<svg focusable="false" aria-hidden="true"
+										class="ecl-link__icon ecl-icon ecl-icon--xs ecl-icon--rotate-90">
+										<use
+											xlink:href="../../catalog/views/inspireportal/images/icons.svg#corner-arrow">
+										</use>
+									</svg>
+								</a>
+							</li>
+						</ul>
+
+					</nav>
+				</div>
+
+			</div>
+		</div>
+
+		<br />
+
+	</div>
+</div>
+
+
+
+<div class="modal fade" id="stopResult" tabindex="-1" role="dialog" aria-labelledby="stopResultLabel" aria-hidden="true">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="modal-body">
+				<p>The result of the query returned more than 15,000 metadata records-items, which is set as limit for retrieving results
+					in the Geoportal user interface.
+					Please, refine your search for being able to consult the full set of results</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>

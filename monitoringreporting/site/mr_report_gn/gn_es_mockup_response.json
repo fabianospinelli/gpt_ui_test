@@ -1,0 +1,39 @@
+{
+    "took": 3,
+    "timed_out": false,
+    "_shards": {
+        "total": 1,
+        "successful": 1,
+        "skipped": 0,
+        "failed": 0
+    },
+    "hits": {
+        "max_score": null,
+        "hits": []
+    },
+    "aggregations": {
+        "resources": {
+            "meta": {
+                "id": "DSi_2_1"
+            },
+            "doc_count_error_upper_bound": 0,
+            "sum_other_doc_count": 0,
+            "buckets": [
+                {
+                    "key": "metadata",
+                    "doc_count": 300,
+                    "DSi_2_1": {
+                        "buckets": {
+                            "DSi_2_1_1": {
+                                "doc_count": 14
+                            },
+                            "DSi_2_1_2": {
+                                "doc_count": 14
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

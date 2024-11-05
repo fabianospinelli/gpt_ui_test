@@ -1,0 +1,5 @@
+**/failed/*.csv
+**/failed_report/*.zip
+**/geoportal/*.json
+**/summary/*.csv
+**/validator/*.json

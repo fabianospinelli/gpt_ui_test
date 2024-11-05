@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+    <head prefix="og: http://ogp.me/ns#">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <meta name="description" content="The INSPIRE Geoportal is the central European access point to the data provided by EU Member States and several EFTA countries under the INSPIRE Directive.">
+        <meta name="keyword" content="INSPIRE Geoportal">
+        <meta name="author" content="European Commission - Joint Research Centre">
+        <meta property="og:title" content="INSPIRE Geoportal"/>
+        <meta property="og:description" content="The INSPIRE Geoportal is the central European access point to the data provided by EU Member States and several EFTA countries under the INSPIRE Directive."/>
+        <meta property="og:url" content="//inspire-geoportal.ec.europa.eu/"/>
+        <meta property="og:image" content="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-194x194.png"/>
+        <meta property="og:type" content="website"/>
+
+        <meta name=”robots” content=”noindex,nofollow”>
+
+        <title>INSPIRE Geoportal - INSPIRE Monitoring and Reporting 2022</title>
+
+        <link rel="stylesheet" href="//inspire.ec.europa.eu/cdn/1.0/css/ec.eu.css">
+
+        <link rel="apple-touch-icon" sizes="57x57" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon-16x16.png" sizes="16x16">
+        <link rel="shortcut icon" href="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/favicon.ico">
+        <meta name="msapplication-TileImage" content="//inspire.ec.europa.eu/cdn/1.0/img/ec.ico/mstile-144x144.png">
+        <meta name="msapplication-TileColor" content="#2b5797">
+        <meta name="theme-color" content="#003399">
+
+        <!-- see https://developers.google.com/speed/docs/insights/BlockingJS -->
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/jquery.min.js" integrity="sha384-vtXRMe3mGCbOeY7l30aIg8H9p3GdeSe4IFlP6G8JMa7o7lXvnz3GFKzPxzJdPfGK" crossorigin="anonymous"></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous" defer></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous" defer></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/bootstrap-select.min.js" integrity="sha384-OgLZWeeKn8Gxtho7YOapXP9cX8BASYnRr8XWu5+0u9PqK4b589JLWA6GzU/Kc7yy" crossorigin="anonymous" defer></script>
+        <script src="https://inspire.ec.europa.eu/cdn/1.2/js/fontawesome.all.min.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous" defer></script>
+
+        <script>
+            try {
+                if (new URLSearchParams('q=%2B').get('q') !== '+')
+                    throw {};
+            } catch (error) {
+                window.URLSearchParams = void 0;
+                document.write('<script src="libs/url-search-params-polyfill/build/url-search-params.js"><' + '/script>');
+            }
+        </script>
+
+        <!-- EU Cookie Consent Kit -->
+        <!--<script src="//ec.europa.eu/wel/cookie-consent/consent.js" type="text/javascript"></script>-->
+        <script src="https://europa.eu/webtools/load.js" defer></script>
+        <script type="application/json">{"utility": "cck"}</script>
+        <!-- EU Analytics -->
+        <script type="application/json">{"utility":"analytics","siteID":"f01c1758-7f3e-4b0d-ad31-e12a19078f5f","sitePath":["inspire-geoportal.ec.europa.eu"],"instance":"ec"}</script>
+
+        <script src="conf/conf.js" crossorigin="" defer></script>
+        <script src="js/app_common.js" crossorigin="" defer></script>
+
+        <!-- template custom section -->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!-- page custom content below -->
+        <script src="libs/sheetjs/xlsx.full.min.js" crossorigin="" defer></script>
+        <script src="libs/FileSaver/FileSaver.min.js" crossorigin="" defer></script>
+
+        <script src="js/app_mr_calculator.js" crossorigin="" defer></script>
+        <script src="js/app_mr2022.js" crossorigin="" defer></script>
+
+        <!-- define the page by specifying the function callback -->
+        <script>
+            var pageId = 'countryDashboard';
+        </script>
+    </head>
+    <body role="document">
+        <div id="header"></div>
+
+        <div class="container">
+
+            <div class="row mt-3">
+                <div class="col-md-10 offset-md-1 text-center">
+                    <div class="page-header text-center">
+                        <h3>Indicators in support of Commission Decision (EU) 2019/1372 implementing Directive 2007/2/EC (INSPIRE) as regards to monitoring and reporting</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <div class="page-header text-center">
+                        <h1>
+                            <span id="country-name"></span>
+                            <span id="country-flag"></span>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="nav nav-tabs" id="tab-header-main" role="tablist"></ul>
+
+            <div class="tab-content" id="tab-content-main"></div>
+
+            <div class="row mt-3" id="full-download">
+                <div class="col-md-6 offset-md-3 text-center">
+                    <button type="button" class="btn btn-success" id="downloadReport" title="Download the calculated indicators for this country" data-toggle="tooltip" data-placement="top"><i class="fas fa-file-excel"></i> Download the calculated indicators for this country</button>
+                </div>
+            </div>
+
+            <div class="row mt-3">
+                <div class="col-sm-12">
+                    <!--<h4>Notes:</h4>-->
+                    <details>
+                        <summary class="text-primary">Notes on calculation of MDi1.1 and MDi1.2</summary>
+                        <p>The evaluation of these indicators involves a validation of the collected metadata through the <a href="https://inspire.ec.europa.eu/validator" target="_blank">INSPIRE Reference Validator <i class="fas fa-external-link-alt"></i></a> (<a href="https://github.com/INSPIRE-MIF/helpdesk-validator/releases/tag/v2022.3" target="_blank">v2022.3</a>).</p>
+                        <p>All metadata records are validated against the Conformance Classes corresponding to the <a href="https://inspire.ec.europa.eu/id/document/tg/metadata-iso19139" target="_blank">INSPIRE MD TG v2.0 <i class="fas fa-external-link-alt"></i></a>:
+                        <ul class="fa-ul">
+                            <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>if the recognized INSPIRE Resource Type is <strong>"dataset"</strong> or <strong>"series"</strong>, the applied executable test suites are <strong>"Conformance Class 2: INSPIRE data sets and data set series interoperability metadata"</strong> and <strong>"Conformance Class 2b: INSPIRE data sets and data set series metadata for Monitoring"</strong>;</li>
+                            <li><span class="fa-li"><i class="fas fa-check text-primary"></i></span>if the recognized INSPIRE Resource Type is <strong>"service"</strong>, the applied executable test suite is:
+                                <ul class="fa-ul inside">
+                                    <li><span class="fa-li"><i class="fas fa-check-double text-success"></i></span><strong>"Conformance Class 4: INSPIRE Network Services metadata"</strong>, if the service is a Network Service (service type equal to "view", "download", "discovery" or "transformation")</li>
+                                    <li><span class="fa-li"><i class="fas fa-check-double text-success"></i></span><strong>"Conformance Class 5: INSPIRE Invocable Spatial Data Services metadata"</strong>, if the service is an Invocable Spatial Data Service (service type equal to "other")</li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!--<p>At the time of writing, the evaluation of the Reference Validator DOES NOT consider NOR apply any of the <a href="https://inspire.ec.europa.eu/inspire-roadmap/61" target="_blank">INSPIRE implementation milestones  <i class="fas fa-external-link-alt"></i></a> to the evaluation.</p>-->
+                    </details>
+                </div>
+            </div>
+
+            <div class="row mt-3" id="documentation">
+                <div class="col-md-12">
+                    <h4><strong>Documentation:</strong></h4>
+                    <p class="card-title"><a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=uriserv:OJ.L_.2019.220.01.0001.01.ENG&toc=OJ:L:2019:220:FULL" target="_blank">Commission Implementing Decision (EU) 2019/1372 of 19 August 2019 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards monitoring and reporting <i class="fas fa-external-link-alt"></i></a></p>
+                    <p class="card-title"><a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC122351" target="_blank">Technical Report including guidance for the calculation of indicators and description of the Monitoring process (Chapter 2) <i class="fas fa-external-link-alt"></i></a></p>
+                    <p class="card-title"><a href="mr2022/resources/MR_indicators_calculation_v1.2.pdf" target="_blank">Indicators calculation <i class="fas fa-file-download"></i></a></p>
+                    <p class="card-title"><a href="mr2022/resources/visualisation_explanation_2022.pdf" target="_blank">Guidance on indicator visualisation in the dashboard <i class="fas fa-file-download"></i></a></p>
+                    <p class="card-title"><a href="mr2022/resources/software_information_2022.pdf" target="_blank">Information on the software used to calculate the indicators <i class="fas fa-file-download"></i></a></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="footer"></div>
+
+        <style>
+            .card-body{
+                padding: 0.5em;
+            }
+        </style>
+
+        <script type="application/ld+json">
+            {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "url": "//inspire-geoportal.ec.europa.eu/geoportal/",
+            "potentialAction": { }
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,130 @@
+<div class="ecl-container">
+
+  <div class="ecl-row">
+    <div class="ecl-col-12">
+
+      <h1 class="ecl-u-type-heading-2">{{arraylist.dataset_data._source.resourceTitleObject.default}}</h1>
+
+    </div>
+  </div>
+
+  <div class="ecl-row">
+
+    <div class="ecl-col-12 ecl-col-l-12">
+
+      <table class="ecl-table">
+        <tbody>
+          <tr class="ecl-table__row">
+            <td class="ecl-table__cell"><b>Resource Title</b></td>
+            <td class="ecl-table__cell"><strong>Conditions Applying To Access And Use</strong></td>
+          </tr>
+
+          <tr class="ecl-table__row">
+            <td class="ecl-table__cell">
+              {{arraylist.dataset_data._source.resourceTitleObject.default}}
+            </td>
+
+            <td class="ecl-table__cell">
+              <a href="{{arraylist.dataset_data._source.MD_LegalConstraintsOtherConstraintsObject[0].link}}"
+                class="ecl-link">
+                {{arraylist.dataset_data._source.MD_LegalConstraintsOtherConstraintsObject[0].default}}</a>
+              <br>
+            </td>
+          </tr>
+
+          <tr class="ecl-table__row">
+            <td class="ecl-table__cell"><strong>Resource Abstract</strong></td>
+            <td class="ecl-table__cell"><strong>Limitations On Public Access</strong></td>
+          </tr>
+
+          <tr class="ecl-table__row">
+            <td class="ecl-table__cell">
+              {{arraylist.dataset_data._source.resourceAbstractObject.default}}
+            </td>
+            <td class="ecl-table__cell"> <a
+                href="{{arraylist.dataset_data._source.MD_LegalConstraintsOtherConstraintsObject[1].link}}"
+                class="ecl-link">
+                {{arraylist.dataset_data._source.MD_LegalConstraintsOtherConstraintsObject[1].default}}</a>
+            </td>
+          </tr>
+
+          <tr class="ecl-table__row">
+            <td colspan="2" class="ecl-table__cell"><strong>Resource Locator</strong><a
+                href="{{arraylist.dataset_data._source.link[0].url}}" class="ecl-link">
+                {{arraylist.dataset_data._source.link[0].url}}<br />
+              </a>
+              <strong><br />Responsible Party</strong> <br />
+              <br>
+
+              <table class="ecl-table">
+                <tbody>
+                  <tr class="ecl-table__row">
+                    <td class="ecl-table__cell"><strong>Organisation name</strong></td>
+                    <td class="ecl-table__cell">{{arraylist.dataset_data._source.contact[0].organisation}}</td>
+                  </tr>
+                  <tr class="ecl-table__row">
+                    <td class="ecl-table__cell"><strong>E-mail</strong></td>
+                    <td class="ecl-table__cell">{{arraylist.dataset_data._source.contact[0].email}}</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              <strong><br /> Metadata Point Of Contact</strong>
+              <br /> <br />
+
+              <table class="ecl-table">
+                <tbody>
+
+                  <tr class="ecl-table__row">
+                    <td class="ecl-table__cell"><strong>Organisation name</strong></td>
+                    <td class="ecl-table__cell"> {{arraylist.dataset_data._source.contactForResource[0].organisation}}
+                    </td>
+                  </tr>
+
+                  <tr class="ecl-table__row">
+                    <td class="ecl-table__cell"><strong>E-mail</strong></td>
+                    <td class="ecl-table__cell">{{arraylist.dataset_data._source.contactForResource[0].email}}</td>
+                  </tr>
+
+                </tbody>
+              </table>
+              <br />
+
+              <table class="ecl-table">
+                <tbody>
+
+                  <tr class="ecl-table__row">
+                    <td class="ecl-table__cell"><strong>Metadata Language</strong></td>
+                    <td class="ecl-table__cell"><strong>Metadata Date</strong></td>
+                  </tr>
+
+                  <tr class="ecl-table__row">
+                    <td class="ecl-table__cell">{{arraylist.dataset_data._source.mainLanguage}}</td>
+                    <td class="ecl-table__cell"> {{arraylist.dataset_data._source.indexingDate}} </td>
+                  </tr>
+
+                  <tr class="ecl-table__row">
+                    <td class="ecl-table__cell"><strong>fileIdentifier</strong></td>
+                    <td class="ecl-table__cell"><strong>Download metadata</strong></td>
+                  </tr>
+
+                  <tr class="ecl-table__row">
+                    <td class="ecl-table__cell"> {{arraylist.dataset_data._id}} </td>
+                    <td class="ecl-table__cell"><a
+                        href="{{serverProtocol}}://{{serverHostname}}:{{serverPort}}/srv/api/records/{{arraylist.dataset_data._id}}/formatters/xml?approved=true">application/vd.iso.19139+xml
+                    </td>
+                  </tr>
+
+                </tbody>
+              </table>
+
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+    </div>
+
+  </div>
+</div>

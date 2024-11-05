@@ -1,0 +1,1069 @@
+{
+    "envDomain": 
+            [
+                {
+                    "label": "AQ management zones & agglomerations",
+                    "tooltip": "Air quality management zones & agglomerations",
+                    "id": "air-quality-management-zones-agglomerations",
+                    "code": "1,01",
+                    "theme": "Air",
+                    "class": "air",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ManagementZonesAndAgglomerations-dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ManagementZones-dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-dir-2008-50"
+                },
+                {
+                    "label": "AQ model areas (incl. assessment methods - models)",
+                    "tooltip": "Air quality model areas (incl. assessment methods - models)",
+                    "id": "air-quality-model-areas-incl-assessment-methods-models",
+                    "code": "2,01",
+                    "theme": "Air",
+                    "class": "air",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ModelAreas-dir-2008-50"
+                },
+                {
+                    "label": "AQ monitoring stations  (incl. assessment methods - measurements)",
+                    "tooltip": "Air quality monitoring stations  (incl. assessment methods - measurements)",
+                    "id": "air-quality-monitoring-stations-incl-assessment-methods-measurements",
+                    "code": "3,01",
+                    "theme": "Air",
+                    "class": "air",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MonitoringStations-dir-2008-50"
+                },
+                {
+                    "label": "AQ data",
+                    "tooltip": "Air quality data",
+                    "id": "air-quality-data",
+                    "code": "4,01",
+                    "theme": "Air",
+                    "class": "air",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MeasurementAndModellingData-dir-2008-50"
+                },
+                {
+                    "label": "Major roads",
+                    "tooltip": "Major roads",
+                    "id": "major-roads",
+                    "code": "5,01",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRoadsRailwaysAndAirTransportNetwork-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRoads-dir-2002-49"
+                },
+                {
+                    "label": "Major railways",
+                    "tooltip": "Major railways",
+                    "id": "major-railways",
+                    "code": "5,02",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRoadsRailwaysAndAirTransportNetwork-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRailways-dir-2002-49"
+                },
+                {
+                    "label": "Major air transport",
+                    "tooltip": "Major air transport",
+                    "id": "major-air-transport",
+                    "code": "5,03",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRoadsRailwaysAndAirTransportNetwork-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorAirTransport-dir-2002-49"
+                },
+                {
+                    "label": "Noise agglomerations",
+                    "tooltip": "Noise agglomerations",
+                    "id": "noise-agglomerations",
+                    "code": "6,01",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-dir-2002-49"
+                },
+                {
+                    "label": "Population",
+                    "tooltip": "Population",
+                    "id": "population",
+                    "code": "7,01",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-Population-dir-2002-49"
+                },
+                {
+                    "label": "Population - densely populated built-up areas",
+                    "tooltip": "Population - densely populated built-up areas",
+                    "id": "population-densely-populated-built-up-areas",
+                    "code": "7,02",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Population-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Population-DenselyPopulatedBuiltUpAreas-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for major roads - Lden",
+                    "tooltip": "Noise contour map for major roads - Lden",
+                    "id": "noise-contour-map-for-major-roads-lden",
+                    "code": "8,01",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRoadsNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRoadsNoiseExposureDelineationDEN-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for major roads - Lnight",
+                    "tooltip": "Noise contour map for major roads - Lnight",
+                    "id": "noise-contour-map-for-major-roads-lnight",
+                    "code": "8,02",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRoadsNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRoadsNoiseExposureDelineationNight-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for major railways - Lden",
+                    "tooltip": "Noise contour map for major railways - Lden",
+                    "id": "noise-contour-map-for-major-railways-lden",
+                    "code": "8,03",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRailwaysNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRailwaysNoiseExposureDelineationDEN-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for major railways - Lnight",
+                    "tooltip": "Noise contour map for major railways - Lnight",
+                    "id": "noise-contour-map-for-major-railways-lnight",
+                    "code": "8,04",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRailwaysNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRailwaysNoiseExposureDelineationNight-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for major airports - Lden",
+                    "tooltip": "Noise contour map for major airports - Lden",
+                    "id": "noise-contour-map-for-major-airports-lden",
+                    "code": "8,05",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorAirportsNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorAirportsNoiseExposureDelineationDEN-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for major airports -Lnight",
+                    "tooltip": "Noise contour map for major airports -Lnight",
+                    "id": "noise-contour-map-for-major-airports-lnight",
+                    "code": "8,06",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorAirportsNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorAirportsNoiseExposureDelineationNight-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for road noise in agglomerations -Lden",
+                    "tooltip": "Noise contour map for road noise in agglomerations -Lden",
+                    "id": "noise-contour-map-for-road-noise-in-agglomerations-lden",
+                    "code": "8,07",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-RoadsNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-RoadsNoiseExposureDelineationDEN-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for road noise in agglomerations -Lnight",
+                    "tooltip": "Noise contour map for road noise in agglomerations -Lnight",
+                    "id": "noise-contour-map-for-road-noise-in-agglomerations-lnight",
+                    "code": "8,08",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-RoadsNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-RoadsNoiseExposureDelineationNight-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for railway noise in agglomerations -Lden",
+                    "tooltip": "Noise contour map for railway noise in agglomerations -Lden",
+                    "id": "noise-contour-map-for-railway-noise-in-agglomerations-lden",
+                    "code": "8,09",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-RailwaysNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-RailwaysNoiseExposureDelineationDEN-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for railway noise in agglomerations -Lnight",
+                    "tooltip": "Noise contour map for railway noise in agglomerations -Lnight",
+                    "id": "noise-contour-map-for-railway-noise-in-agglomerations-lnight",
+                    "code": "8,10",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-RailwaysNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-RailwaysNoiseExposureDelineationNight-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for aircraft noise in agglomerations -Lden",
+                    "tooltip": "Noise contour map for aircraft noise in agglomerations -Lden",
+                    "id": "noise-contour-map-for-aircraft-noise-in-agglomerations-lden",
+                    "code": "8,11",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-AircraftNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-AircraftNoiseExposureDelineationDEN-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for aircraft noise in agglomerations -Lnight",
+                    "tooltip": "Noise contour map for aircraft noise in agglomerations -Lnight",
+                    "id": "noise-contour-map-for-aircraft-noise-in-agglomerations-lnight",
+                    "code": "8,12",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-AircraftNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-AircraftNoiseExposureDelineationNight-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for industrial noise in agglomerations -Lden",
+                    "tooltip": "Noise contour map for industrial noise in agglomerations -Lden",
+                    "id": "noise-contour-map-for-industrial-noise-in-agglomerations-lden",
+                    "code": "8,13",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-IndustrialNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-IndustrialNoiseExposureDelineationDEN-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for industrial noise in agglomerations -Lnight",
+                    "tooltip": "Noise contour map for industrial noise in agglomerations -Lnight",
+                    "id": "noise-contour-map-for-industrial-noise-in-agglomerations-lnight",
+                    "code": "8,14",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-IndustrialNoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-IndustrialNoiseExposureDelineationNight-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map in agglomerations -Lden",
+                    "tooltip": "Noise contour map in agglomerations -Lden",
+                    "id": "noise-contour-map-in-agglomerations-lnight-sic",
+                    "code": "8,15",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-NoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-NoiseExposureDelineationDEN-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map in agglomerations -Lnight",
+                    "tooltip": "Noise contour map in agglomerations -Lnight",
+                    "id": "noise-contour-map-in-agglomerations-lnight",
+                    "code": "8,16",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-NoiseExposureDelineation-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-NoiseExposureDelineationNight-dir-2002-49"
+                },
+                {
+                    "label": "River basin district",
+                    "tooltip": "River basin district",
+                    "id": "river-basin-district",
+                    "code": "9,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/RiverBasinDistricts-dir-2000-60"
+                },
+                {
+                    "label": "River basin district sub-units",
+                    "tooltip": "River basin district sub-units",
+                    "id": "river-basin-district-sub-units",
+                    "code": "9,02",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/RiverBasinDistrictsSubUnits-dir-2000-60"
+                },
+                {
+                    "label": "WFD surface water body lake",
+                    "tooltip": "Water Framework Directive surface water body lake",
+                    "id": "water-framework-directive-surface-water-body-lake",
+                    "code": "10,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/WaterBodies-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SurfaceWaterBodies-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Lakes-dir-2000-60"
+                },
+                {
+                    "label": "WFD surface water body river",
+                    "tooltip": "Water Framework Directive surface water body river",
+                    "id": "water-framework-directive-surface-water-body-river",
+                    "code": "10,02",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/WaterBodies-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SurfaceWaterBodies-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Rivers-dir-2000-60"
+                },
+                {
+                    "label": "WFD surface water body transitional water",
+                    "tooltip": "Water Framework Directive surface water body transitional water",
+                    "id": "water-framework-directive-surface-water-body-transitional-waters",
+                    "code": "10,03",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/WaterBodies-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SurfaceWaterBodies-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/TransitionalWaters-dir-2000-60"
+                },
+                {
+                    "label": "WFD surface water body coastal water",
+                    "tooltip": "Water Framework Directive surface water body coastal water",
+                    "id": "water-framework-directive-surface-water-body-coastal-waters",
+                    "code": "10,04",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/WaterBodies-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SurfaceWaterBodies-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/CoastalWaters-dir-2000-60"
+                },
+                {
+                    "label": "WFD groundwater body",
+                    "tooltip": "Water Framework Directive groundwater body",
+                    "id": "water-framework-directive-groundwater-body",
+                    "code": "10,05",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/WaterBodies-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/GroundwaterBodies-dir-2000-60"
+                },
+                {
+                    "label": "River network",
+                    "tooltip": "River network",
+                    "id": "river-network",
+                    "code": "10,06",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/RiverNetwork-dir-2000-60"
+                },
+                {
+                    "label": "Drinking water protected areas",
+                    "tooltip": "Drinking water protected areas",
+                    "id": "drinking-water-protected-areas",
+                    "code": "11,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ProtectedAreas-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/DrinkingWaterProtectionAreas-dir-2000-60"
+                },
+                {
+                    "label": "WFD protected areas not reported under other directives - shellfish designated waters",
+                    "tooltip": "Water Framework Directive protected areas not reported under other directives - shellfish designated waters",
+                    "id": "water-framework-directive-protected-areas-not-reported-under-other-directives-shellfish-designated-waters",
+                    "code": "11,02",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ProtectedAreas-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/DesignatedWaters-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ProtectionOfEconomicallySignificantAquaticSpecies-ShellfishDesignatedWaters-dir-2000-60"
+                },
+                {
+                    "label": "WFD protected areas not reported under other directives - freshwater fish designated waters",
+                    "tooltip": "Water Framework Directive protected areas not reported under other directives - freshwater fish designated waters",
+                    "id": "water-framework-directive-protected-areas-not-reported-under-other-directives-freshwater-fish-designated-waters",
+                    "code": "11,03",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ProtectedAreas-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/DesignatedWaters-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ProtectionOfEconomicallySignificantAquaticSpecies-FreshwaterFishDesignatedWaters-dir-2000-60"
+                },
+                {
+                    "label": "WFD protected areas not reported under other directives - other protected areas",
+                    "tooltip": "Water Framework Directive protected areas not reported under other directives - other protected areas",
+                    "id": "water-framework-directive-protected-areas-not-reported-under-other-directives-other-protected-areas",
+                    "code": "11,04",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ProtectedAreas-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/DesignatedWaters-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/OtherProtectedAreas-dir-2000-60"
+                },
+                {
+                    "label": "WFD monitoring stations",
+                    "tooltip": "Water Framework Directive monitoring stations",
+                    "id": "water-framework-directive-monitoring-stations",
+                    "code": "12,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MonitoringStations-dir-2000-60"
+                },
+                {
+                    "label": "FD areas of potential significant flood risk",
+                    "tooltip": "Floods Directive areas of potential significant flood risk",
+                    "id": "floods-directive-areas-of-potential-significant-flood-risk",
+                    "code": "13,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/AreasOfPotentialSignificantFloodRisk-dir-2007-60"
+                },
+                {
+                    "label": "FD PFRA observed events",
+                    "tooltip": "Floods Directive. Preliminary flood risk assessment observed events",
+                    "id": "floods-directive-preliminary-flood-risk-assessment-observed-events",
+                    "code": "14,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/PreliminaryFloodRiskAssessment-dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/PreliminaryFloodRiskAssessment-ObservedEvents-dir-2007-60"
+                },
+                {
+                    "label": "FD PFRA potential future events",
+                    "tooltip": "Floods Directive. Preliminary flood risk assessment potential future events",
+                    "id": "floods-directive-preliminary-flood-risk-assessment-potential-future-events",
+                    "code": "14,02",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/PreliminaryFloodRiskAssessment-dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/PreliminaryFloodRiskAssessment-PotentialFutureEvents-dir-2007-60"
+                },
+                {
+                    "label": "FD hazard areas low probability scenario",
+                    "tooltip": "Floods Directive hazard areas low probability scenario",
+                    "id": "floods-directive-flood-hazard-areas-low-probability-scenario",
+                    "code": "15,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodedAreas-dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodHazardAreasLowProbabilityScenario-dir-2007-60"
+                },
+                {
+                    "label": "FD hazard areas medium probability scenario",
+                    "tooltip": "Floods Directive hazard areas medium probability scenario",
+                    "id": "floods-directive-flood-hazard-areas-medium-probability-scenario",
+                    "code": "15,02",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodedAreas-dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodHazardAreasMediumProbabilityScenario-dir-2007-60"
+                },
+                {
+                    "label": "FD hazard area high probability scenario",
+                    "tooltip": "Floods Directive hazard area high probability scenario",
+                    "id": "floods-directive-flood-hazard-areas-high-probability-scenario",
+                    "code": "15,03",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodedAreas-dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodHazardAreasHighProbabilityScenario-dir-2007-60"
+                },
+                {
+                    "label": "FD flood risk zones low probability scenario",
+                    "tooltip": "Floods Directive flood risk zones low probability scenario",
+                    "id": "floods-directive-flood-risk-zones-low-probability-scenario",
+                    "code": "16,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodRiskZones-dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodRiskZonesLowProbabilityScenario-dir-2007-60"
+                },
+                {
+                    "label": "FD flood risk zones medium probability scenario",
+                    "tooltip": "Floods Directive flood risk zones medium probability scenario",
+                    "id": "floods-directive-flood-risk-zones-medium-probability-scenario",
+                    "code": "16,02",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodRiskZones-dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodRiskZonesMediumProbabilityScenario-dir-2007-60"
+                },
+                {
+                    "label": "FD flood risk zones high probability scenario",
+                    "tooltip": "Floods Directive flood risk zones high probability scenario",
+                    "id": "floods-directive-flood-risk-zones-high-probability-scenario",
+                    "code": "16,03",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodRiskZones-dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodRiskZonesHighProbabilityScenario-dir-2007-60"
+                },
+                {
+                    "label": "FD units of management",
+                    "tooltip": "Floods Directive units of management",
+                    "id": "floods-directive-management-units",
+                    "code": "17,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ManagementUnits-dir-2007-60"
+                },
+                {
+                    "label": "MSFD marine reporting units",
+                    "tooltip": "Marine Strategy Framework Directive marine reporting units",
+                    "id": "marine-strategy-framework-directive-marine-reporting-units",
+                    "code": "18,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-56,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MarineRegionsAndUnits-dir-2008-56,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MSFDReportingUnits-dir-2008-56,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MarineAssessmentUnits-dir-2008-56,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MarineRegions-dir-2008-56,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MarineSubRegions-dir-2008-56"
+                },
+                {
+                    "label": "MSFD marine monitoring stations",
+                    "tooltip": "Marine Strategy Framework Directive marine monitoring stations",
+                    "id": "marine-strategy-framework-directive-marine-monitoring-stations",
+                    "code": "19,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-56,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MonitoringStations-dir-2008-56"
+                },
+                {
+                    "label": "Drinking water protection areas, supply zones, safeguard zones",
+                    "tooltip": "Drinking water protection areas, supply zones, safeguard zones",
+                    "id": "drinking-water-protection-areas-supply-zones-safeguard-zones",
+                    "code": "20,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1998-83,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/DrinkingWaterSupplyZones-dir-1998-83,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/LargeWaterSupplyZones-dir-1998-83"
+                },
+                {
+                    "label": "Small water supply zones (WSZ)",
+                    "tooltip": "Small water supply zones (WSZ)",
+                    "id": "small-water-supply-zones-wsz",
+                    "code": "21,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1998-83,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/DrinkingWaterSupplyZones-dir-1998-83,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SmallWaterSupplyZones-dir-1998-83"
+                },
+                {
+                    "label": "Drinking water abstraction points",
+                    "tooltip": "Drinking water abstraction points",
+                    "id": "bathing-water-directive-bathing-sites-abstraction-points",
+                    "code": "21,02",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1998-83,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/DrinkingWaterAbstractionPoints-dir-1998-83"
+                },
+                {
+                    "label": "BWD bathing waters",
+                    "tooltip": "Bathing Water Directive bathing waters",
+                    "id": "bathing-water-directive-bathing-waters",
+                    "code": "22,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2006-7,https://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BathingWaterSites-dir-2006-7"
+                },
+                {
+                    "label": "Biogeographical regions (pan-European dataset)",
+                    "tooltip": "Biogeographical regions (pan-European dataset)",
+                    "id": "biogeographical-regions-pan-european-dataset",
+                    "code": "23,01",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Pan-EuropeanBiogeographicalRegions-dir-1992-43"
+                },
+                {
+                    "label": "Habitat types distribution",
+                    "tooltip": "Habitat types distribution",
+                    "id": "habitat-types-distribution",
+                    "code": "24,01",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/HabitatTypesAndSpeciesDistributionAndRange-dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/HabitatTypesDistribution-dir-1992-43"
+                },
+                {
+                    "label": "Habitat types range",
+                    "tooltip": "Habitat types range",
+                    "id": "habitat-types-range",
+                    "code": "24,02",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/HabitatTypesAndSpeciesDistributionAndRange-dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/HabitatTypesRange-dir-1992-43"
+                },
+                {
+                    "label": "Species distribution",
+                    "tooltip": "Species distribution",
+                    "id": "species-distribution",
+                    "code": "24,03",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/HabitatTypesAndSpeciesDistributionAndRange-dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SpeciesDistribution-dir-1992-43"
+                },
+                {
+                    "label": "Species range",
+                    "tooltip": "Species range",
+                    "id": "species-range",
+                    "code": "24,04",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/HabitatTypesAndSpeciesDistributionAndRange-dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SpeciesRange-dir-1992-43"
+                },
+                {
+                    "label": "BIRDS range",
+                    "tooltip": "BIRDS range",
+                    "id": "birds-range",
+                    "code": "24,07",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdSpeciesDistributionAndRange-dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdsRange-dir-2009-147"
+                },
+                {
+                    "label": "BIRDS range sensitive",
+                    "tooltip": "BIRDS range sensitive",
+                    "id": "birds-range-sensitive",
+                    "code": "24,08",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdSpeciesDistributionAndRange-dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdsRange-dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdsRange-Sensitive-dir-2009-147"
+                },
+                {
+                    "label": "BIRDS distribution",
+                    "tooltip": "BIRDS distribution",
+                    "id": "birds-distribution",
+                    "code": "24,09",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdSpeciesDistributionAndRange-dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdSpeciesDistribution-dir-2009-147"
+                },
+                {
+                    "label": "BIRDS distribution sensitive",
+                    "tooltip": "BIRDS distribution sensitive",
+                    "id": "birds-distribution-sensitive",
+                    "code": "24,10",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdSpeciesDistributionAndRange-dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdSpeciesDistribution-dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdSpeciesDistribution-Sensitive-dir-2009-147"
+                },
+                {
+                    "label": "Natura 2000 sites",
+                    "tooltip": "Natura 2000 sites",
+                    "id": "natura-2000-sites",
+                    "code": "25,01",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Natura2000Sites-dir-1992-43"
+                },
+                {
+                    "label": "Natura 2000 sites",
+                    "tooltip": "Natura 2000 sites",
+                    "id": "natura-2000-sites",
+                    "code": "25,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Natura2000Sites-dir-1992-43"
+                },
+                {
+                    "label": "Alien species distribution",
+                    "tooltip": "Alien species distribution",
+                    "id": "alien-species-distribution",
+                    "code": "26,01",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/reg-2014-1143,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/InvasiveAlienSpeciesDistribution-reg-2014-1143"
+                },
+                {
+                    "label": "E-PRTR sites & facilities",
+                    "tooltip": "E-PRTR sites & facilities",
+                    "id": "e-prtr-sites-facilities",
+                    "code": "27,01",
+                    "theme": "Industrial-emissions",
+                    "class": "industrial-emissions",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/reg-2006-166,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/IndustrialSites-EURegistry-reg-2006-166,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SitesAndFacilities-reg-2006-166"
+                },
+                {
+                    "label": "E-PRTR emission data",
+                    "tooltip": "E-PRTR emission data",
+                    "id": "e-prtr-emission-data",
+                    "code": "28,01",
+                    "theme": "Industrial-emissions",
+                    "class": "industrial-emissions",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/reg-2006-166,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ActualPollutantReleases-reg-2006-166"
+                },
+                {
+                    "label": "IED installations",
+                    "tooltip": "Industrial Emissions Directive installations",
+                    "id": "industrial-emissions-directive-installations",
+                    "code": "29,01",
+                    "theme": "Industrial-emissions",
+                    "class": "industrial-emissions",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2010-75,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/IndustrialSites-EURegistry-dir-2010-75,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Installations-dir-2010-75"
+                },
+                {
+                    "label": "Combustion plants",
+                    "tooltip": "Combustion plants",
+                    "id": "combustion-plants",
+                    "code": "30,01",
+                    "theme": "Industrial-emissions",
+                    "class": "industrial-emissions",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2010-75,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/IndustrialSites-EURegistry-dir-2010-75,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/LargeCombustionPlants-dir-2010-75"
+                },
+                {
+                    "label": "UWWTD agglomerations",
+                    "tooltip": "Urban Waste Water Treatment Directive agglomerations",
+                    "id": "urban-wastewater-treatment-directive-agglomerations",
+                    "code": "31,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1991-271,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-dir-1991-271"
+                },
+                {
+                    "label": "UWWTD plants",
+                    "tooltip": "Urban Waste Water Treatment Directive plants",
+                    "id": "urban-waste-water-treatment-directive-plants",
+                    "code": "32,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1991-271,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/UrbanWasteWaterTreatmentPlants-dir-1991-271"
+                },
+                {
+                    "label": "UWWTD discharge points",
+                    "tooltip": "Urban Waste Water Treatment Directive discharge points",
+                    "id": "urban-waste-water-treatment-directive-discharge-points",
+                    "code": "33,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1991-271,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/DischargePointsToReceivingWaters-dir-1991-271"
+                },
+                {
+                    "label": "UWWTD sensitive areas",
+                    "tooltip": "Urban Waste Water Treatment Directive sensitive areas",
+                    "id": "urban-waste-water-treatment-directive-sensitive-areas",
+                    "code": "34,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1991-271,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SensitiveAreasLessSensitiveAreasAndCatchments-dir-1991-271,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SensitiveAreas-dir-1991-271,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/LessSensitiveAreas-dir-1991-271,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SensitiveAreaCatchments-dir-1991-271"
+                },
+                {
+                    "label": "NiD monitoring stations",
+                    "tooltip": "Nitrates Directive monitoring stations",
+                    "id": "nitrates-directive-monitoring-stations",
+                    "code": "35,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1991-676,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MonitoringStations-dir-1991-676"
+                },
+                {
+                    "label": "NiD nitrate vulnerable zones",
+                    "tooltip": "Nitrates Directive nitrate vulnerable zones",
+                    "id": "nitrates-directive-nitrate-vulnerable-zones",
+                    "code": "36,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1991-676,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/NitratesVulnerableZones-dir-1991-676"
+                },
+                {
+                    "label": "Areas exemted from permission of dumping waste",
+                    "tooltip": "Areas exempt from requirement to obtain a permit to dump waste",
+                    "id": "areas-exempt-from-requirement-to-obtain-a-permit-to-dump-waste",
+                    "code": "37,01",
+                    "theme": "Waste",
+                    "class": "waste",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1999-31,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ExemptedIslandsAndIsolatedSettlements-dir-1999-31"
+                },
+                {
+                    "label": "Extractive waste facilities",
+                    "tooltip": "Extractive waste facilities",
+                    "id": "extractive-waste-facilities",
+                    "code": "38,01",
+                    "theme": "Waste",
+                    "class": "waste",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2006-21,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FacilitiesForManagingExtractiveWaste-dir-2006-21"
+                },
+                {
+                    "label": "Seveso III location of establishment",
+                    "tooltip": "Seveso III location of establishment",
+                    "id": "seveso-iii-directive-location-of-establishment",
+                    "code": "39,01",
+                    "theme": "Industrial-accidents",
+                    "class": "industrial-accidents",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2012-18,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EstablishmentsInvolvingDangerousSubstances-dir-2012-18"
+                },
+                {
+                    "label": "Boreholes for hydraulic fracturing",
+                    "tooltip": "Boreholes for hydraulic fracturing",
+                    "id": "boreholes-for-hydraulic-fracturing",
+                    "code": "40,01",
+                    "theme": "Industrial-emissions",
+                    "class": "industrial-emissions",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/reco-2014-70,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Boreholes-reco-2014-70,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BoreholesForHydraulicFracturing-reco-2014-70"
+                },
+                {
+                    "label": "Agricultural sludge receiving facilities",
+                    "tooltip": "Agricultural sludge receiving facilities",
+                    "id": "agricultural-sludge-receiving-facilities",
+                    "code": "42,01",
+                    "theme": "Waste",
+                    "class": "waste",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1986-278,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/AgriculturalFacilitiesReceivingSludge-dir-1986-278"
+                },
+                {
+                    "label": "Agricultural sludge deposit sites",
+                    "tooltip": "Agricultural sludge deposit sites",
+                    "id": "agricultural-sludge-deposit-sites",
+                    "code": "43,01",
+                    "theme": "Waste",
+                    "class": "waste",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1986-278,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/AgriculturalSitesWhereSludgeIsDeposited-dir-1986-278"
+                },
+                {
+                    "label": "Mercury storage facilities",
+                    "tooltip": "Mercury storage facilities",
+                    "id": "mercury-storage-facilities",
+                    "code": "44,01",
+                    "theme": "Waste",
+                    "class": "waste",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/reg-2017-852,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MercuryStorageFacilities-reg-2017-852"
+                },
+                {
+                    "label": "Nationally designated areas (CDDA)",
+                    "tooltip": "Nationally designated areas (CDDA)",
+                    "id": "nationally-designated-areas-cdda",
+                    "code": "45,01",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EEA-AWP,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/NationallyDesignatedAreasCDDA"
+                },
+                {
+                    "label": "Biogeographical regions (national datasets)",
+                    "tooltip": "Biogeographical regions (national datasets)",
+                    "id": "biogeographical-regions-national-datasets",
+                    "code": "46,01",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/national-legislation,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/NationalBiogeographicalRegions,https://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/NationalBiogeographicalRegions-dir-1992-43"
+                },
+                {
+                    "label": "IED/LCP emission data",
+                    "tooltip": "Industrial Emissions Directive. LCP emission data",
+                    "id": "industrial-emissions-directive-lcp-emission-data",
+                    "code": "47,01",
+                    "theme": "Industrial-emissions",
+                    "class": "industrial-emissions",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2010-75,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Emissions-dir-2010-75"
+                },
+                {
+                    "label": "Location of landfill of waste sites",
+                    "tooltip": "Location of landfill of waste sites",
+                    "id": "location-of-landfill-of-waste-sites",
+                    "code": "48,01",
+                    "theme": "Waste",
+                    "class": "waste",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1999-31,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/LandfillOfWasteSites-dir-1999-31"
+                },
+
+                {
+                    "label": "AQ management zones & agglomerations",
+                    "tooltip": "Air quality management zones & agglomerations",
+                    "id": "air-quality-management-zones-agglomerations-grouping",
+                    "code": "1,01",
+                    "theme": "Air",
+                    "class": "air",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ManagementZonesAndAgglomerations-dir-2008-50"
+                },
+                {
+                    "label": "Major roads, railways and air transport network (Noise Directive)",
+                    "tooltip": "Major roads, railways and air transport network (Noise Directive)",
+                    "id": "major-roads-railways-and-air-transport-network-grouping",
+                    "code": "5,01-5,02-5,03",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRoadsRailwaysAndAirTransportNetwork-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map",
+                    "tooltip": "Noise contour map",
+                    "id": "noise-contour-map-grouping",
+                    "code": "8,01-8,02-8,03-8,04-8,05-8,06-8,07-8,08-8,09-8,10-8,11-8,12-8,13-8,14-8,15-8,16",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for major roads",
+                    "tooltip": "Noise contour map for major roads",
+                    "id": "noise-contour-map-for-major-roads-grouping",
+                    "code": "8,01-8,02",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRoadsNoiseExposureDelineation-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for major railways",
+                    "tooltip": "Noise contour map for major railways",
+                    "id": "noise-contour-map-for-major-railways-grouping",
+                    "code": "8,03-8,04",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorRailwaysNoiseExposureDelineation-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for major airports",
+                    "tooltip": "Noise contour map for major airports",
+                    "id": "noise-contour-map-for-major-airports-grouping",
+                    "code": "8,05-8,06",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MajorAirportsNoiseExposureDelineation-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for road noise in agglomerations",
+                    "tooltip": "Noise contour map for road noise in agglomerations",
+                    "id": "noise-contour-map-for-road-noise-in-agglomerations-grouping",
+                    "code": "8,07-8,08",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-RoadsNoiseExposureDelineation-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for railway noise in agglomerations",
+                    "tooltip": "Noise contour map for railway noise in agglomerations",
+                    "id": "noise-contour-map-for-railway-noise-in-agglomerations-grouping",
+                    "code": "8,09-8,10",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-RailwaysNoiseExposureDelineation-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for aircraft noise in agglomerations",
+                    "tooltip": "Noise contour map for aircraft noise in agglomerations",
+                    "id": "noise-contour-map-for-aircraft-noise-in-agglomerations-grouping",
+                    "code": "8,11-8,12",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-AircraftNoiseExposureDelineation-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map for industrial noise in agglomerations",
+                    "tooltip": "Noise contour map for industrial noise in agglomerations",
+                    "id": "noise-contour-map-for-industrial-noise-in-agglomerations-grouping",
+                    "code": "8,13-8,14",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-IndustrialNoiseExposureDelineation-dir-2002-49"
+                },
+                {
+                    "label": "Noise contour map in agglomerations",
+                    "tooltip": "Noise contour map in agglomerations",
+                    "id": "noise-contour-map-in-agglomerations-grouping",
+                    "code": "8,15-8,16",
+                    "theme": "Noise",
+                    "class": "noise",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-50,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/EnvironmentalNoiseExposure-dir-2002-49,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Agglomerations-NoiseExposureDelineation-dir-2002-49"
+                },
+                {
+                    "label": "Water bodies (Water Framework Directive)",
+                    "tooltip": "Water bodies (Water Framework Directive)",
+                    "id": "water-bodies-water-framework-directive-grouping",
+                    "code": "10,01-10,02-10,03-10,04-10,05",
+                    "theme": "Water",
+                    "class": "water",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/WaterBodies-dir-2000-60"
+                },
+                {
+                    "label": "Surface water bodies (Water Framework Directive)",
+                    "tooltip": "Surface water bodies (Water Framework Directive)",
+                    "id": "surface-water-bodies-water-framework-directive-grouping",
+                    "code": "10,01-10,02-10,03-10,04",
+                    "theme": "Water",
+                    "class": "water",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/WaterBodies-dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SurfaceWaterBodies-dir-2000-60"
+                },
+                {
+                    "label": "Protected areas (Water Framework Directive)",
+                    "tooltip": "Protected areas (Water Framework Directive)",
+                    "id": "protected-areas-water-framework-directive-grouping",
+                    "code": "11,01-11,02-11,03-11,04-22,01-25,01-34,01-36,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2000-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/ProtectedAreas-dir-2000-60"
+                },
+                {
+                    "label": "Preliminary flood risk assessment (Floods Directive)",
+                    "tooltip": "Preliminary flood risk assessment (Floods Directive)",
+                    "id": "preliminary-flood-risk-assessment-floods-directive-grouping",
+                    "code": "14,01-14,02",
+                    "theme": "Water",
+                    "class": "water",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/PreliminaryFloodRiskAssessment-dir-2007-60"
+                },
+                {
+                    "label": "FD hazard areas",
+                    "tooltip": "Floods Directive hazard areas",
+                    "id": "fd-hazard-areas-grouping",
+                    "code": "15,01-15,02-15,03",
+                    "theme": "Water",
+                    "class": "water",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodedAreas-dir-2007-60"
+                },
+                {
+                    "label": "FD flood risk zones",
+                    "tooltip": "Floods Directive flood risk zones",
+                    "id": "fd-flood-risk-zones-grouping",
+                    "code": "16,01-16,02-16,03",
+                    "theme": "Water",
+                    "class": "water",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2007-60,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/FloodRiskZones-dir-2007-60"
+                },
+                {
+                    "label": "MSFD marine reporting units",
+                    "tooltip": "Marine Strategy Framework Directive marine reporting units",
+                    "id": "msfd-marine-reporting-units-grouping",
+                    "code": "18,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2008-56,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/MarineRegionsAndUnits-dir-2008-56"
+                },
+                {
+                    "label": "Drinking water protection areas, supply zones, safeguard zones",
+                    "tooltip": "Drinking water protection areas, supply zones, safeguard zones",
+                    "id": "drinking-water-protection-areas-supply-zones-safeguard-zones-grouping",
+                    "code": "20,01-21,01",
+                    "theme": "Water",
+                    "class": "water",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1998-83,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/DrinkingWaterSupplyZones-dir-1998-83"
+                },
+                {
+                    "label": "Habitat types and species distribution and range (Habitats Directive)",
+                    "tooltip": "Habitat types and species distribution and range (Habitats Directive)",
+                    "id": "habitat-types-and-species-distribution-and-range-habitats-directive-grouping",
+                    "code": "24,01-24,02-24,03-24,04-25,05-24,06",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/HabitatTypesAndSpeciesDistributionAndRange-dir-1992-43"
+                },
+                {
+                    "label": "Habitat types distribution",
+                    "tooltip": "Habitat types distribution",
+                    "id": "habitat-types-distribution-grouping",
+                    "code": "24,01-24,05",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/HabitatTypesAndSpeciesDistributionAndRange-dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/HabitatTypesDistribution-dir-1992-43"
+                },
+                {
+                    "label": "Species distribution",
+                    "tooltip": "Species distribution",
+                    "id": "species-distribution-grouping",
+                    "code": "24,03-24,06",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/HabitatTypesAndSpeciesDistributionAndRange-dir-1992-43,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/SpeciesDistribution-dir-1992-43"
+                },
+                {
+                    "label": "Bird species distribution and range (Birds Directive)",
+                    "tooltip": "Bird species distribution and range (Birds Directive)",
+                    "id": "bird-species-distribution-and-range-birds-directive-grouping",
+                    "code": "24,09-24,10-24,07-24,08",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdSpeciesDistributionAndRange-dir-2009-147"
+                },
+                {
+                    "label": "BIRDS distribution",
+                    "tooltip": "BIRDS distribution",
+                    "id": "birds-distribution-grouping",
+                    "code": "24,09-24,10",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdSpeciesDistributionAndRange-dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdSpeciesDistribution-dir-2009-147"
+                },
+                {
+                    "label": "BIRDS range",
+                    "tooltip": "BIRDS range",
+                    "id": "birds-range-grouping",
+                    "code": "24,07-24,08",
+                    "theme": "Nature",
+                    "class": "nature",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdSpeciesDistributionAndRange-dir-2009-147,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/BirdsRange-dir-2009-147"
+                },
+                {
+                    "label": "EU registry on industrial sites",
+                    "tooltip": "EU registry on industrial sites",
+                    "id": "eu-registry-on-industrial-sites-grouping",
+                    "code": "27,01-29,01-30,01",
+                    "theme": "Industrial-emissions",
+                    "class": "industrial-emissions",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/IndustrialSites-EURegistry-reg-2006-166,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/IndustrialSites-EURegistry-dir-2010-75"
+                },
+                {
+                    "label": "Boreholes for hydraulic fracturing",
+                    "tooltip": "Boreholes for hydraulic fracturing",
+                    "id": "boreholes-for-hydraulic-fracturing-grouping",
+                    "code": "40,01",
+                    "theme": "Industrial-emissions",
+                    "class": "industrial-emissions",
+                    "type": "grouping",
+                    "links": "http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/reco-2014-70,http://inspire.ec.europa.eu/metadata-codelist/PriorityDataset/Boreholes-reco-2014-70"
+                }
+
+            ]
+}

@@ -1,0 +1,81 @@
+<div class="ecl-container">
+
+  <div class="col-xl text-center">
+    <h1 class="ecl-u-type-heading-2">INSPIRE Data Themes</h1>
+    <p class="ecl-u-type-heading-6 font-weight-unset">Explore all Member States' datasets by selecting a data theme.
+    </p>
+  </div>
+
+  <div ng-repeat="annex in annexList">
+
+    <h2 class="text-center ecl-u-type-heading-2">Annex {{annex.label}}</h2>
+
+    <div class="row">
+
+      <div ng-repeat="theme in themes.data | filter: { annexGroupId: annex.id}" ng-init="myVariable = $index+1">
+
+        <div class="clearfix" ng-if="$index % 4 == 0"></div>
+
+        <div class="col-s-12 col-md-6 col-lg-3 margin-top-20">
+
+          <div class="card data-themes-card">
+
+            <div class="card-header">
+              <div class="row text-center justify-content-center">
+
+                <div class="col-md-12">
+                  <img ng-src="../../catalog/views/inspireportal/images/{{theme.id}}.svg" alt="theme" />
+                </div>
+
+                <div class="col-md-12">
+                  <b><a href="../../srv/eng/catalog.search#/overview?view=themeOverview&theme={{theme.id}}"
+                      class="ecl-link ecl-link--standalone"> {{theme.label}} </a></b>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="card-body">
+              <div class="row text-center justify-content-center">
+                <div class="col-md-12">
+                  <b>Def:</b>
+                  <div class="theme-def"><a
+                      href="../../srv/eng/catalog.search#/overview?view=themeOverview&theme={{theme.id}}"
+                      class="ecl-link ecl-link--standalone"> <span data-tooltip-text="{{theme.definition}}">
+                        {{theme.definition | truncate:50:wordwise:60}}... </span> </a></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="card-footer pos-text">
+              <div class="ecl-u-f-l">
+                <a target="_blank" ng-href="{{getIconURL(theme)}}"
+                  class="ecl-link ecl-link--standalone">
+                  <i class="fa fa-info-circle" data-toggle="tooltip" data-placement="top"
+                    title="Click for more details"></i>
+                </a>
+              </div>
+              {{getStatsDataThemesData('datathemes', theme, 'MT')}}
+              <div class="ecl-u-f-c">
+                <i class="fa fa-file text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+                  data-placement="top" title="Metadata"></i>
+                <span id="datathemes_{{theme.id}}_MT" class="statsThemeSelectionBox_mdCount_ad"></span>
+                  <span> | </span>
+                <i class="fa fa-download text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+                  data-placement="top" title="Downloadable"></i>
+                <span id="datathemes_{{theme.id}}_DW" class="statsThemeSelectionBox_dwCount_ad"></span>
+                  <span> | </span>
+                <i class="fa fa-eye text-primary ecl-color" aria-hidden="true" data-toggle="tooltip"
+                  data-placement="top" title="Viewable"></i>
+                <span id="datathemes_{{theme.id}}_VW" class="statsThemeSelectionBox_lyCount_ad"></span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</div>
